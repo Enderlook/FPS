@@ -23,31 +23,29 @@ class FPS_API ATPS_Player : public ACharacter
 public:
 	// Sets default values for this character's properties
 	ATPS_Player();
-	UPROPERTY (VisibleAnywhere, BlueprintReadOnly, Category = Camera)
-	USpringArmComponent* CameraBoom;
-	
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
-	UCameraComponent* FollowCamera;
 
-	void MoveForward(float Axis);
-	void MoveRight(float Axis);
-
+private:
 	bool bDead;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
-		float Power;
+	UPROPERTY(EditAnywhere)
+	float power;
 
 	UPROPERTY(EditAnywhere)
-		float Power_Threshold;
-
-	UFUNCTION()
-	void OnBeginOverlap(class UPrimitiveComponent* HitComp,
-	                           class AActor* OtherActor, class UPrimitiveComponent* OtherComp,
-	                           int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+	float powerThreshold;
 
 	UPROPERTY(EditAnywhere, Category = "UI HUD")
-		TSubclassOf<UUserWidget> Player_Power_Widget_Class;
-	UUserWidget* Player_Power_Widget;
+	TSubclassOf<UUserWidget> playerPowerWidgetClass;
+	UUserWidget* playerPowerWidget;
+
+private:
+	UFUNCTION()
+	void OnBeginOverlap(class UPrimitiveComponent* HitComp,
+			class AActor* OtherActor, class UPrimitiveComponent* OtherComp,
+			int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+	void MoveForward(float Axis);
+
+	void MoveRight(float Axis);
 
 	void RestartGame();
 	

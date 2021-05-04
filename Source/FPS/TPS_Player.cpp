@@ -8,30 +8,31 @@ ATPS_Player::ATPS_Player()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+
 	GetCapsuleComponent()->InitCapsuleSize(42.0, 96.0);
 	
 	bUseControllerRotationPitch = false;
 	bUseControllerRotationRoll = false;
 	bUseControllerRotationYaw = false;
 
-	GetCharacterMovement()->bOrientRotationToMovement = true;
-	GetCharacterMovement()->RotationRate = FRotator(0.0f, 540.0f, 0.0f);
-	GetCharacterMovement()->JumpZVelocity = 650.0f;
-	GetCharacterMovement()->AirControl = 0.2f;
+	UCharacterMovementComponent* movement = GetCharacterMovement();
+	movement->bOrientRotationToMovement = true;
+	movement->RotationRate = FRotator(0.0f, 540.0f, 0.0f);
+	movement->JumpZVelocity = 650.0f;
+	movement->AirControl = 0.2f;
 
-	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
-	CameraBoom->SetupAttachment(RootComponent);
+	USpringArmComponent* cameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
+	cameraBoom->SetupAttachment(RootComponent);
 
-	CameraBoom->TargetArmLength = 300.0f;
-	CameraBoom->bUsePawnControlRotation = true;
+	cameraBoom->TargetArmLength = 300.0f;
+	cameraBoom->bUsePawnControlRotation = true;
 
-	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
-	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); 
-	FollowCamera->bUsePawnControlRotation = false;
+	UCameraComponent* followCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
+	followCamera->SetupAttachment(cameraBoom, USpringArmComponent::SocketName); 
+	followCamera->bUsePawnControlRotation = false;
 
 	bDead = false;
-	Power = 100.0f;
-	
+	power = 100.0f;	
 }
 
 // Called when the game starts or when spawned
@@ -40,11 +41,11 @@ void ATPS_Player::BeginPlay()
 	Super::BeginPlay();
 
 	GetCapsuleComponent()->OnComponentBeginOverlap.AddDynamic(this, &ATPS_Player::OnBeginOverlap);
-	if (Player_Power_Widget_Class != nullptr)
+	if (playerPowerWidgetClass != nullptr)
 	{
-		Player_Power_Widget = CreateWidget(GetWorld(), Player_Power_Widget_Class);
-		Player_Power_Widget->AddToViewport();
-	}	
+		playerPowerWidget = CreateWidget(GetWorld(), playerPowerWidgetClass);
+		playerPowerWidget->AddToViewport();
+	}
 }
 
 // Called every frame
@@ -52,9 +53,9 @@ void ATPS_Player::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	Power -= DeltaTime * Power_Threshold;
+	power -= DeltaTime * powerThreshold;
 
-	if (Power <= 0)
+	if (power <= 0)
 	{
 		if (!bDead)
 		{
@@ -80,9 +81,6 @@ void ATPS_Player::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &ATPS_Player::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ATPS_Player::MoveRight);
-	
-
-
 }
 
 void ATPS_Player::MoveForward(float Axis)
@@ -120,11 +118,11 @@ void ATPS_Player::OnBeginOverlap(UPrimitiveComponent* HitComp,
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Collided with Recharge"));
 
-		Power += 10.0f;
+		power += 10.0f;
 
-		if (Power > 100.0f) Power = 100.0f;
+		if (power > 100.0f)
+			power = 100.0f;
 
-		OtherActor->Destroy();
-		
+		OtherActor->Destroy();		
 	}
 }
