@@ -70,5 +70,5 @@ void AEnemyAIController::GoToPatrolState()
 	AEnemyCharacter* character = Cast<AEnemyCharacter>(GetPawn());
 
 	if (character)
-		character->MoveToNextWaypoint();
+		character->MoveToCurrentWaypoint();
 }

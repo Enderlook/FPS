@@ -37,16 +37,38 @@ void AEnemyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 
 }
 
+void AEnemyCharacter::MoveToCurrentWaypoint()
+{
+	AEnemyAIController* controller = Cast<AEnemyAIController>(GetController());
+
+	if (controller && waypoints.Num() > 0)
+	{
+		int index = GetWaypointIndex();
+		AActor* actor = waypoints[index];
+		controller->MoveToActor(actor, waypointAceptanceRadius, false);
+	}
+}
+
 void AEnemyCharacter::MoveToNextWaypoint()
 {
 	AEnemyAIController* controller = Cast<AEnemyAIController>(GetController());
 
-	if (controller)
+	if (controller && waypoints.Num() > 0)
 	{
-		int newWaypoint = FMath::RandRange(0, waypoints.Num() - 1);
-		AActor* actor = waypoints[newWaypoint];
+		waypointIndex++;
+		int index = GetWaypointIndex();
+		AActor* actor = waypoints[index];
 		controller->MoveToActor(actor, waypointAceptanceRadius, false);
 	}
+}
+
+int AEnemyCharacter::GetWaypointIndex() {
+	int count = waypoints.Num() - 1;
+	int max = count * 2;
+	int index = waypointIndex % max;
+	if (index >= count)
+		return max - index;
+	return index;
 }
 
 void AEnemyCharacter::MoveToPlayer()

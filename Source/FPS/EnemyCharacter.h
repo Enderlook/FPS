@@ -18,6 +18,7 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	TArray<AActor*> waypoints;
+	int waypointIndex;
 
 	AActor* player;
 	FVector lastKnownPlayerPosition;
@@ -43,11 +44,15 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	void MoveToCurrentWaypoint();
+
 	void MoveToNextWaypoint();
 
 	void MoveToPlayer();
 
 	void MoveToLastPlayerKnownLocation();
+
+	int GetWaypointIndex();
 
 private:
 	void CheckPlayerIsInSight();
