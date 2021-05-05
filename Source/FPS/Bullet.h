@@ -27,6 +27,8 @@ private:
 	UPROPERTY(VisibleDefaultsOnly, Category = Movement)
 	UMaterialInstanceDynamic* bulletMaterialInstance;
 
+	const AActor* ownerActor;
+
 public:	
 	// Sets default values for this actor's properties
 	ABullet();
@@ -41,13 +43,12 @@ public:
 
 private:
 	UFUNCTION()
-	void OnHit(
-		UPrimitiveComponent* HitComponent,
-		AActor* OtherActor,
-		UPrimitiveComponent* OtherComponent,
-		FVector NormalImpulse,
-		const FHitResult& Hit);
+	void OnBeginOverlap(
+		UPrimitiveComponent* HitComp,
+		AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex,
+		bool bFromSweep, const FHitResult& SweepResult);
 
 public:
 	void FireInDirection(const FVector& shootDirection);
+	void SetOwnerActor(const AActor* ownerActor);
 };

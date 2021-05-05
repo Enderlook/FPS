@@ -103,6 +103,7 @@ void ATPS_Player::Fire()
 				// Set the projectile's initial trajectory.
 				FVector LaunchDirection = muzzleRotation.Vector();
 				bullet->FireInDirection(LaunchDirection);
+				bullet->SetOwnerActor(this);
 			}
 		}
 	}
