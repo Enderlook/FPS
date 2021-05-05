@@ -5,14 +5,18 @@
 #include "Engine.h"
 #include "Engine/World.h"
 #include "GameFramework/Character.h"
+#include "Damagable.h"
 #include "EnemyCharacter.generated.h"
 
 UCLASS()
-class FPS_API AEnemyCharacter : public ACharacter
+class FPS_API AEnemyCharacter : public ACharacter, public IDamagable
 {
 	GENERATED_BODY()
 
 private:
+	UPROPERTY(EditAnywhere)
+	int hitpoints;
+
 	UPROPERTY(EditAnywhere)
 	float waypointAceptanceRadius;
 
@@ -43,6 +47,8 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	virtual void TakeDamage() override;
 
 	void MoveToCurrentWaypoint();
 

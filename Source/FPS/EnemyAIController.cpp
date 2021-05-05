@@ -72,3 +72,8 @@ void AEnemyAIController::GoToPatrolState()
 	if (character)
 		character->MoveToCurrentWaypoint();
 }
+
+void AEnemyAIController::SetDead()
+{
+	state = EState::ES_Dead;
+}

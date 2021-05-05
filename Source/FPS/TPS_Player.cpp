@@ -1,7 +1,7 @@
 #include "TPS_Player.h"
-#include  "Components/SkeletalMeshComponent.h"
+#include "Components/SkeletalMeshComponent.h"
 #include "GameFramework/Actor.h"
-#include  "Kismet/GameplayStatics.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 ATPS_Player::ATPS_Player()
@@ -30,9 +30,6 @@ ATPS_Player::ATPS_Player()
 	UCameraComponent* followCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	followCamera->SetupAttachment(cameraBoom, USpringArmComponent::SocketName); 
 	followCamera->bUsePawnControlRotation = false;
-
-	bDead = false;
-	power = 100.0f;	
 }
 
 // Called when the game starts or when spawned
@@ -46,26 +43,14 @@ void ATPS_Player::BeginPlay()
 		playerPowerWidget = CreateWidget(GetWorld(), playerPowerWidgetClass);
 		playerPowerWidget->AddToViewport();
 	}
+
+	currentHitpoints = hitpoints;
 }
 
 // Called every frame
 void ATPS_Player::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-	power -= DeltaTime * powerThreshold;
-
-	if (power <= 0)
-	{
-		if (!bDead)
-		{
-			bDead = true;
-			
-			GetMesh()->SetSimulatePhysics(true);
-			FTimerHandle UnusedHandle;
-			GetWorldTimerManager().SetTimer(UnusedHandle, this, &ATPS_Player::RestartGame, 3.0f, false);
-		}
-	}
 }
 
 // Called to bind functionality to input
@@ -76,7 +61,7 @@ void ATPS_Player::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
+	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ATPS_Player::RestartGame);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &ATPS_Player::MoveForward);
@@ -125,7 +110,7 @@ void ATPS_Player::Fire()
 
 void ATPS_Player::MoveForward(float Axis)
 {
-	if (!bDead)
+	if (currentHitpoints > 0)
 	{
 		const FRotator Rotation = Controller->GetControlRotation();
 		const FRotator YawRotation(0, Rotation.Yaw, 0);
@@ -136,7 +121,7 @@ void ATPS_Player::MoveForward(float Axis)
 
 void ATPS_Player::MoveRight(float Axis)
 {
-	if (!bDead)
+	if (currentHitpoints > 0)
 	{
 		const FRotator Rotation = Controller->GetControlRotation();
 		const FRotator YawRotation(0, Rotation.Yaw, 0);
@@ -144,6 +129,13 @@ void ATPS_Player::MoveRight(float Axis)
 		AddMovementInput(Direction, Axis);
 	}
 }
+
+void ATPS_Player::Jump()
+{
+	if (currentHitpoints > 0)
+		Super::Jump();
+}
+
 
 void ATPS_Player::RestartGame()
 {
@@ -156,13 +148,23 @@ void ATPS_Player::OnBeginOverlap(UPrimitiveComponent* HitComp,
 {
 	if (OtherActor->ActorHasTag("Recharge"))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Collided with Recharge"));
+		UE_LOG(LogTemp, Warning, TEXT("Collided with Health Pack"));
 
-		power += 10.0f;
+		currentHitpoints += hitpointsRestoredOnPickup;
 
-		if (power > 100.0f)
-			power = 100.0f;
+		if (currentHitpoints > hitpoints)
+			currentHitpoints = hitpoints;
 
-		OtherActor->Destroy();		
+		OtherActor->Destroy();
+	}
+}
+
+void ATPS_Player::TakeDamage()
+{
+	if (--currentHitpoints <= 0)
+	{
+		GetMesh()->SetSimulatePhysics(true);
+		FTimerHandle UnusedHandle;
+		GetWorldTimerManager().SetTimer(UnusedHandle, this, &ATPS_Player::RestartGame, 3.0f, false);
 	}
 }

@@ -13,10 +13,11 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "Blueprint/UserWidget.h"
 #include "Bullet.h"
+#include "Damagable.h"
 #include "TPS_Player.generated.h"
 
 UCLASS()
-class FPS_API ATPS_Player : public ACharacter
+class FPS_API ATPS_Player : public ACharacter, public IDamagable
 {
 	GENERATED_BODY()
 
@@ -25,13 +26,12 @@ public:
 	ATPS_Player();
 
 private:
-	bool bDead;
+	UPROPERTY(EditAnywhere)
+	int hitpoints;
+	int currentHitpoints;
 
 	UPROPERTY(EditAnywhere)
-	float power;
-
-	UPROPERTY(EditAnywhere)
-	float powerThreshold;
+	int hitpointsRestoredOnPickup;
 
 	UPROPERTY(EditAnywhere, Category = "UI HUD")
 	TSubclassOf<UUserWidget> playerPowerWidgetClass;
@@ -56,18 +56,23 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+public:
+	virtual void TakeDamage() override;
+
+	virtual void Jump() override;
+
 private:
 	UFUNCTION()
-		void OnBeginOverlap(
-			class UPrimitiveComponent* HitComp,
-			class AActor* OtherActor,
-			class UPrimitiveComponent* OtherComp,
-			int32 OtherBodyIndex,
-			bool bFromSweep,
-			const FHitResult& SweepResult);
+	void OnBeginOverlap(
+		class UPrimitiveComponent* HitComp,
+		class AActor* OtherActor,
+		class UPrimitiveComponent* OtherComp,
+		int32 OtherBodyIndex,
+		bool bFromSweep,
+		const FHitResult& SweepResult);
 
 	UFUNCTION()
-		void Fire();
+	void Fire();
 
 	void MoveForward(float Axis);
 

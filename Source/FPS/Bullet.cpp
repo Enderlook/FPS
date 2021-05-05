@@ -71,7 +71,19 @@ void ABullet::FireInDirection(const FVector& shootDirection)
 
 void ABullet::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit)
 {
-	if (OtherActor != this && OtherComponent->IsSimulatingPhysics())
-		OtherComponent->AddImpulseAtLocation(bulletMovementComponent->Velocity * 100.0f, Hit.ImpactPoint);
+	if (OtherActor != this)
+	{
+		if (OtherComponent->IsSimulatingPhysics())
+			OtherComponent->AddImpulseAtLocation(bulletMovementComponent->Velocity * 100.0f, Hit.ImpactPoint);
+
+		for (UActorComponent* component : OtherActor->GetComponents())
+		{
+			if (component && component->GetClass()->ImplementsInterface(UDamagable::StaticClass()))
+			{
+				Cast<IDamagable>(component)->TakeDamage();
+				break;
+			}
+		}
+	}
 	Destroy();
 }

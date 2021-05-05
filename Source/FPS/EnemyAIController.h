@@ -11,6 +11,7 @@ enum class EState : uint8
 	ES_Patrol,
 	ES_Hunt,
 	ES_Chase,
+	ES_Dead,
 };
 
 /**
@@ -34,4 +35,5 @@ private:
 
 public:
 	void CanSeePlayer(bool can);
+	void SetDead();
 };
