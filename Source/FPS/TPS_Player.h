@@ -11,8 +11,8 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
-
 #include "Blueprint/UserWidget.h"
+#include "Bullet.h"
 #include "TPS_Player.generated.h"
 
 UCLASS()
@@ -37,17 +37,13 @@ private:
 	TSubclassOf<UUserWidget> playerPowerWidgetClass;
 	UUserWidget* playerPowerWidget;
 
-private:
-	UFUNCTION()
-	void OnBeginOverlap(class UPrimitiveComponent* HitComp,
-			class AActor* OtherActor, class UPrimitiveComponent* OtherComp,
-			int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+protected:
+	UPROPERTY(EditDefaultsOnly, Category = "Projectile")
+	TSubclassOf<class ABullet> BulletClass;
 
-	void MoveForward(float Axis);
-
-	void MoveRight(float Axis);
-
-	void RestartGame();
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Gameplay")
+	FVector MuzzleOffset;
 	
 protected:
 	// Called when the game starts or when spawned
@@ -60,4 +56,22 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+private:
+	UFUNCTION()
+		void OnBeginOverlap(
+			class UPrimitiveComponent* HitComp,
+			class AActor* OtherActor,
+			class UPrimitiveComponent* OtherComp,
+			int32 OtherBodyIndex,
+			bool bFromSweep,
+			const FHitResult& SweepResult);
+
+	UFUNCTION()
+		void Fire();
+
+	void MoveForward(float Axis);
+
+	void MoveRight(float Axis);
+
+	void RestartGame();
 };

@@ -81,6 +81,46 @@ void ATPS_Player::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &ATPS_Player::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ATPS_Player::MoveRight);
+
+	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &ATPS_Player::Fire);
+}
+
+void ATPS_Player::Fire()
+{
+	if (BulletClass)
+	{
+		// Get the camera transform.
+		FVector cameraLocation;
+		FRotator cameraRotation;
+		GetActorEyesViewPoint(cameraLocation, cameraRotation);
+
+		// Set MuzzleOffset to spawn projectiles slightly in front of the camera.
+		MuzzleOffset.Set(100.0f, 0.0f, 0.0f);
+
+		// Transform MuzzleOffset from camera space to world space.
+		FVector muzzleLocation = cameraLocation + FTransform(cameraRotation).TransformVector(MuzzleOffset);
+
+		// Skew the aim to be slightly upwards.
+		FRotator muzzleRotation = cameraRotation;
+		muzzleRotation.Pitch += 10.0f;
+
+		UWorld* World = GetWorld();
+		if (World)
+		{
+			FActorSpawnParameters SpawnParams;
+			SpawnParams.Owner = this;
+			SpawnParams.Instigator = GetInstigator();
+
+			// Spawn the projectile at the muzzle.
+			ABullet* bullet = World->SpawnActor<ABullet>(BulletClass, muzzleLocation, muzzleRotation, SpawnParams);
+			if (bullet)
+			{
+				// Set the projectile's initial trajectory.
+				FVector LaunchDirection = muzzleRotation.Vector();
+				bullet->FireInDirection(LaunchDirection);
+			}
+		}
+	}
 }
 
 void ATPS_Player::MoveForward(float Axis)
