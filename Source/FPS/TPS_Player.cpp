@@ -25,6 +25,8 @@ ATPS_Player::ATPS_Player()
 	cameraBoom->SetupAttachment(RootComponent);
 
 	cameraBoom->TargetArmLength = 300.0f;
+	cameraBoom->SocketOffset = FVector(0.0f, 150.0f, 0.0f);
+	//cameraBoom->AddRelativeLocation(FVector(0.0f, 300.0f, 0.0f));
 	cameraBoom->bUsePawnControlRotation = true;
 
 	UCameraComponent* followCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
