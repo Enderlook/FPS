@@ -34,6 +34,9 @@ private:
 	UPROPERTY(EditAnywhere)
 	float sightRadius;
 
+	UPROPERTY(EditAnywhere)
+	float sightMaxAngle;
+
 public:
 	// Sets default values for this character's properties
 	AEnemyCharacter();
