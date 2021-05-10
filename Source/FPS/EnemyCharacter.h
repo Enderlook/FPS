@@ -6,6 +6,7 @@
 #include "Engine/World.h"
 #include "GameFramework/Character.h"
 #include "Damagable.h"
+#include "EnemyAIController.h"
 #include "EnemyCharacter.generated.h"
 
 UCLASS()
@@ -49,17 +50,13 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	virtual void TakeDamage() override;
-
 	void MoveToCurrentWaypoint();
-
 	void MoveToNextWaypoint();
-
 	void MoveToPlayer();
-
 	void MoveToLastPlayerKnownLocation();
 
-	int GetWaypointIndex();
-
 private:
-	void CheckPlayerIsInSight();
+	class AEnemyAIController* GetAIController();
+	bool IsPlayerInSight();
+	int GetWaypointIndex();
 };
