@@ -38,5 +38,6 @@ private:
 public:
 	void CanSeePlayer(bool can);
 	void SetDead();
+	void FromAttack(bool canSeePlayer);
 	void OnBeingHurt();
 };

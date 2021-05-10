@@ -130,6 +130,27 @@ bool AEnemyCharacter::IsPlayerInSight()
 	}
 	return false;
 }
+
+void AEnemyCharacter::Attack()
+{
+	if (isAttacking)
+		return;
+
+	AEnemyAIController* controller = GetAIController();
+	if (controller)
+	{
+		isAttacking = true;
+		FTimerHandle handle;
+		GetWorld()->GetTimerManager().SetTimer(handle, this, &AEnemyCharacter::AttackCallback, 1, false, 1);
+	}
+}
+
+void AEnemyCharacter::AttackCallback()
+{
+	isAttacking = false;
+	AEnemyAIController* controller = GetAIController();
+	if (controller)
+		controller->FromAttack(IsPlayerInSight());
 }
 
 void AEnemyCharacter::TakeDamage()

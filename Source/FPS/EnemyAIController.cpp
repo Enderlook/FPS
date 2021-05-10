@@ -14,6 +14,7 @@ void AEnemyAIController::OnMoveCompleted(FAIRequestID RequestID, const FPathFoll
 			character->MoveToNextWaypoint();
 			break;
 		case EState::ES_Hunt:
+			character->Attack();
 			break;
 		case EState::ES_Chase:
 			GoToPatrolState();
@@ -39,6 +40,14 @@ void AEnemyAIController::CanSeePlayer(bool can)
 			GoToHuntState();
 		break;
 	}
+}
+
+void AEnemyAIController::FromAttack(bool canSeePlayer)
+{
+	if (canSeePlayer)
+		GoToHuntState();
+	else
+		GoToPatrolState();
 }
 
 void AEnemyAIController::GoToHuntState()

@@ -37,6 +37,8 @@ private:
 	UPROPERTY(EditAnywhere)
 	float sightMaxAngle;
 
+	bool isAttacking;
+
 public:
 	// Sets default values for this character's properties
 	AEnemyCharacter();
@@ -57,9 +59,11 @@ public:
 	void MoveToNextWaypoint();
 	void MoveToPlayer();
 	void MoveToLastPlayerKnownLocation();
+	void Attack();
 
 private:
 	class AEnemyAIController* GetAIController();
 	bool IsPlayerInSight();
 	int GetWaypointIndex();
+	void AttackCallback();
 };
