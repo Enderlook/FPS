@@ -63,17 +63,6 @@ void ABullet::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
-
-void ABullet::FireInDirection(const FVector& shootDirection)
-{
-	bulletMovementComponent->Velocity = shootDirection * bulletMovementComponent->InitialSpeed;
-}
-
-void ABullet::SetOwnerActor(const AActor* owner)
-{
-	this->ownerActor = owner;
-}
-
 void ABullet::OnBeginOverlap(UPrimitiveComponent* HitComp,
 	AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex,
 	bool bFromSweep, const FHitResult& SweepResult)
@@ -88,5 +77,26 @@ void ABullet::OnBeginOverlap(UPrimitiveComponent* HitComp,
 			damagable->TakeDamage();
 
 		Destroy();
+	}
+}
+
+void ABullet::SpawnAndShoot(AActor* actor, TSubclassOf<class ABullet> bulletClass, FVector position, FRotator rotation)
+{
+	UWorld* world = actor->GetWorld();
+	if (world)
+	{
+		FActorSpawnParameters spawnParams;
+		spawnParams.Owner = actor;
+		spawnParams.Instigator = actor->GetInstigator();
+
+		// Spawn the projectile at the muzzle.
+		ABullet* bullet = world->SpawnActor<ABullet>(bulletClass, position, rotation, spawnParams);
+		if (bullet)
+		{
+			// Set the projectile's initial trajectory.
+			FVector launchDirection = rotation.Vector();
+			bullet->bulletMovementComponent->Velocity = launchDirection * bullet->bulletMovementComponent->InitialSpeed;
+			bullet->ownerActor = actor;
+		}
 	}
 }

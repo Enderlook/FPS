@@ -89,23 +89,7 @@ void ATPS_Player::Fire()
 		FRotator muzzleRotation = cameraRotation;
 		muzzleRotation.Pitch += 10.0f;
 
-		UWorld* world = GetWorld();
-		if (world)
-		{
-			FActorSpawnParameters spawnParams;
-			spawnParams.Owner = this;
-			spawnParams.Instigator = GetInstigator();
-
-			// Spawn the projectile at the muzzle.
-			ABullet* bullet = world->SpawnActor<ABullet>(BulletClass, muzzleLocation, muzzleRotation, spawnParams);
-			if (bullet)
-			{
-				// Set the projectile's initial trajectory.
-				FVector launchDirection = muzzleRotation.Vector();
-				bullet->FireInDirection(launchDirection);
-				bullet->SetOwnerActor(this);
-			}
-		}
+		ABullet::SpawnAndShoot(this, BulletClass, muzzleLocation, muzzleRotation);
 	}
 }
 

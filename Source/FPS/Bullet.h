@@ -49,6 +49,6 @@ private:
 		bool bFromSweep, const FHitResult& SweepResult);
 
 public:
-	void FireInDirection(const FVector& shootDirection);
-	void SetOwnerActor(const AActor* ownerActor);
+
+	static void SpawnAndShoot(AActor* actor, TSubclassOf<class ABullet> bulletClass, FVector position, FRotator rotation);
 };
