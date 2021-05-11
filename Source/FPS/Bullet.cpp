@@ -23,25 +23,21 @@ ABullet::ABullet()
 		RootComponent = collisionComponent;
 	}
 
-	if (!bulletMovementComponent)
-	{
-		bulletMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovementComponent"));
-		bulletMovementComponent->SetUpdatedComponent(collisionComponent);
-		bulletMovementComponent->InitialSpeed = 3000.0f;
-		bulletMovementComponent->MaxSpeed = 3000.0f;
-		bulletMovementComponent->bRotationFollowsVelocity = true;
-		bulletMovementComponent->bShouldBounce = true;
-		bulletMovementComponent->Bounciness = 0.3f;
-		bulletMovementComponent->ProjectileGravityScale = 0.0f;
-	}
+	bulletMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovementComponent"));
+	bulletMovementComponent->SetUpdatedComponent(collisionComponent);
+	bulletMovementComponent->InitialSpeed = 3000.0f;
+	bulletMovementComponent->MaxSpeed = 3000.0f;
+	bulletMovementComponent->bRotationFollowsVelocity = true;
+	bulletMovementComponent->bShouldBounce = true;
+	bulletMovementComponent->Bounciness = 0.3f;
+	bulletMovementComponent->ProjectileGravityScale = 0.0f;
 
-	if (!bulletMeshComponent)
-	{
-		bulletMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ProjectileMeshComponent"));
-		static ConstructorHelpers::FObjectFinder<UStaticMesh> mesh(TEXT("/Game/StarterContent/Shapes/Shape_Sphere.Shape_Sphere"));
-		if (mesh.Succeeded())
-			bulletMeshComponent->SetStaticMesh(mesh.Object);
-	}
+	UStaticMeshComponent* bulletMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ProjectileMeshComponent"));
+	bulletMeshComponent->SetRelativeScale3D(FVector(0.09f, 0.09f, 0.09f));
+	bulletMeshComponent->SetupAttachment(RootComponent);
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> mesh(TEXT("/Game/StarterContent/Shapes/Shape_Sphere.Shape_Sphere"));
+	if (mesh.Succeeded())
+		bulletMeshComponent->SetStaticMesh(mesh.Object);
 
 	static ConstructorHelpers::FObjectFinder<UMaterial> material(TEXT("/Game/Materials/BulletMaterial.BulletMaterial"));
 	if (material.Succeeded())
@@ -49,8 +45,6 @@ ABullet::ABullet()
 		UMaterialInstanceDynamic* bulletMaterialInstance = UMaterialInstanceDynamic::Create(material.Object, bulletMeshComponent);
 		bulletMeshComponent->SetMaterial(0, bulletMaterialInstance);
 	}
-	bulletMeshComponent->SetRelativeScale3D(FVector(0.09f, 0.09f, 0.09f));
-	bulletMeshComponent->SetupAttachment(RootComponent);
 }
 
 // Called when the game starts or when spawned

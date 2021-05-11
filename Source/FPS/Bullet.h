@@ -21,8 +21,6 @@ private:
 	UPROPERTY(VisibleAnywhere, Category = Movement)
 	UProjectileMovementComponent* bulletMovementComponent;
 
-	UPROPERTY(VisibleDefaultsOnly, Category = Projectile)
-	UStaticMeshComponent* bulletMeshComponent;
 
 	const AActor* ownerActor;
 
