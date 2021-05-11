@@ -87,6 +87,15 @@ void ATPS_Player::Fire()
 		// Transform MuzzleOffset from camera space to world space.
 		FVector muzzleLocation = cameraLocation + FTransform(cameraRotation).TransformVector(MuzzleOffset);
 
+		if(Firingdrone==nullptr)
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, "nullptr");
+		}
+		else
+		{
+			muzzleLocation = Firingdrone->GetSocketLocation("FX_Eye_R");
+		}
+		
 		// Skew the aim to be slightly upwards.
 		FRotator muzzleRotation = cameraRotation;
 		muzzleRotation.Pitch += 10.0f;
