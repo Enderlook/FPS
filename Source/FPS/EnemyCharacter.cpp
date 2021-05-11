@@ -80,7 +80,7 @@ void AEnemyCharacter::MoveToLastPlayerKnownLocation()
 {
 	AEnemyAIController* controller = GetAIController();
 	if (controller)
-		controller->MoveToLocation(lastKnownPlayerPosition, playerAceptanceRadius, false);
+		controller->MoveToLocation(GetLastKnownPlayerLocation(), playerAceptanceRadius, false);
 }
 
 bool AEnemyCharacter::IsPlayerInSight()
@@ -135,14 +135,12 @@ void AEnemyCharacter::Attack()
 {
 	if (isAttacking)
 		return;
+	AttackStart();
+}
 
-	AEnemyAIController* controller = GetAIController();
-	if (controller)
-	{
-		isAttacking = true;
-		FTimerHandle handle;
-		GetWorld()->GetTimerManager().SetTimer(handle, this, &AEnemyCharacter::AttackCallback, 1, false, 1);
-	}
+void AEnemyCharacter::AttackStart()
+{
+	isAttacking = true;
 }
 
 void AEnemyCharacter::AttackCallback()
@@ -174,4 +172,9 @@ void AEnemyCharacter::TakeDamage()
 AEnemyAIController* AEnemyCharacter::GetAIController()
 {
 	return Cast<AEnemyAIController>(GetController());
+}
+
+FVector AEnemyCharacter::GetLastKnownPlayerLocation()
+{
+	return lastKnownPlayerPosition;
 }

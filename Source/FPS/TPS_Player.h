@@ -26,24 +26,22 @@ public:
 	ATPS_Player();
 
 private:
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Player|Health")
 	int hitpoints;
 	int currentHitpoints;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Player|Health")
 	int hitpointsRestoredOnPickup;
 
-	UPROPERTY(EditAnywhere, Category = "UI HUD")
+	UPROPERTY(EditAnywhere, Category = "Player|UI")
 	TSubclassOf<UUserWidget> playerPowerWidgetClass;
 	UUserWidget* playerPowerWidget;
 
-protected:
-	UPROPERTY(EditDefaultsOnly, Category = "Projectile")
-	TSubclassOf<class ABullet> BulletClass;
+	UPROPERTY(EditDefaultsOnly, Category = "Player|Attack")
+	TSubclassOf<class ABullet> bulletClass;
 
-public:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Gameplay")
-	FVector MuzzleOffset;
+	UPROPERTY(EditAnywhere, Category = "Player|Attack")
+	FVector muzzleOffset;
 	
 protected:
 	// Called when the game starts or when spawned

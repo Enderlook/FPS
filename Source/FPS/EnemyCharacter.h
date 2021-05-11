@@ -15,26 +15,26 @@ class FPS_API AEnemyCharacter : public ACharacter, public IDamagable
 	GENERATED_BODY()
 
 private:
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Enemy Character")
 	int hitpoints;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Enemy Character|NavAgent")
 	float waypointAceptanceRadius;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Enemy Character|NavAgent")
 	TArray<AActor*> waypoints;
 	int waypointIndex;
 
 	AActor* player;
 	FVector lastKnownPlayerPosition;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Enemy Character|NavAgent")
 	float playerAceptanceRadius;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Enemy Character|NavAgent")
 	float sightRadius;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Enemy Character|NavAgent")
 	float sightMaxAngle;
 
 	bool isAttacking;
@@ -61,9 +61,13 @@ public:
 	void MoveToLastPlayerKnownLocation();
 	void Attack();
 
-private:
+protected:
+	virtual void AttackStart();
+	void AttackCallback();
 	class AEnemyAIController* GetAIController();
 	bool IsPlayerInSight();
+	FVector GetLastKnownPlayerLocation();
+
+private:
 	int GetWaypointIndex();
-	void AttackCallback();
 };

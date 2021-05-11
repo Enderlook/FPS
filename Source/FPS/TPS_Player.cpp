@@ -72,7 +72,7 @@ void ATPS_Player::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 
 void ATPS_Player::Fire()
 {
-	if (BulletClass)
+	if (bulletClass)
 	{
 		// Get the camera transform.
 		FVector cameraLocation;
@@ -80,16 +80,16 @@ void ATPS_Player::Fire()
 		GetActorEyesViewPoint(cameraLocation, cameraRotation);
 
 		// Set MuzzleOffset to spawn projectiles slightly in front of the camera.
-		MuzzleOffset.Set(100.0f, 0.0f, 0.0f);
+		muzzleOffset.Set(100.0f, 0.0f, 0.0f);
 
 		// Transform MuzzleOffset from camera space to world space.
-		FVector muzzleLocation = cameraLocation + FTransform(cameraRotation).TransformVector(MuzzleOffset);
+		FVector muzzleLocation = cameraLocation + FTransform(cameraRotation).TransformVector(muzzleOffset);
 
 		// Skew the aim to be slightly upwards.
 		FRotator muzzleRotation = cameraRotation;
 		muzzleRotation.Pitch += 10.0f;
 
-		ABullet::SpawnAndShoot(this, BulletClass, muzzleLocation, muzzleRotation);
+		ABullet::SpawnAndShoot(this, bulletClass, muzzleLocation, muzzleRotation);
 	}
 }
 
