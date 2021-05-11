@@ -38,15 +38,17 @@ ABullet::ABullet()
 	if (!bulletMeshComponent)
 	{
 		bulletMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ProjectileMeshComponent"));
-		static ConstructorHelpers::FObjectFinder<UStaticMesh>Mesh(TEXT("/Game/StarterContent/Shapes/Shape_Sphere.Shape_Sphere"));
-		if (Mesh.Succeeded())
-			bulletMeshComponent->SetStaticMesh(Mesh.Object);
+		static ConstructorHelpers::FObjectFinder<UStaticMesh> mesh(TEXT("/Game/StarterContent/Shapes/Shape_Sphere.Shape_Sphere"));
+		if (mesh.Succeeded())
+			bulletMeshComponent->SetStaticMesh(mesh.Object);
 	}
 
-	static ConstructorHelpers::FObjectFinder<UMaterial>Material(TEXT("/Game/Materials/BulletMaterial.BulletMaterial"));
-	if (Material.Succeeded())
-		bulletMaterialInstance = UMaterialInstanceDynamic::Create(Material.Object, bulletMeshComponent);
-	bulletMeshComponent->SetMaterial(0, bulletMaterialInstance);
+	static ConstructorHelpers::FObjectFinder<UMaterial> material(TEXT("/Game/Materials/BulletMaterial.BulletMaterial"));
+	if (material.Succeeded())
+	{
+		UMaterialInstanceDynamic* bulletMaterialInstance = UMaterialInstanceDynamic::Create(material.Object, bulletMeshComponent);
+		bulletMeshComponent->SetMaterial(0, bulletMaterialInstance);
+	}
 	bulletMeshComponent->SetRelativeScale3D(FVector(0.09f, 0.09f, 0.09f));
 	bulletMeshComponent->SetupAttachment(RootComponent);
 }

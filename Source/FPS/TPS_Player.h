@@ -11,6 +11,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "Components/SkeletalMeshComponent.h"
 #include "Blueprint/UserWidget.h"
 #include "Bullet.h"
 #include "Damagable.h"
@@ -40,8 +41,7 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "Player|Attack")
 	TSubclassOf<class ABullet> bulletClass;
 
-	UPROPERTY(EditAnywhere, Category = "Player|Attack")
-	FVector muzzleOffset;
+	USkeletalMeshComponent* firingDrone;
 	
 protected:
 	// Called when the game starts or when spawned

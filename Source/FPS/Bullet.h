@@ -24,9 +24,6 @@ private:
 	UPROPERTY(VisibleDefaultsOnly, Category = Projectile)
 	UStaticMeshComponent* bulletMeshComponent;
 
-	UPROPERTY(VisibleDefaultsOnly, Category = Movement)
-	UMaterialInstanceDynamic* bulletMaterialInstance;
-
 	const AActor* ownerActor;
 
 public:	
