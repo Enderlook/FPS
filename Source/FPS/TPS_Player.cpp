@@ -82,23 +82,14 @@ void ATPS_Player::Fire()
 		GetActorEyesViewPoint(cameraLocation, cameraRotation);
 
 		// Set MuzzleOffset to spawn projectiles slightly in front of the camera.
-		MuzzleOffset.Set(100.0f, 0.0f, 0.0f);
+		MuzzleOffset.Set(0.0f, 150.0f, 0.0f);
 
 		// Transform MuzzleOffset from camera space to world space.
 		FVector muzzleLocation = cameraLocation + FTransform(cameraRotation).TransformVector(MuzzleOffset);
-
-		if(Firingdrone==nullptr)
-		{
-			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, "nullptr");
-		}
-		else
-		{
-			muzzleLocation = Firingdrone->GetSocketLocation("FX_Eye_R");
-		}
 		
 		// Skew the aim to be slightly upwards.
 		FRotator muzzleRotation = cameraRotation;
-		muzzleRotation.Pitch += 10.0f;
+		//muzzleRotation.Pitch += 10.0f;
 
 		UWorld* World = GetWorld();
 		if (World)

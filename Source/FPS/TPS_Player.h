@@ -50,8 +50,8 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Gameplay")
 	FVector MuzzleOffset;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Gameplay")
-	USkeletalMeshComponent* Firingdrone;
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Gameplay")
+	//USkeletalMeshComponent* Firingdrone;
 	
 protected:
 	// Called when the game starts or when spawned
