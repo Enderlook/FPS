@@ -14,14 +14,11 @@ ABullet::ABullet()
 	if (!RootComponent)
 		RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("ProjectileSceneComponent"));
 	
-	if (!collisionComponent)
-	{
-		collisionComponent = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComponent"));
-		collisionComponent->InitSphereRadius(15.0f);
-		collisionComponent->BodyInstance.SetCollisionProfileName(TEXT("Bullet"));
-		collisionComponent->OnComponentBeginOverlap.AddDynamic(this, &ABullet::OnBeginOverlap);
-		RootComponent = collisionComponent;
-	}
+	USphereComponent* collisionComponent = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComponent"));
+	collisionComponent->InitSphereRadius(15.0f);
+	collisionComponent->BodyInstance.SetCollisionProfileName(TEXT("Bullet"));
+	collisionComponent->OnComponentBeginOverlap.AddDynamic(this, &ABullet::OnBeginOverlap);
+	RootComponent = collisionComponent;
 
 	bulletMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovementComponent"));
 	bulletMovementComponent->SetUpdatedComponent(collisionComponent);
