@@ -37,9 +37,13 @@ private:
 	TSubclassOf<UUserWidget> playerPowerWidgetClass;
 	UUserWidget* playerPowerWidget;
 
+
 protected:
 	UPROPERTY(EditDefaultsOnly, Category = "Projectile")
 	TSubclassOf<class ABullet> BulletClass;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Gameplay")
+	UCameraComponent* followCamera;
 
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Gameplay")

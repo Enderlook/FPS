@@ -29,7 +29,7 @@ ATPS_Player::ATPS_Player()
 	//cameraBoom->AddRelativeLocation(FVector(0.0f, 300.0f, 0.0f));
 	cameraBoom->bUsePawnControlRotation = true;
 
-	UCameraComponent* followCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
+	followCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	followCamera->SetupAttachment(cameraBoom, USpringArmComponent::SocketName); 
 	followCamera->bUsePawnControlRotation = false;
 }
