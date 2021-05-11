@@ -6,6 +6,7 @@
 #include "Engine/World.h"
 #include "GameFramework/Character.h"
 #include "Damagable.h"
+#include "EnemyAIController.h"
 #include "EnemyCharacter.generated.h"
 
 UCLASS()
@@ -14,24 +15,29 @@ class FPS_API AEnemyCharacter : public ACharacter, public IDamagable
 	GENERATED_BODY()
 
 private:
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Enemy Character")
 	int hitpoints;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Enemy Character|NavAgent")
 	float waypointAceptanceRadius;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Enemy Character|NavAgent")
 	TArray<AActor*> waypoints;
 	int waypointIndex;
 
 	AActor* player;
 	FVector lastKnownPlayerPosition;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Enemy Character|NavAgent")
 	float playerAceptanceRadius;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Enemy Character|NavAgent")
 	float sightRadius;
+
+	UPROPERTY(EditAnywhere, Category = "Enemy Character|NavAgent")
+	float sightMaxAngle;
+
+	bool isAttacking;
 
 public:
 	// Sets default values for this character's properties
@@ -49,17 +55,19 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	virtual void TakeDamage() override;
-
 	void MoveToCurrentWaypoint();
-
 	void MoveToNextWaypoint();
-
 	void MoveToPlayer();
-
 	void MoveToLastPlayerKnownLocation();
+	void Attack();
 
-	int GetWaypointIndex();
+protected:
+	virtual void AttackStart();
+	void AttackCallback();
+	class AEnemyAIController* GetAIController();
+	bool IsPlayerInSight();
+	FVector GetLastKnownPlayerLocation();
 
 private:
-	void CheckPlayerIsInSight();
+	int GetWaypointIndex();
 };

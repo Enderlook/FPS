@@ -2,7 +2,6 @@
 
 
 #include "EnemyCharacter.h"
-#include "EnemyAIController.h"
 
 // Sets default values
 AEnemyCharacter::AEnemyCharacter()
@@ -26,7 +25,9 @@ void AEnemyCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	CheckPlayerIsInSight();
+	AEnemyAIController* controller = GetAIController();
+	if (controller)
+		controller->CanSeePlayer(IsPlayerInSight());
 }
 
 // Called to bind functionality to input
@@ -38,8 +39,7 @@ void AEnemyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 
 void AEnemyCharacter::MoveToCurrentWaypoint()
 {
-	AEnemyAIController* controller = Cast<AEnemyAIController>(GetController());
-
+	AEnemyAIController* controller = GetAIController();
 	if (controller && waypoints.Num() > 0)
 	{
 		int index = GetWaypointIndex();
@@ -50,8 +50,7 @@ void AEnemyCharacter::MoveToCurrentWaypoint()
 
 void AEnemyCharacter::MoveToNextWaypoint()
 {
-	AEnemyAIController* controller = Cast<AEnemyAIController>(GetController());
-
+	AEnemyAIController* controller = GetAIController();
 	if (controller && waypoints.Num() > 0)
 	{
 		waypointIndex++;
@@ -72,47 +71,110 @@ int AEnemyCharacter::GetWaypointIndex() {
 
 void AEnemyCharacter::MoveToPlayer()
 {
-	AEnemyAIController* controller = Cast<AEnemyAIController>(GetController());
-
+	AEnemyAIController* controller = GetAIController();
 	if (controller)
 		controller->MoveToActor(player, playerAceptanceRadius, false);
 }
 
 void AEnemyCharacter::MoveToLastPlayerKnownLocation()
 {
-	AEnemyAIController* controller = Cast<AEnemyAIController>(GetController());
-
+	AEnemyAIController* controller = GetAIController();
 	if (controller)
-		controller->MoveToLocation(lastKnownPlayerPosition, playerAceptanceRadius, false);
+		controller->MoveToLocation(GetLastKnownPlayerLocation(), playerAceptanceRadius, false);
 }
 
-void AEnemyCharacter::CheckPlayerIsInSight()
+bool AEnemyCharacter::IsPlayerInSight()
 {
-	AEnemyAIController* controller = Cast<AEnemyAIController>(GetController());
+	// TODO: This could be replaced with PawnSensing component.
 
+	AEnemyAIController* controller = GetAIController();
 	if (player && controller)
 	{
 		if (player->GetDistanceTo(this) < sightRadius)
 		{
-			lastKnownPlayerPosition = player->GetActorLocation();
-			controller->CanSeePlayer(true);
-		}
-		else
-		{
-			controller->CanSeePlayer(false);
+			FVector playerPosition = player->GetActorLocation();
+			FVector ourPosition = GetActorLocation();
+			FVector direction = (playerPosition - ourPosition);
+			direction.Normalize();
+
+			FVector forward = GetActorForwardVector();
+			float angle = FMath::RadiansToDegrees(acosf(FVector::DotProduct(forward, direction)));
+
+			if (angle < sightMaxAngle)
+			{
+				// TODO: This could be replaced by `controller->LineOfSightTo(player, FVector::ZeroVector, false)` which is more accurate.
+				// Thought we would no longer be doing a manual raycast.
+				FHitResult hit;
+				FCollisionQueryParams traceParams(FName(TEXT("")), false, GetOwner());
+				// TODO: This could be replaced by `LineTraceSingleByObjectType` thought we would no longer be doing a manual raycast.
+				ECollisionChannel defaultCollisionChannel = (ECollisionChannel)0;
+				FPhysicsInterface::RaycastSingle(
+					GetWorld(),
+					OUT hit,
+					ourPosition,
+					playerPosition,
+					defaultCollisionChannel,
+					traceParams,
+					FCollisionResponseParams::DefaultResponseParam,
+					FCollisionObjectQueryParams(ECollisionChannel::ECC_PhysicsBody)
+				);
+
+				AActor* actorHit = hit.GetActor();
+				if (!actorHit || actorHit == player)
+				{
+					lastKnownPlayerPosition = player->GetActorLocation();
+					return true;
+				}
+			}
 		}
 	}
+	return false;
+}
+
+void AEnemyCharacter::Attack()
+{
+	if (isAttacking)
+		return;
+	AttackStart();
+}
+
+void AEnemyCharacter::AttackStart()
+{
+	isAttacking = true;
+}
+
+void AEnemyCharacter::AttackCallback()
+{
+	isAttacking = false;
+	AEnemyAIController* controller = GetAIController();
+	if (controller)
+		controller->FromAttack(IsPlayerInSight());
 }
 
 void AEnemyCharacter::TakeDamage()
 {
+	AEnemyAIController* controller = GetAIController();
 	if (--hitpoints <= 0)
 	{
-		AEnemyAIController* controller = Cast<AEnemyAIController>(GetController());
 		if (controller)
 			controller->SetDead();
 
 		GetMesh()->SetSimulatePhysics(true);
 		SetLifeSpan(3);
 	}
+	else
+	{
+		lastKnownPlayerPosition = player->GetActorLocation();
+		controller->OnBeingHurt();
+	}
+}
+
+AEnemyAIController* AEnemyCharacter::GetAIController()
+{
+	return Cast<AEnemyAIController>(GetController());
+}
+
+FVector AEnemyCharacter::GetLastKnownPlayerLocation()
+{
+	return lastKnownPlayerPosition;
 }

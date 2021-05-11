@@ -2,12 +2,10 @@
 
 
 #include "EnemyAIController.h"
-#include "EnemyCharacter.h"
 
 void AEnemyAIController::OnMoveCompleted(FAIRequestID RequestID, const FPathFollowingResult& Result)
 {
-	AEnemyCharacter* character = Cast<AEnemyCharacter>(GetPawn());
-
+	AEnemyCharacter* character = GetCharacter();
 	if (character)
 	{
 		switch (state)
@@ -16,6 +14,7 @@ void AEnemyAIController::OnMoveCompleted(FAIRequestID RequestID, const FPathFoll
 			character->MoveToNextWaypoint();
 			break;
 		case EState::ES_Hunt:
+			character->Attack();
 			break;
 		case EState::ES_Chase:
 			GoToPatrolState();
@@ -43,12 +42,19 @@ void AEnemyAIController::CanSeePlayer(bool can)
 	}
 }
 
+void AEnemyAIController::FromAttack(bool canSeePlayer)
+{
+	if (canSeePlayer)
+		GoToHuntState();
+	else
+		GoToPatrolState();
+}
+
 void AEnemyAIController::GoToHuntState()
 {
 	state = EState::ES_Hunt;
 
-	AEnemyCharacter* character = Cast<AEnemyCharacter>(GetPawn());
-
+	AEnemyCharacter* character = GetCharacter();
 	if (character)
 		character->MoveToPlayer();
 }
@@ -57,8 +63,7 @@ void AEnemyAIController::GoToChaseState()
 {
 	state = EState::ES_Chase;
 
-	AEnemyCharacter* character = Cast<AEnemyCharacter>(GetPawn());
-
+	AEnemyCharacter* character = GetCharacter();
 	if (character)
 		character->MoveToLastPlayerKnownLocation();
 }
@@ -67,8 +72,7 @@ void AEnemyAIController::GoToPatrolState()
 {
 	state = EState::ES_Patrol;
 
-	AEnemyCharacter* character = Cast<AEnemyCharacter>(GetPawn());
-
+	AEnemyCharacter* character = GetCharacter();
 	if (character)
 		character->MoveToCurrentWaypoint();
 }
@@ -76,4 +80,14 @@ void AEnemyAIController::GoToPatrolState()
 void AEnemyAIController::SetDead()
 {
 	state = EState::ES_Dead;
+}
+
+void AEnemyAIController::OnBeingHurt()
+{
+	GoToChaseState();
+}
+
+AEnemyCharacter* AEnemyAIController::GetCharacter()
+{
+	return Cast<AEnemyCharacter>(GetPawn());
 }

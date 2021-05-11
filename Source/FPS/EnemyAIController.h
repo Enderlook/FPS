@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "AIController.h"
+#include "EnemyCharacter.h"
 #include "EnemyAIController.generated.h"
 
 enum class EState : uint8
@@ -29,6 +30,7 @@ private:
 	void OnMoveCompleted(FAIRequestID RequestID, const FPathFollowingResult& Result) override;
 
 private:
+	class AEnemyCharacter* GetCharacter();
 	void GoToHuntState();
 	void GoToChaseState();
 	void GoToPatrolState();
@@ -36,4 +38,6 @@ private:
 public:
 	void CanSeePlayer(bool can);
 	void SetDead();
+	void FromAttack(bool canSeePlayer);
+	void OnBeingHurt();
 };
