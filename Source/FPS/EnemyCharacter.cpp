@@ -156,18 +156,20 @@ void AEnemyCharacter::AttackCallback()
 void AEnemyCharacter::TakeDamage()
 {
 	AEnemyAIController* controller = GetAIController();
-	if (--hitpoints <= 0)
+	if (controller)
 	{
-		if (controller)
+		if (--hitpoints <= 0)
+		{
 			controller->SetDead();
 
-		GetMesh()->SetSimulatePhysics(true);
-		SetLifeSpan(3);
-	}
-	else
-	{
-		lastKnownPlayerPosition = player->GetActorLocation();
-		controller->OnBeingHurt();
+			GetMesh()->SetSimulatePhysics(true);
+			SetLifeSpan(3);
+		}
+		else
+		{
+			lastKnownPlayerPosition = player->GetActorLocation();
+			controller->OnBeingHurt();
+		}
 	}
 }
 
