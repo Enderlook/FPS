@@ -6,7 +6,7 @@
 
 void AEnemyAIController::OnMoveCompleted(FAIRequestID RequestID, const FPathFollowingResult& Result)
 {
-	AEnemyCharacter* character = GetCharacter();
+	AEnemyCharacter* character = GetPawn<AEnemyCharacter>();
 	if (character)
 	{
 		switch (state)
@@ -56,7 +56,7 @@ void AEnemyAIController::GoToHuntState()
 {
 	state = EState::ES_Hunt;
 
-	AEnemyCharacter* character = GetCharacter();
+	AEnemyCharacter* character = GetPawn<AEnemyCharacter>();
 	if (character)
 	{
 		character->SetText(FText::FromString(FString("Hunt")));
@@ -68,7 +68,7 @@ void AEnemyAIController::GoToChaseState()
 {
 	state = EState::ES_Chase;
 
-	AEnemyCharacter* character = GetCharacter();
+	AEnemyCharacter* character = GetPawn<AEnemyCharacter>();
 	if (character)
 	{
 		character->SetText(FText::FromString(FString("Chase")));
@@ -80,7 +80,7 @@ void AEnemyAIController::GoToPatrolState()
 {
 	state = EState::ES_Patrol;
 
-	AEnemyCharacter* character = GetCharacter();
+	AEnemyCharacter* character = GetPawn<AEnemyCharacter>();
 	if (character)
 	{
 		character->SetText(FText::FromString(FString("Patrol")));
@@ -91,7 +91,7 @@ void AEnemyAIController::GoToPatrolState()
 void AEnemyAIController::SetDead()
 {
 	state = EState::ES_Dead;
-	AEnemyCharacter* character = GetCharacter();
+	AEnemyCharacter* character = GetPawn<AEnemyCharacter>();
 	if (character)
 		character->SetText(FText::FromString(FString("Death")));
 }
@@ -99,11 +99,7 @@ void AEnemyAIController::SetDead()
 void AEnemyAIController::OnBeingHurt()
 {
 	GoToChaseState();
-}
 
-AEnemyCharacter* AEnemyAIController::GetCharacter()
-{
-	return Cast<AEnemyCharacter>(GetPawn());
 }
 
 void AEnemyAIController::Initialize()

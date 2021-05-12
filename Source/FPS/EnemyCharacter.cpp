@@ -187,7 +187,7 @@ void AEnemyCharacter::TakeDamage()
 
 AEnemyAIController* AEnemyCharacter::GetAIController()
 {
-	return Cast<AEnemyAIController>(GetController());
+	return GetController<AEnemyAIController>();
 }
 
 FVector AEnemyCharacter::GetLastKnownPlayerLocation()

@@ -30,7 +30,6 @@ private:
 	void OnMoveCompleted(FAIRequestID RequestID, const FPathFollowingResult& Result) override;
 
 private:
-	class AEnemyCharacter* GetCharacter();
 	void GoToHuntState();
 	void GoToChaseState();
 	void GoToPatrolState();

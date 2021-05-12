@@ -20,7 +20,7 @@ void AMeleeEnemyCharacter::AttackStart()
 	if (controller)
 	{
 		FTimerHandle handle;
-		GetWorld()->GetTimerManager().SetTimer(handle, this, &AMeleeEnemyCharacter::Attack, 1, false, 1);
+		GetWorldTimerManager().SetTimer(handle, this, &AMeleeEnemyCharacter::Attack, 1, false, 1);
 	}
 }
 
