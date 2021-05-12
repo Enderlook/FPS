@@ -95,6 +95,9 @@ void ATPS_Player::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 
 void ATPS_Player::Fire()
 {
+	if (currentHitpoints <= 0)
+		return;
+
 	if (bulletClass)
 	{
 		// Get the camera transform.
