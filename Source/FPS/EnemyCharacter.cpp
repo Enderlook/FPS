@@ -102,8 +102,10 @@ bool AEnemyCharacter::IsPlayerInSight()
 		if (player->GetDistanceTo(this) < sightRadius)
 		{
 			FVector playerPosition = player->GetActorLocation();
-			FVector ourPosition = GetActorLocation();
-			FVector direction = (playerPosition - ourPosition);
+			FVector viewPoint;
+			FRotator viewRotation;
+			GetActorEyesViewPoint(viewPoint, viewRotation);
+			FVector direction = (playerPosition - viewPoint);
 			direction.Normalize();
 
 			FVector forward = GetActorForwardVector();
@@ -111,8 +113,6 @@ bool AEnemyCharacter::IsPlayerInSight()
 
 			if (angle < sightMaxAngle)
 			{
-				// TODO: This could be replaced by `controller->LineOfSightTo(player, FVector::ZeroVector, false)` which is more accurate.
-				// Thought we would no longer be doing a manual raycast.
 				FHitResult hit;
 				FCollisionQueryParams traceParams(FName(TEXT("")), false, GetOwner());
 				// TODO: This could be replaced by `LineTraceSingleByObjectType` thought we would no longer be doing a manual raycast.
@@ -120,7 +120,7 @@ bool AEnemyCharacter::IsPlayerInSight()
 				FPhysicsInterface::RaycastSingle(
 					GetWorld(),
 					OUT hit,
-					ourPosition,
+					viewPoint,
 					playerPosition,
 					defaultCollisionChannel,
 					traceParams,
@@ -131,8 +131,14 @@ bool AEnemyCharacter::IsPlayerInSight()
 				AActor* actorHit = hit.GetActor();
 				if (!actorHit || actorHit == player)
 				{
-					lastKnownPlayerPosition = player->GetActorLocation();
-					return true;
+					// We only perform the above raycast because it's requested by the exam,
+					// actually the following check if much more accurate (it perfom several raycasts to check the size of the object),
+					// that is why we also execute this after the first naive check.
+					if (controller->LineOfSightTo(player, FVector::ZeroVector, false))
+					{
+						lastKnownPlayerPosition = player->GetActorLocation();
+						return true;
+					}
 				}
 			}
 		}
