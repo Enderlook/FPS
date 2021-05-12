@@ -22,7 +22,7 @@ void AGameScript::ContinueGame()
 {
 	if (levelName == FName("None"))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Congratulations! You completed the game!"));
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Green, TEXT("Congratulations! You completed the game!"));
 	}
 	else
 		UGameplayStatics::OpenLevel(this, levelName);
