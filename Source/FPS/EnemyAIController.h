@@ -40,4 +40,5 @@ public:
 	void SetDead();
 	void FromAttack(bool canSeePlayer);
 	void OnBeingHurt();
+	void Initialize();
 };

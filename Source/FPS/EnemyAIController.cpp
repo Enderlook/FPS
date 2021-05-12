@@ -2,6 +2,7 @@
 
 
 #include "EnemyAIController.h"
+#include "Internationalization/Text.h"
 
 void AEnemyAIController::OnMoveCompleted(FAIRequestID RequestID, const FPathFollowingResult& Result)
 {
@@ -14,6 +15,7 @@ void AEnemyAIController::OnMoveCompleted(FAIRequestID RequestID, const FPathFoll
 			character->MoveToNextWaypoint();
 			break;
 		case EState::ES_Hunt:
+			character->SetText(FText::FromString(FString("Attack")));
 			character->Attack();
 			break;
 		case EState::ES_Chase:
@@ -56,7 +58,10 @@ void AEnemyAIController::GoToHuntState()
 
 	AEnemyCharacter* character = GetCharacter();
 	if (character)
+	{
+		character->SetText(FText::FromString(FString("Hunt")));
 		character->MoveToPlayer();
+	}
 }
 
 void AEnemyAIController::GoToChaseState()
@@ -65,7 +70,10 @@ void AEnemyAIController::GoToChaseState()
 
 	AEnemyCharacter* character = GetCharacter();
 	if (character)
+	{
+		character->SetText(FText::FromString(FString("Chase")));
 		character->MoveToLastPlayerKnownLocation();
+	}
 }
 
 void AEnemyAIController::GoToPatrolState()
@@ -74,12 +82,18 @@ void AEnemyAIController::GoToPatrolState()
 
 	AEnemyCharacter* character = GetCharacter();
 	if (character)
+	{
+		character->SetText(FText::FromString(FString("Patrol")));
 		character->MoveToCurrentWaypoint();
+	}
 }
 
 void AEnemyAIController::SetDead()
 {
 	state = EState::ES_Dead;
+	AEnemyCharacter* character = GetCharacter();
+	if (character)
+		character->SetText(FText::FromString(FString("Death")));
 }
 
 void AEnemyAIController::OnBeingHurt()
@@ -90,4 +104,9 @@ void AEnemyAIController::OnBeingHurt()
 AEnemyCharacter* AEnemyAIController::GetCharacter()
 {
 	return Cast<AEnemyCharacter>(GetPawn());
+}
+
+void AEnemyAIController::Initialize()
+{
+	GoToPatrolState();
 }

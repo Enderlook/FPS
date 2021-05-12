@@ -2,11 +2,13 @@
 
 #pragma once
 
+#include "Components/TextRenderComponent.h"
 #include "Engine.h"
 #include "Engine/World.h"
 #include "GameFramework/Character.h"
 #include "Damagable.h"
 #include "EnemyAIController.h"
+#include "Internationalization/Text.h"
 #include "EnemyCharacter.generated.h"
 
 UCLASS()
@@ -39,6 +41,8 @@ private:
 
 	bool isAttacking;
 
+	UTextRenderComponent* textComponent;
+
 public:
 	// Sets default values for this character's properties
 	AEnemyCharacter();
@@ -60,6 +64,7 @@ public:
 	void MoveToPlayer();
 	void MoveToLastPlayerKnownLocation();
 	void Attack();
+	void SetText(FText text);
 
 protected:
 	virtual void AttackStart();
