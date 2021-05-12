@@ -27,6 +27,10 @@ void AEnemyCharacter::BeginPlay()
 	AEnemyAIController* controller = GetAIController();
 	if (controller)
 		controller->Initialize();
+
+	AGameScript* gameScript = GetGameMode();
+	if (gameScript)
+		gameScript->OnEnemySpawned();
 }
 
 // Called every frame
@@ -173,9 +177,17 @@ void AEnemyCharacter::TakeDamage()
 	{
 		if (--hitpoints <= 0)
 		{
+			if (hitpoints < 0)
+				return;
+
+			controller->StopMovement();
 			controller->SetDead();
 			GetMesh()->SetSimulatePhysics(true);
 			SetLifeSpan(3);
+
+			AGameScript* gameScript = GetGameMode();
+			if (gameScript)
+				gameScript->OnEnemyDestroyed();
 		}
 		else
 		{
@@ -198,4 +210,9 @@ FVector AEnemyCharacter::GetLastKnownPlayerLocation()
 void AEnemyCharacter::SetText(FText text)
 {
 	textComponent->SetText(text);
+}
+
+AGameScript* AEnemyCharacter::GetGameMode()
+{
+	return Cast<AGameScript>(GetWorld()->GetLevelScriptActor());
 }

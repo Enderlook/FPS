@@ -9,6 +9,7 @@
 #include "Damagable.h"
 #include "EnemyAIController.h"
 #include "Internationalization/Text.h"
+#include "GameScript.h"
 #include "EnemyCharacter.generated.h"
 
 UCLASS()
@@ -70,6 +71,7 @@ protected:
 	virtual void AttackStart();
 	void AttackCallback();
 	class AEnemyAIController* GetAIController();
+	class AGameScript* GetGameMode();
 	bool IsPlayerInSight();
 	FVector GetLastKnownPlayerLocation();
 
