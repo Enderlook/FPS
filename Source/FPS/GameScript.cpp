@@ -14,11 +14,11 @@ void AGameScript::OnEnemyDestroyed()
 	if (--enemyCount == 0)
 	{
 		FTimerHandle handle;
-		GetWorldTimerManager().SetTimer(handle, this, &AGameScript::RestartGame, 3.0f, false);
+		GetWorldTimerManager().SetTimer(handle, this, &AGameScript::ContinueGame, 3.0f, false);
 	}
 }
 
-void AGameScript::RestartGame()
+void AGameScript::ContinueGame()
 {
 	if (levelName == FName("None"))
 	{

@@ -21,7 +21,7 @@ private:
 	int enemyCount;
 
 private:
-	void RestartGame();
+	void ContinueGame();
 
 public:
 	void OnEnemySpawned();
