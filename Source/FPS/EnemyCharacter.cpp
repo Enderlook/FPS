@@ -8,6 +8,8 @@ AEnemyCharacter::AEnemyCharacter()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+
+	AIControllerClass = AEnemyAIController::StaticClass();
 }
 
 // Called when the game starts or when spawned
@@ -154,18 +156,20 @@ void AEnemyCharacter::AttackCallback()
 void AEnemyCharacter::TakeDamage()
 {
 	AEnemyAIController* controller = GetAIController();
-	if (--hitpoints <= 0)
+	if (controller)
 	{
-		if (controller)
+		if (--hitpoints <= 0)
+		{
 			controller->SetDead();
 
-		GetMesh()->SetSimulatePhysics(true);
-		SetLifeSpan(3);
-	}
-	else
-	{
-		lastKnownPlayerPosition = player->GetActorLocation();
-		controller->OnBeingHurt();
+			GetMesh()->SetSimulatePhysics(true);
+			SetLifeSpan(3);
+		}
+		else
+		{
+			lastKnownPlayerPosition = player->GetActorLocation();
+			controller->OnBeingHurt();
+		}
 	}
 }
 

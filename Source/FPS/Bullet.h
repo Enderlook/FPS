@@ -15,9 +15,6 @@ class FPS_API ABullet : public AActor
 	GENERATED_BODY()
 
 private:
-	UPROPERTY(VisibleDefaultsOnly, Category = Projectile)
-	USphereComponent* collisionComponent;
-
 	UPROPERTY(VisibleAnywhere, Category = Movement)
 	UProjectileMovementComponent* bulletMovementComponent;
 
