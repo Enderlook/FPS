@@ -98,8 +98,10 @@ void AEnemyAIController::SetDead()
 
 void AEnemyAIController::OnBeingHurt()
 {
-	GoToChaseState();
+	if (state == EState::ES_Dead)
+		return;
 
+	GoToChaseState();
 }
 
 void AEnemyAIController::Initialize()
