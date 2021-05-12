@@ -174,7 +174,8 @@ void ATPS_Player::TakeDamage()
 	if (--currentHitpoints <= 0)
 	{
 		GetMesh()->SetSimulatePhysics(true);
-		FTimerHandle UnusedHandle;
-		GetWorldTimerManager().SetTimer(UnusedHandle, this, &ATPS_Player::RestartGame, 3.0f, false);
+		firingDrone->SetSimulatePhysics(true);
+		FTimerHandle handle;
+		GetWorldTimerManager().SetTimer(handle, this, &ATPS_Player::RestartGame, 3.0f, false);
 	}
 }
