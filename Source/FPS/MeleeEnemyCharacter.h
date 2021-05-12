@@ -14,12 +14,6 @@ class FPS_API AMeleeEnemyCharacter : public AEnemyCharacter
 {
 	GENERATED_BODY()
 
-private:
-	UCapsuleComponent* collisionComponent;
-
-public:
-	AMeleeEnemyCharacter();
-
 protected:
 	virtual void AttackStart() override;
 

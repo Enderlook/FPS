@@ -2,15 +2,7 @@
 
 
 #include "MeleeEnemyCharacter.h"
-
-AMeleeEnemyCharacter::AMeleeEnemyCharacter()
-{
-	collisionComponent = CreateDefaultSubobject<UCapsuleComponent>(TEXT("Attack"));
-	collisionComponent->InitCapsuleSize(75.0f, 150.0f);
-	collisionComponent->BodyInstance.SetCollisionProfileName(TEXT("Melee"));
-	collisionComponent->SetupAttachment(RootComponent);
-	collisionComponent->AddLocalOffset(FVector(100.0f, 0.0f, 0.0f));
-}
+#include "Kismet/KismetSystemLibrary.h"
 
 void AMeleeEnemyCharacter::AttackStart()
 {
@@ -26,16 +18,28 @@ void AMeleeEnemyCharacter::AttackStart()
 
 void AMeleeEnemyCharacter::Attack()
 {
+	TArray<AActor*> actorsToIgnore = TArray<AActor*>();
+	actorsToIgnore.Add(this);
 	TArray<AActor*> actors = TArray<AActor*>();
-	collisionComponent->GetOverlappingActors(actors);
-	for (AActor* actor : actors)
-	{
-		if (actor == this)
-			continue;
 
-		IDamagable* damagable = Cast<IDamagable>(actor);
-		if (damagable != nullptr)
-			damagable->TakeDamage();
+	if (UKismetSystemLibrary::CapsuleOverlapActors(
+		GetWorld(),
+		GetActorLocation() + FVector(100.0f, 0.0f, 0.0f),
+		75.0f, 150.0f,
+		TArray<TEnumAsByte<EObjectTypeQuery>>(),
+		nullptr,
+		actorsToIgnore,
+		actors))
+	{
+		for (AActor* actor : actors)
+		{
+			if (actor == this)
+				continue;
+
+			IDamagable* damagable = Cast<IDamagable>(actor);
+			if (damagable != nullptr)
+				damagable->TakeDamage();
+		}
 	}
 	AttackCallback();
 }
