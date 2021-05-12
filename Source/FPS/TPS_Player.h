@@ -25,11 +25,12 @@ class FPS_API ATPS_Player : public ACharacter, public IDamagable
 public:
 	// Sets default values for this character's properties
 	ATPS_Player();
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Player|Health")
+	int currentHitpoints;
 
 private:
 	UPROPERTY(EditAnywhere, Category = "Player|Health")
 	int hitpoints;
-	int currentHitpoints;
 
 	UPROPERTY(EditAnywhere, Category = "Player|Health")
 	int hitpointsRestoredOnPickup;
