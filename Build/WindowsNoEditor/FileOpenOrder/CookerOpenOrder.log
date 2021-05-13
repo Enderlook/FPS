@@ -14,13 +14,13 @@
 "../../../Engine/Content/BufferVisualization/CustomDepth.uasset" 13
 "../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/VectorLength.uasset" 14
 "../../../Engine/Content/BufferVisualization/CustomDepthWorldUnits.uasset" 15
-"../../../Engine/Content/EngineMaterials/MiniFont.uasset" 16
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.uasset" 17
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat2.uasset" 18
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ScreenResolution.uasset" 19
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.uasset" 20
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/ScaleUVsByCenter.uasset" 21
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Texturing/ScreenAlignedUVs.uasset" 22
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.uasset" 16
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat2.uasset" 17
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ScreenResolution.uasset" 18
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.uasset" 19
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/ScaleUVsByCenter.uasset" 20
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Texturing/ScreenAlignedUVs.uasset" 21
+"../../../Engine/Content/EngineMaterials/MiniFont.uasset" 22
 "../../../Engine/Content/BufferVisualization/CustomStencil.uasset" 23
 "../../../Engine/Content/BufferVisualization/FinalImage.uasset" 24
 "../../../Engine/Content/BufferVisualization/LightingModel.uasset" 25
@@ -321,187 +321,187 @@
 "../../../Engine/Content/VREditor/TransformGizmo/Main.uasset" 320
 "../../../Engine/Content/VREditor/TransformGizmo/SM_Sequencer_Key.uasset" 321
 "../../../Engine/Content/VREditor/TransformGizmo/SM_Sequencer_Node.uasset" 322
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Blueprints/Health_UI.uasset" 323
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Meshes/Gadget_Extents.uasset" 324
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Meshes/Gadget_CylShadows.uasset" 325
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/SharedHairContent/FemaleHairSet01/T_GadgetHair_Color.uasset" 326
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/SharedHairContent/FemaleHairSet01/T_FemaleHairSet01_Roots.uasset" 327
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/SharedHairContent/FemaleHairSet01/T_FemaleHairSet01_Opacity.uasset" 328
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/SharedHairContent/FemaleHairSet01/T_FemaleHairSet01_ID.uasset" 329
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/SharedHairContent/FemaleHairSet01/T_FemaleHairSet01_Depth.uasset" 330
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/TestContent/T_HairClump02_Roots.uasset" 331
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/TestContent/T_HairClump02_ID.uasset" 332
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/TestContent/T_HairClump02_DyeMask.uasset" 333
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/TestContent/T_HairClump02_Depth.uasset" 334
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/TestContent/T_HairClump02_Alpha.uasset" 335
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/ParagonCharacterHairWind.uasset" 336
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/Materials/MF_BlendHairColorsWithParam.uasset" 337
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/T_Fire_Tiled_D.uasset" 338
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/FX/Textures/Water/T_Caustics_2.uasset" 339
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/FX/Textures/Gradients/Masks/T_gradient_stasis.uasset" 340
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/T_TestML_Mask.uasset" 341
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Rubber/T_Blank_N.uasset" 342
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Metal/T_Blue_Metal02.uasset" 343
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/Textures/T_AtmosphericCloudNoise03.uasset" 344
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/Textures/T_AtmosphericCloudNoise01_N.uasset" 345
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/Textures/T_AtmosphericCloudNoise01.uasset" 346
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/ParameterCollections/OrionGlobalGameplayCollection.uasset" 347
-"../../../Engine/Content/Functions/Engine_MaterialFunctions03/Blends/Lerp_ScratchGrime.uasset" 348
-"../../../Engine/Content/EngineMaterials/DefaultNormal.uasset" 349
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/ML_Blank.uasset" 350
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/MaterialLayerConstructors/MLC_Standard.uasset" 351
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/MaterialLayerConstructors/MLC_ScratchAndGrime.uasset" 352
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Meshes/Gadget_Extents.uasset" 323
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Meshes/Gadget_CylShadows.uasset" 324
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/SharedHairContent/FemaleHairSet01/T_GadgetHair_Color.uasset" 325
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/SharedHairContent/FemaleHairSet01/T_FemaleHairSet01_Roots.uasset" 326
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/SharedHairContent/FemaleHairSet01/T_FemaleHairSet01_Opacity.uasset" 327
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/SharedHairContent/FemaleHairSet01/T_FemaleHairSet01_ID.uasset" 328
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/SharedHairContent/FemaleHairSet01/T_FemaleHairSet01_Depth.uasset" 329
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/TestContent/T_HairClump02_Roots.uasset" 330
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/TestContent/T_HairClump02_ID.uasset" 331
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/TestContent/T_HairClump02_DyeMask.uasset" 332
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/TestContent/T_HairClump02_Depth.uasset" 333
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/TestContent/T_HairClump02_Alpha.uasset" 334
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/ParagonCharacterHairWind.uasset" 335
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/Materials/MF_BlendHairColorsWithParam.uasset" 336
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/T_Fire_Tiled_D.uasset" 337
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/FX/Textures/Water/T_Caustics_2.uasset" 338
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/FX/Textures/Gradients/Masks/T_gradient_stasis.uasset" 339
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/T_TestML_Mask.uasset" 340
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Rubber/T_Blank_N.uasset" 341
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Metal/T_Blue_Metal02.uasset" 342
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/Textures/T_AtmosphericCloudNoise03.uasset" 343
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/Textures/T_AtmosphericCloudNoise01_N.uasset" 344
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/Textures/T_AtmosphericCloudNoise01.uasset" 345
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/ParameterCollections/OrionGlobalGameplayCollection.uasset" 346
+"../../../Engine/Content/Functions/Engine_MaterialFunctions03/Blends/Lerp_ScratchGrime.uasset" 347
+"../../../Engine/Content/EngineMaterials/DefaultNormal.uasset" 348
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/ML_Blank.uasset" 349
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/MaterialLayerConstructors/MLC_Standard.uasset" 350
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/MaterialLayerConstructors/MLC_ScratchAndGrime.uasset" 351
+"../../../Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_Standard.uasset" 352
 "../../../Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_BreakBaseColor.uasset" 353
 "../../../Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_OverrideBaseColor.uasset" 354
-"../../../Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_Standard.uasset" 355
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/MetallicShading.uasset" 356
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Metal/ML_blue_Metal.uasset" 357
-"../../../Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_Emissive.uasset" 358
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/MF_OrionRimlight.uasset" 359
-"../../../Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_Tint.uasset" 360
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/MF_HitFlash.uasset" 361
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.uasset" 362
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast.uasset" 363
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedTexture.uasset" 364
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/MetallicShading.uasset" 355
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Metal/ML_blue_Metal.uasset" 356
+"../../../Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_Emissive.uasset" 357
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/MF_OrionRimlight.uasset" 358
+"../../../Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_Tint.uasset" 359
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/MF_HitFlash.uasset" 360
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.uasset" 361
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast.uasset" 362
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedTexture.uasset" 363
+"../../../Engine/Content/EngineMaterials/Good64x64TilingNoiseHighFreq.uasset" 364
 "../../../Engine/Content/Functions/Engine_MaterialFunctions02/Texturing/ScreenAlignedPixelToPixelUVs.uasset" 365
-"../../../Engine/Content/EngineMaterials/Good64x64TilingNoiseHighFreq.uasset" 366
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/DitherTemporalAA.uasset" 367
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/MF_DeathFade.uasset" 368
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/MaterialFunctions/MF_BrightnessAdjust.uasset" 369
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/MF_CharacterEffects.uasset" 370
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Black_Linear.uasset" 371
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Math/MultiplyAdd.uasset" 372
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/HueShift.uasset" 373
-"../../../Engine/Content/EngineResources/Black.uasset" 374
-"../../../Engine/Content/EditorMaterials/Cascade/CASC_Solo_On.uasset" 375
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/Materials/M_HairSheet_Master2.uasset" 376
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Materials/MIC_Gadget_Hair.uasset" 377
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/T_EyeIrisBaseColor_Example_5.uasset" 378
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/FX/Textures/Flares/T_Gadget_Corona_D.uasset" 379
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/T_Swirly_Noise.uasset" 380
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/T_Sphere_EYE_NORMALS.uasset" 381
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/T_EyeScleraBaseColor_Example_2.uasset" 382
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/T_EyeMidPlaneDisplacement_Example.uasset" 383
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/T_EyeIrisBaseColor_Example_2.uasset" 384
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/T_Eye_Wet_Normal.uasset" 385
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/T_EYE_NORMALS.uasset" 386
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/T_DecalMask_Radial03.uasset" 387
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/EpicQuadPanorama_CC.uasset" 388
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/EyeInner_Profile.uasset" 389
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/ML_TacticiaULTEye.uasset" 390
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/TangentBasis.uasset" 391
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/ML_EyeRefraction.uasset" 392
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/FlattenNormal.uasset" 393
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/ImageAdjustment/DeriveHDRfromLDR.uasset" 394
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Materials/M_EyeRefractive.uasset" 395
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Materials/MIC_Gadget_Eye_Refractive.uasset" 396
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyelash/T_Universal_Eyelashes_D.uasset" 397
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyelash/M_EyelashMaster.uasset" 398
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Materials/M_GadgetEyelashMaster_Inst.uasset" 399
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Mouth/Textures/T_TeethAndTongue_N.uasset" 400
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Mouth/Textures/T_TeethAndTongue_D.uasset" 401
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Mouth/Textures/T_Master_Mouth_1_RGB.uasset" 402
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Mouth/Textures/T_Master_Mouth_1_N.uasset" 403
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Mouth/Textures/T_Master_Mouth_1_COLOR.uasset" 404
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Mouth/Materials/TeethSubsurfaceProfile.uasset" 405
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Mouth/Materials/M_Mouth_Master.uasset" 406
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Mouth/Materials/MI_Human_Mouth.uasset" 407
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Materials/Gadget_SubsurfaceProfile.uasset" 408
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_UpperBody_Skin_Spec.uasset" 409
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_UpperBody_N.uasset" 410
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_UpperBody_Skin_Color.uasset" 411
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_UpperBody_RGB.uasset" 412
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_UpperBody_MASK_2.uasset" 413
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_UpperBody_MASK.uasset" 414
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Skin/T_Pore_Specular.uasset" 415
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Skin/T_Pore_Normals2.uasset" 416
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/MF_SkinPores.uasset" 417
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Skin/ML_Skin.uasset" 418
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Rubber/M_RubberHose_Simple.uasset" 419
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/MaterialLayerConstructors/MF_RoughnessAdjustment.uasset" 420
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/MaterialLayerConstructors/MF_BaseColorTintAndContrast.uasset" 421
-"../../../Engine/Content/EngineMaterials/FlatNormal.uasset" 422
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/MF_ClothShading.uasset" 423
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/MaterialFunctions/MF_ParagonCharacterAO.uasset" 424
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Painted/T_ML_PaintedConstructionMetal_N.uasset" 425
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Painted/T_ML_PaintedConstructionMetal.uasset" 426
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Painted/ML_PaintedConstructionMetal.uasset" 427
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Metal/T_RoughMetal01_N.uasset" 428
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Metal/T_RoughMetal01.uasset" 429
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Metal/ML_Steel.uasset" 430
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Leather/T_ML_FineLeather01_N.uasset" 431
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Leather/T_ML_FineLeather01_Brown.uasset" 432
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Leather/ML_ThinLeather01_Brown.uasset" 433
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Leather/T_Dark_Leather_N.uasset" 434
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Leather/T_Light_Leather2.uasset" 435
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Leather/ML_Light_Leather_Brown2.uasset" 436
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Fabric/T_ML_Fabric_Blue_Medium_N.uasset" 437
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Fabric/T_ML_Fabric_Basic2.uasset" 438
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Fabric/ML_Fabric_Basic.uasset" 439
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals.uasset" 440
-"../../../Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_BakedNormal.uasset" 441
-"../../../Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_TenLayerBlend.uasset" 442
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Materials/M_Gadget_UpperBody.uasset" 443
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Machine_Base_RGB.uasset" 444
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Machine_Base_N.uasset" 445
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Machine_Base_Mask_2.uasset" 446
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Machine_Base_Mask.uasset" 447
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/FX/Textures/Masks/T_EngineFlameMask.uasset" 448
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/FX/Textures/Energy/Electricity/T_lightning_tile.uasset" 449
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Materials/Functions/MF_Gadget_EmissiveWires.uasset" 450
-"../../../Engine/Content/MaterialTemplates/Textures/T_Noise01.uasset" 451
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Synthetics/ML_Grime.uasset" 452
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Rubber/T_Rubber_2_N.uasset" 453
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Rubber/T_Rubber_2.uasset" 454
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Rubber/ML_DarkSoft_Rubber.uasset" 455
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/MaterialLayerConstructors/MLC_SolidValues.uasset" 456
-"../../../Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_OverrideOpacity.uasset" 457
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Metal/ML_BladeMetal.uasset" 458
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Metal/ML_Aluminum.uasset" 459
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Materials/M_Gadget_MachineArmBase.uasset" 460
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Machine_Arm_RGB.uasset" 461
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Machine_Arm_N.uasset" 462
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Machine_Arm_Mask_2.uasset" 463
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Machine_Arm_Mask.uasset" 464
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Metal/ML_Chrome.uasset" 465
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Materials/M_Gadget_MachineArm.uasset" 466
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_LowerBody_Skin_Color.uasset" 467
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_LowerBody_RGB.uasset" 468
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_LowerBody_N.uasset" 469
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_LowerBody_MASK_02.uasset" 470
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_LowerBody_MASK.uasset" 471
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Fabric/T_ML_Canvas_Grey01_N.uasset" 472
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Fabric/T_ML_Canvas_Grey01.uasset" 473
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Fabric/ML_Canvas_Grey01.uasset" 474
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Materials/M_Gadget_LowerBody.uasset" 475
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Gadgets_TINT.uasset" 476
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Gadgets_RGB.uasset" 477
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Gadgets_NORMALS.uasset" 478
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Gadgets_MASK_2.uasset" 479
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Gadgets_MASK.uasset" 480
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Gadgets_Decal.uasset" 481
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Synthetics/T_ML_CleanPlastic01.uasset" 482
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Synthetics/ML_Glass_ColorTint.uasset" 483
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Metal/T_Rust01_N.uasset" 484
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Metal/T_Rust01.uasset" 485
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Metal/ML_Rust01.uasset" 486
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Metal/ML_DullPanelMetal.uasset" 487
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Fabric/T_ML_Fabric_Dirty.uasset" 488
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Fabric/ML_Fabric_Dirty.uasset" 489
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/MatLayerBlend_Decal.uasset" 490
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Materials/M_Gadget_Gadgets.uasset" 491
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Materials/M_TearLine.uasset" 492
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/TearDuctSubsurfaceProfile.uasset" 493
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/T_Eye_Tearduct__normals2.uasset" 494
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Materials/M_TearDuct_2.uasset" 495
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/T_EyeOcclusion2.uasset" 496
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/CameraVectorWithWPOOptions.uasset" 497
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/ImageAdjustment/BlurSampleOffsets.uasset" 498
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/ImageAdjustment/SceneTextureAverage.uasset" 499
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Materials/M_Eye_Occlusion.uasset" 500
-"../../../Engine/Content/EngineMeshes/Humanoid.uasset" 501
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Meshes/Gadget_Skeleton.uasset" 502
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Meshes/Gadget.uasset" 503
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/DitherTemporalAA.uasset" 366
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/MF_DeathFade.uasset" 367
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/MaterialFunctions/MF_BrightnessAdjust.uasset" 368
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/MF_CharacterEffects.uasset" 369
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Black_Linear.uasset" 370
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Math/MultiplyAdd.uasset" 371
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/HueShift.uasset" 372
+"../../../Engine/Content/EngineResources/Black.uasset" 373
+"../../../Engine/Content/EditorMaterials/Cascade/CASC_Solo_On.uasset" 374
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Hair/Materials/M_HairSheet_Master2.uasset" 375
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Materials/MIC_Gadget_Hair.uasset" 376
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/T_EyeIrisBaseColor_Example_5.uasset" 377
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/FX/Textures/Flares/T_Gadget_Corona_D.uasset" 378
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/T_Swirly_Noise.uasset" 379
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/T_Sphere_EYE_NORMALS.uasset" 380
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/T_EyeScleraBaseColor_Example_2.uasset" 381
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/T_EyeMidPlaneDisplacement_Example.uasset" 382
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/T_EyeIrisBaseColor_Example_2.uasset" 383
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/T_Eye_Wet_Normal.uasset" 384
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/T_EYE_NORMALS.uasset" 385
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/T_DecalMask_Radial03.uasset" 386
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/EpicQuadPanorama_CC.uasset" 387
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/EyeInner_Profile.uasset" 388
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/ML_TacticiaULTEye.uasset" 389
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/TangentBasis.uasset" 390
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/ML_EyeRefraction.uasset" 391
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/FlattenNormal.uasset" 392
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/ImageAdjustment/DeriveHDRfromLDR.uasset" 393
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Materials/M_EyeRefractive.uasset" 394
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Materials/MIC_Gadget_Eye_Refractive.uasset" 395
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyelash/T_Universal_Eyelashes_D.uasset" 396
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyelash/M_EyelashMaster.uasset" 397
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Materials/M_GadgetEyelashMaster_Inst.uasset" 398
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_UpperBody_Skin_Spec.uasset" 399
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_UpperBody_N.uasset" 400
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_UpperBody_Skin_Color.uasset" 401
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_UpperBody_RGB.uasset" 402
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_UpperBody_MASK_2.uasset" 403
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_UpperBody_MASK.uasset" 404
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Materials/Gadget_SubsurfaceProfile.uasset" 405
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Skin/T_Pore_Specular.uasset" 406
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Skin/T_Pore_Normals2.uasset" 407
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/MF_SkinPores.uasset" 408
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Skin/ML_Skin.uasset" 409
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Rubber/M_RubberHose_Simple.uasset" 410
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Painted/T_ML_PaintedConstructionMetal_N.uasset" 411
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Painted/T_ML_PaintedConstructionMetal.uasset" 412
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/MaterialLayerConstructors/MF_RoughnessAdjustment.uasset" 413
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/MaterialLayerConstructors/MF_BaseColorTintAndContrast.uasset" 414
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Painted/ML_PaintedConstructionMetal.uasset" 415
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Metal/T_RoughMetal01_N.uasset" 416
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Metal/T_RoughMetal01.uasset" 417
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Metal/ML_Steel.uasset" 418
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Leather/T_ML_FineLeather01_N.uasset" 419
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Leather/T_ML_FineLeather01_Brown.uasset" 420
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Leather/ML_ThinLeather01_Brown.uasset" 421
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Leather/T_Dark_Leather_N.uasset" 422
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Leather/T_Light_Leather2.uasset" 423
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Leather/ML_Light_Leather_Brown2.uasset" 424
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Fabric/T_ML_Fabric_Blue_Medium_N.uasset" 425
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Fabric/T_ML_Fabric_Basic2.uasset" 426
+"../../../Engine/Content/EngineMaterials/FlatNormal.uasset" 427
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/MF_ClothShading.uasset" 428
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Fabric/ML_Fabric_Basic.uasset" 429
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/MaterialFunctions/MF_ParagonCharacterAO.uasset" 430
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals.uasset" 431
+"../../../Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_BakedNormal.uasset" 432
+"../../../Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_TenLayerBlend.uasset" 433
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Materials/M_Gadget_UpperBody.uasset" 434
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Machine_Base_RGB.uasset" 435
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Machine_Base_N.uasset" 436
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Machine_Base_Mask_2.uasset" 437
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Machine_Base_Mask.uasset" 438
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/FX/Textures/Masks/T_EngineFlameMask.uasset" 439
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/FX/Textures/Energy/Electricity/T_lightning_tile.uasset" 440
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Materials/Functions/MF_Gadget_EmissiveWires.uasset" 441
+"../../../Engine/Content/MaterialTemplates/Textures/T_Noise01.uasset" 442
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Synthetics/ML_Grime.uasset" 443
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Rubber/T_Rubber_2_N.uasset" 444
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Rubber/T_Rubber_2.uasset" 445
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Rubber/ML_DarkSoft_Rubber.uasset" 446
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialFunctions/MaterialLayerConstructors/MLC_SolidValues.uasset" 447
+"../../../Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_OverrideOpacity.uasset" 448
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Metal/ML_BladeMetal.uasset" 449
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Metal/ML_Aluminum.uasset" 450
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Materials/M_Gadget_MachineArmBase.uasset" 451
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Machine_Arm_RGB.uasset" 452
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Machine_Arm_N.uasset" 453
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Machine_Arm_Mask_2.uasset" 454
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Machine_Arm_Mask.uasset" 455
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Metal/ML_Chrome.uasset" 456
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Materials/M_Gadget_MachineArm.uasset" 457
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_LowerBody_Skin_Color.uasset" 458
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_LowerBody_RGB.uasset" 459
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_LowerBody_N.uasset" 460
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_LowerBody_MASK_02.uasset" 461
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_LowerBody_MASK.uasset" 462
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Fabric/T_ML_Canvas_Grey01_N.uasset" 463
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Fabric/T_ML_Canvas_Grey01.uasset" 464
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Fabric/ML_Canvas_Grey01.uasset" 465
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Materials/M_Gadget_LowerBody.uasset" 466
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Gadgets_TINT.uasset" 467
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Gadgets_RGB.uasset" 468
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Gadgets_NORMALS.uasset" 469
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Gadgets_MASK_2.uasset" 470
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Gadgets_MASK.uasset" 471
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Textures/T_Gadget_Gadgets_Decal.uasset" 472
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Synthetics/T_ML_CleanPlastic01.uasset" 473
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Synthetics/ML_Glass_ColorTint.uasset" 474
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Metal/T_Rust01_N.uasset" 475
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Metal/T_Rust01.uasset" 476
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Metal/ML_Rust01.uasset" 477
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Metal/ML_DullPanelMetal.uasset" 478
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Fabric/T_ML_Fabric_Dirty.uasset" 479
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/Fabric/ML_Fabric_Dirty.uasset" 480
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/MaterialLayers/MatLayerBlend_Decal.uasset" 481
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Materials/M_Gadget_Gadgets.uasset" 482
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Materials/M_TearLine.uasset" 483
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/TearDuctSubsurfaceProfile.uasset" 484
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/T_Eye_Tearduct__normals2.uasset" 485
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Materials/M_TearDuct_2.uasset" 486
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Textures/T_EyeOcclusion2.uasset" 487
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/CameraVectorWithWPOOptions.uasset" 488
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/ImageAdjustment/BlurSampleOffsets.uasset" 489
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/ImageAdjustment/SceneTextureAverage.uasset" 490
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Eyes/Materials/M_Eye_Occlusion.uasset" 491
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Mouth/Textures/T_Master_Mouth_1_COLOR.uasset" 492
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Mouth/Materials/TeethSubsurfaceProfile.uasset" 493
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Mouth/Textures/T_Master_Mouth_1_RGB.uasset" 494
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Mouth/Textures/T_Master_Mouth_1_N.uasset" 495
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Mouth/Materials/M_Mouth_Master.uasset" 496
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Mouth/Textures/T_TeethAndTongue_N.uasset" 497
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Mouth/Textures/T_TeethAndTongue_D.uasset" 498
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Global/Mouth/Materials/MI_Human_Mouth.uasset" 499
+"../../../Engine/Content/EngineMeshes/Humanoid.uasset" 500
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/Characters/Heroes/Gadget/Meshes/Gadget_Skeleton.uasset" 501
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Meshes/Gadget.uasset" 502
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Blueprints/Health_UI.uasset" 503
 "../../../Engine/Content/Animation/DefaultAnimCurveCompressionSettings.uasset" 504
 "../../../Engine/Content/Animation/DefaultAnimBoneCompressionSettings.uasset" 505
 "S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Animations/GadgetRetarget/gadget_ThirdPersonWalk.uasset" 506
@@ -518,542 +518,403 @@
 "S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Materials/BulletMaterial.uasset" 517
 "S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Meshes/Skeleton/gadget_bot_Skeleton.uasset" 518
 "S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Meshes/Hero_Specific/gadget_bot_Physics.uasset" 519
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/MLC_Standard.uasset" 520
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/MLC_ScratchAndGrime.uasset" 521
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Tile/T_TestML_Mask.uasset" 522
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/ML__Blank.uasset" 523
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_RoughMetal01_N.uasset" 524
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_RoughMetal01.uasset" 525
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Blank_N.uasset" 526
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/ML_Aluminum.uasset" 527
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/MLC_SolidValues.uasset" 528
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/MatLayerBlend_Decal.uasset" 529
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Functions/MF_RoughnessAdjustment.uasset" 530
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Blue_Metal02.uasset" 531
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/ML_blue_Metal.uasset" 532
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Gadget_UV2_RGB.uasset" 533
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Functions/MF_OrionCharacterAO.uasset" 534
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Param_Collections/GlobalGameplayCollection.uasset" 535
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Tile/Noise/T_AtmosphericCloudNoise01_N.uasset" 536
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Tile/Noise/T_AtmosphericCloudNoise01.uasset" 537
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Functions/MF_ClothShading.uasset" 538
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Functions/MF_OrionRimlight.uasset" 539
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Functions/MF_HitFlash.uasset" 540
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Tile/Noise/T_AtmosphericCloudNoise03.uasset" 541
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Functions/MF_DeathFade.uasset" 542
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Functions/MF_BrightnessAdjust.uasset" 543
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Functions/MF_CharacterEffects.uasset" 544
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Functions/MF_BaseColorTintAndContrast.uasset" 545
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Gadget_Gadgets_TINT.uasset" 546
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Gadget_Gadgets_RGB.uasset" 547
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Gadget_Gadgets_NORMALS.uasset" 548
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Gadget_Gadgets_MASK_2.uasset" 549
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Gadget_Gadgets_MASK.uasset" 550
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Gadget_Gadgets_Decal.uasset" 551
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/ML_Steel.uasset" 552
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Rust01_N.uasset" 553
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Rust01.uasset" 554
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/ML_Rust01.uasset" 555
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_ML_PaintedConstructionMetal_N.uasset" 556
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_ML_PaintedConstructionMetal.uasset" 557
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/ML_PaintedConstructionMetal.uasset" 558
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_ML_CleanPlastic01.uasset" 559
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/ML_Glass_ColorTint.uasset" 560
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_ML_Fabric_Blue_Medium_N.uasset" 561
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_ML_Fabric_Dirty.uasset" 562
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/ML_Fabric_Dirty.uasset" 563
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/ML_DullPanelMetal.uasset" 564
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Rubber_2_N.uasset" 565
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Rubber_2.uasset" 566
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/ML_DarkSoft_Rubber.uasset" 567
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/ML_BladeMetal.uasset" 568
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Gadget_Gadgets_TINT.uasset" 520
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Gadget_Gadgets_RGB.uasset" 521
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Gadget_Gadgets_NORMALS.uasset" 522
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Gadget_Gadgets_MASK_2.uasset" 523
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Gadget_Gadgets_MASK.uasset" 524
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Gadget_Gadgets_Decal.uasset" 525
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Tile/T_TestML_Mask.uasset" 526
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_RoughMetal01_N.uasset" 527
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_RoughMetal01.uasset" 528
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/ML_Steel.uasset" 529
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Rust01_N.uasset" 530
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Rust01.uasset" 531
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/ML_Rust01.uasset" 532
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_ML_PaintedConstructionMetal_N.uasset" 533
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_ML_PaintedConstructionMetal.uasset" 534
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Functions/MF_RoughnessAdjustment.uasset" 535
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Functions/MF_BaseColorTintAndContrast.uasset" 536
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/ML_PaintedConstructionMetal.uasset" 537
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_ML_CleanPlastic01.uasset" 538
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/MLC_SolidValues.uasset" 539
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/ML__Blank.uasset" 540
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/ML_Glass_ColorTint.uasset" 541
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_ML_Fabric_Blue_Medium_N.uasset" 542
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_ML_Fabric_Dirty.uasset" 543
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Functions/MF_ClothShading.uasset" 544
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/ML_Fabric_Dirty.uasset" 545
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/ML_DullPanelMetal.uasset" 546
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Rubber_2_N.uasset" 547
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Rubber_2.uasset" 548
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Blank_N.uasset" 549
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/MLC_Standard.uasset" 550
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/MLC_ScratchAndGrime.uasset" 551
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/ML_DarkSoft_Rubber.uasset" 552
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Blue_Metal02.uasset" 553
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/ML_BladeMetal.uasset" 554
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/ML_Aluminum.uasset" 555
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/MatLayerBlend_Decal.uasset" 556
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/ML_blue_Metal.uasset" 557
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Hero_Specific/T_Gadget_UV2_RGB.uasset" 558
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Functions/MF_OrionCharacterAO.uasset" 559
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Param_Collections/GlobalGameplayCollection.uasset" 560
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Tile/Noise/T_AtmosphericCloudNoise01_N.uasset" 561
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Tile/Noise/T_AtmosphericCloudNoise01.uasset" 562
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Functions/MF_OrionRimlight.uasset" 563
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Functions/MF_HitFlash.uasset" 564
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Textures/Tile/Noise/T_AtmosphericCloudNoise03.uasset" 565
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Functions/MF_DeathFade.uasset" 566
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Functions/MF_BrightnessAdjust.uasset" 567
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Functions/MF_CharacterEffects.uasset" 568
 "S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonGadget/FX/Materials/Hero_Specific/M_Gadget_Gadgets.uasset" 569
 "S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Meshes/drone.uasset" 570
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Wall_01_N.uasset" 571
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Wall_01_MRE.uasset" 572
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Wall_01_C.uasset" 573
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Prop_Computer_02_E.uasset" 574
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/_SimpleMaterial.uasset" 575
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Ceiling_02_N.uasset" 576
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Ceiling_02_MRE.uasset" 577
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Ceiling_02_C.uasset" 578
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Ceiling_02.uasset" 579
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Prop_Computer_01_N.uasset" 580
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Prop_Computer_01_MRE.uasset" 581
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Prop_Computer_01_E.uasset" 582
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Prop_Computer_01_C.uasset" 583
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Computer_01_SC.uasset" 584
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Prop_Computer_01_E2.uasset" 585
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Computer_01_Windows.uasset" 586
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Facade_01_N.uasset" 587
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Facade_01_MRE.uasset" 588
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Facade_01_C.uasset" 589
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Facade_01.uasset" 590
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Floor_04_N.uasset" 591
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Floor_04_MRE.uasset" 592
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Floor_04_C.uasset" 593
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Floor_04.uasset" 594
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Floor_03_N.uasset" 595
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Floor_03_MRE.uasset" 596
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Floor_03_C.uasset" 597
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedTexture_SeperateChannels.uasset" 598
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/_WorldAlignedMaterial.uasset" 599
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Floor_04_World.uasset" 600
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/_Glass_01.uasset" 601
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Glass_02.uasset" 602
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Light_01_E.uasset" 603
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Light_01_C.uasset" 604
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Light_01_Soft.uasset" 605
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Light_01_Strong.uasset" 606
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Light_01_Var.uasset" 607
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Picture_01_N.uasset" 608
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Picture_01_MRE.uasset" 609
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Picture_01_C_2.uasset" 610
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Picture_02.uasset" 611
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Screen_01_N.uasset" 612
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Screen_01_MRE.uasset" 613
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Screen_01_E2.uasset" 614
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Screen_01_C.uasset" 615
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Screen_01_Strong.uasset" 616
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Wall_02_N.uasset" 617
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Wall_02_MRE.uasset" 618
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Wall_02_C.uasset" 619
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Wall_02.uasset" 620
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Wall_03_N.uasset" 621
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Wall_03_MRE.uasset" 622
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Wall_03_C2.uasset" 623
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Wall_03B.uasset" 624
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Trim_01_N.uasset" 625
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Trim_01_MRE.uasset" 626
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Trim_01_C.uasset" 627
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Trim_01.uasset" 628
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Light_01.uasset" 629
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Ceiling_01_N.uasset" 630
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Ceiling_01_MRE.uasset" 631
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Ceiling_01_C.uasset" 632
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Ceiling_01.uasset" 633
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Ceiling_02.uasset" 634
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Ceiling_02_01.uasset" 635
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Ceiling_02_Beams.uasset" 636
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Ceiling_02_Beams_Corner.uasset" 637
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Ceiling_02_Corner.uasset" 638
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Glass_01.uasset" 639
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Ceiling_02_Glass.uasset" 640
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Door_Frame_01.uasset" 641
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Windows_Back_01_C1.uasset" 642
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Windows_01_N.uasset" 643
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Windows_01_MRE.uasset" 644
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Windows_01_C.uasset" 645
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/_BackdropWindows.uasset" 646
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Windows_03_N.uasset" 647
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Windows_03_MRE.uasset" 648
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Windows_03_C.uasset" 649
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Backdrop_Windows_04.uasset" 650
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Facade_01_01.uasset" 651
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Facade_01_Curve_01.uasset" 652
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Facade_01_Curve_02.uasset" 653
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Facade_01_Trim_01.uasset" 654
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Trim_01_Dark_Panel_N.uasset" 655
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Trim_01_Dark_Panel_MRE.uasset" 656
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Trim_01_Dark_Panel_C.uasset" 657
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Trim_01_Dark.uasset" 658
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Floor_01_N.uasset" 659
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Floor_01_MRE.uasset" 660
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Floor_01_C.uasset" 661
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Floor_01.uasset" 662
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Floor01_01.uasset" 663
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Floor_01_Curve_01.uasset" 664
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Floor_Simple_4x4.uasset" 665
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Glass_Wall_01_Frame_01.uasset" 666
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Floor_03.uasset" 667
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Floor_02_N.uasset" 668
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Floor_02_MRE.uasset" 669
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Floor_02_C.uasset" 670
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Floor_02.uasset" 671
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Rooftop_Floor_01.uasset" 672
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Wall_03_C.uasset" 673
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Wall_03.uasset" 674
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Rooftop_Planter.uasset" 675
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Stairs_01_01.uasset" 676
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Text_01_A.uasset" 677
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/_MaskedMaterial.uasset" 678
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/Text_01.uasset" 679
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Text_01.uasset" 680
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Trim01_01.uasset" 681
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Wall_01.uasset" 682
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Wall_03_01.uasset" 683
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Wall_03_02.uasset" 684
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Panels_01_N.uasset" 685
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Panels_01_MRE.uasset" 686
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Panels_01_E.uasset" 687
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Panels_01_C.uasset" 688
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Panels_01.uasset" 689
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Wall_03_Addon_02.uasset" 690
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Wall_03_Cap.uasset" 691
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Wall_03_Door_01.uasset" 692
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Elevator_01_N.uasset" 693
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Elevator_01_MRE.uasset" 694
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Elevator_01_E.uasset" 695
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Elevator_01_C.uasset" 696
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Elevator_01.uasset" 697
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Wall_03_Elevator.uasset" 698
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Wall_03_Trim_01.uasset" 699
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Wall_03_Trim_01_Cap.uasset" 700
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Wall_04_01.uasset" 701
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Wall_04_Cap.uasset" 702
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Wall_04_Door_Hole.uasset" 703
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Wall_04_Planter.uasset" 704
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Wall_05_01.uasset" 705
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Wall_05_Cap.uasset" 706
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Wall_Addons_01_N.uasset" 707
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Wall_Addons_01_MRE.uasset" 708
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Wall_Addons_01_C.uasset" 709
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Wall_Addons.uasset" 710
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Wall_Addon_01.uasset" 711
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Wall_Addon_02.uasset" 712
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Wall_01_N.uasset" 713
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Wall_01_MRE.uasset" 714
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Wall_01_C.uasset" 715
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Backdrop_01_Wall.uasset" 716
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Backdrop_Windows_01.uasset" 717
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Backdrop/SFW_Backdrop_Building_01.uasset" 718
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Windows_02_N.uasset" 719
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Windows_02_MRE.uasset" 720
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Windows_02_C.uasset" 721
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Windows_Back_01_C2.uasset" 722
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Backdrop_Windows_02.uasset" 723
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Backdrop/SFW_Backdrop_Building_03.uasset" 724
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Bench_01_01.uasset" 725
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Ceiling_01_Light_01.uasset" 726
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Light_03.uasset" 727
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Light_04.uasset" 728
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Light_01_Off.uasset" 729
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Light_05.uasset" 730
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Light_Spot_01.uasset" 731
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Screen_01_E.uasset" 732
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Screen_01.uasset" 733
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Monitor_01.uasset" 734
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Picture_01_C.uasset" 735
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Picture_01.uasset" 736
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Picture_01.uasset" 737
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/_SimpleMasked.uasset" 738
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Plants_01_N.uasset" 739
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Plants_01_MRE.uasset" 740
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Plants_01_C.uasset" 741
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/Plant_01.uasset" 742
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Plant_01.uasset" 743
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Plant_02.uasset" 744
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Plant_03.uasset" 745
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Plant_04.uasset" 746
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Railing_01_01.uasset" 747
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Rooftop_Awning_01.uasset" 748
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Rooftop_Chair_01.uasset" 749
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Table_01_N.uasset" 750
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Table_01_MRE.uasset" 751
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Table_01_C.uasset" 752
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Table_01.uasset" 753
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Table_Meeting_Room_01.uasset" 754
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Leather_01_N.uasset" 755
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Leather_01_MRE.uasset" 756
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Leather_01_C.uasset" 757
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Chair_01.uasset" 758
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Trash_Bin_01.uasset" 759
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Vase_01_N.uasset" 760
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Vase_01_MRE.uasset" 761
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Vase_01_C.uasset" 762
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Vase_01.uasset" 763
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Vase_01.uasset" 764
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Window_Blinds_01_N.uasset" 765
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Window_Blinds_01_MRE.uasset" 766
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Window_Blinds_01_C.uasset" 767
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Blinds_01.uasset" 768
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Window_Blinds_02.uasset" 769
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/LUTPNG.uasset" 770
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/StarterContent/Materials/M_Basic_Wall.uasset" 771
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/StarterContent/Shapes/Shape_Sphere.uasset" 772
-"../../Plugins/2D/Paper2D/Content/PlaceholderTextures/DummySpriteTexture.uasset" 773
-"../../Plugins/2D/Paper2D/Content/DummySprite.uasset" 774
-"../../Plugins/2D/Paper2D/Content/DefaultPaperTerrainMaterial.uasset" 775
-"../../Plugins/2D/Paper2D/Content/DefaultSpriteMaterial.uasset" 776
-"../../Plugins/2D/Paper2D/Content/MaskedUnlitSpriteMaterial.uasset" 777
-"../../Plugins/2D/Paper2D/Content/OpaqueUnlitSpriteMaterial.uasset" 778
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraCoordinateSpace.uasset" 779
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraOrientationAxis.uasset" 780
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraRandomnessMode.uasset" 781
-"../../Plugins/FX/Niagara/Content/Icons/S_ParticleSystem.uasset" 782
-"../../Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackInteger3.uasset" 783
-"../../Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackDirection.uasset" 784
-"../../Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/game_wind_noise.uasset" 785
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/SafeNormalize.uasset" 786
-"../../Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeWindMotion.uasset" 787
-"../../Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBranchMotion.uasset" 788
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ObjectLocalBounds.uasset" 789
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/UVs/BoundingBoxBased_0-1_UVW.uasset" 790
-"../../Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeWind.uasset" 791
-"../../Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBillboard.uasset" 792
-"../../../Engine/Content/EngineResources/DefaultTexture.uasset" 793
-"../../Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBillboardMaster.uasset" 794
-"../../Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeCameraFacing.uasset" 795
-"../../Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeMaster.uasset" 796
-"../../../Engine/Content/BasicShapes/Cylinder.uasset" 797
-"../../../Engine/Content/ArtTools/RenderToTexture/Materials/Debug/M_Emissive_Color.uasset" 798
-"../../Plugins/Lumin/MagicLeapPassableWorld/Content/MagicLeapARPinInfoActor.uasset" 799
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat4Components.uasset" 800
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_ChromaKey.uasset" 801
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_OpaqueColoredMaterial.uasset" 802
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/PokeAHoleMaterial.uasset" 803
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/StarterContent/Textures/T_Wood_Oak_N.uasset" 804
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/StarterContent/Textures/T_Wood_Oak_D.uasset" 805
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/StarterContent/Textures/T_MacroVariation.uasset" 806
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/StarterContent/Materials/M_Wood_Oak.uasset" 807
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/StarterContent/Materials/M_Basic_Floor.uasset" 808
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Levels/Prototype_BuiltData.uasset" 809
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/StarterContent/Audio/Starter_Wind06.uasset" 810
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/StarterContent/Audio/Starter_Wind05.uasset" 811
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/StarterContent/Audio/Starter_Birds01.uasset" 812
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/StarterContent/Audio/Starter_Background_Cue.uasset" 813
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Meshes/Material__30.uasset" 814
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Meshes/Heart.uasset" 815
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Blueprints/PickableItem_BP.uasset" 816
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Wall_03_Addon_01.uasset" 817
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Glass_Wall_01.uasset" 818
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Ceiling_01_Lights_N.uasset" 819
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Ceiling_01_Lights_MRE.uasset" 820
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Ceiling_01_Lights_E.uasset" 821
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Ceiling_01_Lights_C.uasset" 822
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Ceiling_01_Lights.uasset" 823
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Ceiling_01_Lights.uasset" 824
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Ceiling_01.uasset" 825
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Sign_Elevator.uasset" 826
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Rooftop_Table_01.uasset" 827
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Prop_Desk_01.uasset" 828
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Computer_01.uasset" 829
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Prop_Computer_Monitor_01.uasset" 830
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Prop_Computer_Keyboard_01.uasset" 831
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Prop_Computer_02_N.uasset" 832
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Prop_Computer_02_MRE.uasset" 833
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Prop_Computer_02_C.uasset" 834
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Computer_02.uasset" 835
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Prop_Computer_Case_01.uasset" 836
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Chair_Office_01.uasset" 837
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Backdrop/SFW_Backdrop_Building_05.uasset" 838
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Backdrop_Windows_03.uasset" 839
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Backdrop/SFW_Backdrop_Building_04.uasset" 840
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Backdrop/SFW_Backdrop_Building_02.uasset" 841
-"../../../Engine/Content/BasicShapes/Cube.uasset" 842
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Blueprints/Waypoint_BP.uasset" 843
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_ROOT_Phase_hair_01.uasset" 844
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_ID_Phase_hair_01.uasset" 845
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_A_Phase_hair_01.uasset" 846
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/Textures/T_PhaseHair_Flow.uasset" 847
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/SharedHairContent/FemaleHair_Straight_Venus/T_Diffuse.uasset" 848
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/SharedHairContent/FemaleHair_Straight_Venus/T_Depth.uasset" 849
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/SharedHairContent/Dye_MaskGradients/T_Gradient.uasset" 850
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/TestContent/T_HairClump02_Roots.uasset" 851
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/TestContent/T_HairClump02_ID.uasset" 852
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/TestContent/T_HairClump02_DyeMask.uasset" 853
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/TestContent/T_HairClump02_Depth.uasset" 854
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/TestContent/T_HairClump02_Alpha.uasset" 855
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/ParagonCharacterHairWind.uasset" 856
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/Materials/MF_BlendHairColorsWithParam.uasset" 857
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/T_Fire_Tiled_D.uasset" 858
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/FX/Textures/Water/T_Caustics_2.uasset" 859
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/FX/Textures/Gradients/Masks/T_gradient_stasis.uasset" 860
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/T_TestML_Mask.uasset" 861
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Rubber/T_Blank_N.uasset" 862
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Metal/T_Blue_Metal02.uasset" 863
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/Textures/T_AtmosphericCloudNoise03.uasset" 864
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/Textures/T_AtmosphericCloudNoise01_N.uasset" 865
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/Textures/T_AtmosphericCloudNoise01.uasset" 866
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/ParameterCollections/OrionGlobalGameplayCollection.uasset" 867
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/ML__Blank.uasset" 868
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MaterialLayerConstructors/MLC_Standard.uasset" 869
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MaterialLayerConstructors/MLC_ScratchAndGrime.uasset" 870
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Metal/ML_blue_Metal.uasset" 871
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MF_OrionRimlight.uasset" 872
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MF_HitFlash.uasset" 873
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MF_DeathFade.uasset" 874
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MF_BrightnessAdjust.uasset" 875
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MF_CharacterEffects.uasset" 876
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/T_Black_Linear.uasset" 877
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/Materials/M_HairSheet_Master2.uasset" 878
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/M_Phase_Pandapack_hair_short.uasset" 879
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/SharedHairContent/FemaleHair_Straight_Venus/T_Roots.uasset" 880
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/SharedHairContent/FemaleHair_Straight_Venus/T_ID.uasset" 881
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/SharedHairContent/FemaleHair_Straight_Venus/T_Alfa.uasset" 882
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/FX/Textures/Tile/Noise/T_Soft_Noise.uasset" 883
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/FX/Textures/Energy/Plasma/T_Plasma_Aurora_Seamless.uasset" 884
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/M_Phase_Pandapack_hair.uasset" 885
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/T_EyeIrisBaseColor_Example_3.uasset" 886
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/FX/Textures/Flares/T_Phase_Corona_D.uasset" 887
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/T_Swirly_Noise.uasset" 888
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/T_Sphere_EYE_NORMALS.uasset" 889
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/T_EyeScleraBaseColor_Example_2.uasset" 890
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/T_EyeIrisBaseColor_Example_2.uasset" 891
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/T_Eye_Wet_Normal.uasset" 892
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/T_EYE_NORMALS.uasset" 893
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/T_DecalMask_Radial03.uasset" 894
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/EpicQuadPanorama_CC.uasset" 895
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/EyeInner_Profile.uasset" 896
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/ML_TacticiaULTEye.uasset" 897
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/T_EyeMidPlaneDisplacement_Example.uasset" 898
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/MaterialFunctions/ML_EyeRefraction.uasset" 899
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Materials/M_EyeRefractive.uasset" 900
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/M_Phase_Pandapack_Eye.uasset" 901
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Textures/T_Phase_Pandapack_body_head_2_Skin_Mask02.uasset" 902
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/ML_Phase_NailPolish.uasset" 903
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Leather/T_Dark_Leather_N.uasset" 904
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Leather/T_Light_Leather2.uasset" 905
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MaterialLayerConstructors/MF_RoughnessAdjustment.uasset" 906
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MaterialLayerConstructors/MF_BaseColorTintAndContrast.uasset" 907
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Leather/ML_Light_Leather_Brown2.uasset" 908
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/ML_Phase_Leather.uasset" 909
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MF_Lerp_GammaColor.uasset" 910
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/MF_Lipstick_Basic.uasset" 911
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/SSP_Phase_Skin.uasset" 912
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Body_Head_N.uasset" 913
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_body_head_2_Skin_Mask.uasset" 914
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_body_head_2_DIFF.uasset" 915
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Skin/T_Pore_Specular.uasset" 916
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Skin/T_Pore_Normals2.uasset" 917
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MF_SkinPores.uasset" 918
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Skin/ML_Skin.uasset" 919
-"../../../Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_RoughnessOverride.uasset" 920
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/M_Phase_Pandapack_body_head.uasset" 921
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Textures/T_PyroPhoenix_Fabric_Pattern_D.uasset" 922
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Textures/T_Phase_Pandapack_RGB.uasset" 923
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Textures/T_Phase_Pandapack_Mask02.uasset" 924
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Textures/T_Phase_Pandapack_Mask01.uasset" 925
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Textures/T_Pandapack_Normal_Demo.uasset" 926
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/T_Velvet_Thick_N.uasset" 927
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/T_Velvet_Thick_MASKS.uasset" 928
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/ML_Velvet_Thick.uasset" 929
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/T_silkroughness.uasset" 930
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/T_GoldFabric01_N.uasset" 931
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/ML_RoyalSilk.uasset" 932
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MF_OrionCharacterAO.uasset" 933
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MF_Fuzz_Layer.uasset" 934
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MF_Fiber_Shadow.uasset" 935
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MF_Character_MaterialLayerQuality.uasset" 936
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Painted/T_PaintScratches.uasset" 937
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Painted/ML_MetallicClearCoat.uasset" 938
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Metal/T_Metal_Precious_Old_RGBA.uasset" 939
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Metal/T_Metal_Precious_Old_N.uasset" 940
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Metal/ML_Precious_Metal_Old.uasset" 941
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/M_Phase_Pandapack.uasset" 942
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/FX/Textures/Tile/Noise/T_Noise_Rough_Dark_Big.uasset" 943
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Metal/T_ScratchMask.uasset" 944
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Metal/T_Metal_SandCast_Med_N.uasset" 945
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Metal/T_Gray_Flat_Black.uasset" 946
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Metal/ML_Metal_SandCast.uasset" 947
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/Layer/ML_Phase_Pandapack_Metal.uasset" 948
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Leather/T_ML_FineLeather01_N.uasset" 949
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Leather/T_ML_FineLeather01.uasset" 950
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Leather/ML_ThinLeather01_Colored.uasset" 951
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/ML_Phase_Hard_Leather.uasset" 952
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/T_Kurohane_Eye_D.uasset" 953
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Metal/T_Blank_N.uasset" 954
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Synthetics/ML_Gem.uasset" 955
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/ML_Phase_Gem.uasset" 956
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/T_ML_Fabric_Blue_Medium_N.uasset" 957
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/T_ML_Fabric_Shiny_Gray.uasset" 958
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/ML_ColorableCloth2.uasset" 959
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/ML_Phase_Fabric.uasset" 960
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/T_FineFabric01_N.uasset" 961
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/T_FineFabric01.uasset" 962
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/ML_ColorableCloth.uasset" 963
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/ML_Phase_Cloth.uasset" 964
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Skirt_Shoe_Jewelery_RGBAO.uasset" 965
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Skirt_Shoe_Jewelery_N.uasset" 966
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Skirt_Shoe_Jewelery_Mask03.uasset" 967
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Skirt_Shoe_Jewelery_Mask02.uasset" 968
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Skirt_Shoe_Jewelery_Mask01.uasset" 969
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/M_T_Phase_Pandapack_Skirt_Shoe_Jewelery.uasset" 970
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/MIC_T_Phase_Pandapack_Jewelery.uasset" 971
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/MIC_T_Phase_Pandapack_Boots.uasset" 972
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/Layer/ML_Phase_Pandapack_Cloth.uasset" 973
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Textures/T_Phase_Pandapack_Jacket_tights_RGBAO.uasset" 974
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Textures/T_Phase_Pandapack_Jacket_tights_N.uasset" 975
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Textures/T_Phase_Pandapack_Jacket_tights_Mask03.uasset" 976
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Textures/T_Phase_Pandapack_Jacket_tights_Mask02.uasset" 977
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Painted/ML_Plain_Glossy_Plastic.uasset" 978
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/ML_Phase_Hard_Plastic.uasset" 979
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/T_Basic_Flesh_Color_N.uasset" 980
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/T_Basic_Flesh_Color.uasset" 981
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/ML_Basic_Fleah_Color.uasset" 982
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Jacket_tights_Mask01.uasset" 983
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/M_Phase_Pandapack_jacket_tights.uasset" 984
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/MIC_Phase_Pandapack_jTights.uasset" 985
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Backpack_Purse_RGBAO.uasset" 986
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Backpack_Purse_N.uasset" 987
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Backpack_Purse_Mask03.uasset" 988
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Backpack_Purse_Mask02.uasset" 989
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Backpack_Purse_Mask01.uasset" 990
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/ML_Phase_Silk.uasset" 991
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/ML_Phase_Metal.uasset" 992
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Parent/M_Phase_backpack_purse.uasset" 993
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/MIC_Phase_Pandapack_backpack_purse.uasset" 994
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Lace_N.uasset" 995
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Lace_Mask.uasset" 996
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Parent/M_Phase_lace.uasset" 997
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/MIC_PhasePandaPack_lace.uasset" 998
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Materials/M_TearLine.uasset" 999
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/M_Phase_TearLine.uasset" 1000
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/T_EyeOcclusion2.uasset" 1001
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Materials/M_Eye_Occlusion.uasset" 1002
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/M_Phase_Eye_Occlusion.uasset" 1003
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Mouth/Textures/T_TeethAndTongue_N.uasset" 1004
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Mouth/Textures/T_TeethAndTongue_D2.uasset" 1005
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Mouth/Textures/T_Master_Mouth_1_RGB.uasset" 1006
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Mouth/Textures/T_Master_Mouth_1_N.uasset" 1007
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Mouth/Textures/T_Master_Mouth_1_COLOR.uasset" 1008
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Mouth/Materials/TeethSubsurfaceProfile.uasset" 1009
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Mouth/Materials/M_Mouth_Master.uasset" 1010
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Mouth/Materials/M_Mouth_MId_color.uasset" 1011
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyelash/T_Femme_Eyelashes_N.uasset" 1012
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyelash/T_Femme_Eyelashes_D.uasset" 1013
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyelash/M_EyelashMaster_N.uasset" 1014
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Meshes/phase_Skeleton.uasset" 1015
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Meshes/Phase_Pandapack_GDC.uasset" 1016
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Animations/PhaseRetarget/phase_ThirdPersonWalk.uasset" 1017
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Animations/PhaseRetarget/phase_ThirdPersonRun.uasset" 1018
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Animations/PhaseRetarget/phase_ThirdPersonIdle.uasset" 1019
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Animations/PhaseRetarget/phase_ThirdPerson_IdleRun_2D.uasset" 1020
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Animations/PhaseRetarget/phase_ThirdPerson_Jump.uasset" 1021
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Animations/PhaseRetarget/phase_ThirdPersonJump_Start.uasset" 1022
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Animations/PhaseRetarget/phase_ThirdPersonJump_Loop.uasset" 1023
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Animations/PhaseRetarget/phase_ThirdPerson_AnimBP.uasset" 1024
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Blueprints/ShooterEnemyCharacter_BP.uasset" 1025
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Meshes/Phase_ShadowCyl.uasset" 1026
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Meshes/Phase_Extents.uasset" 1027
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/M_Phase_hair_short.uasset" 1028
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/T_EyeIrisBaseColor_Example_6.uasset" 1029
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/M_Phase_Eye.uasset" 1030
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Parent/M_T_Phase_Skirt_Shoe_Jewelery.uasset" 1031
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/MIC_T_Phase_Skirt.uasset" 1032
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/MIC_T_PhaseJewelery.uasset" 1033
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/MIC_Phase_lace.uasset" 1034
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Jacket_tights_RGBAO.uasset" 1035
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Jacket_tights_N.uasset" 1036
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Jacket_tights_Mask03.uasset" 1037
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Jacket_tights_Mask02.uasset" 1038
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Parent/M_Phase_jacket_tights.uasset" 1039
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/MIC_Phase_jacket.uasset" 1040
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_body_head_2_Skin_Mask02.uasset" 1041
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Parent/M_Phase_body_head.uasset" 1042
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/MIC_Phase_body_head.uasset" 1043
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/MIC_Phase_backpack_purse.uasset" 1044
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Meshes/Phase_GDC.uasset" 1045
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Blueprints/MeleeEnemyCharacter_BP.uasset" 1046
-"../../../Engine/Content/EngineSky/T_Sky_Stars.uasset" 1047
-"../../../Engine/Content/EngineSky/T_Sky_Clouds_M.uasset" 1048
-"../../../Engine/Content/EngineSky/T_Sky_Blue.uasset" 1049
-"../../../Engine/Content/EngineSky/M_Sky_Panning_Clouds2.uasset" 1050
-"../../../Engine/Content/EngineSky/SM_SkySphere.uasset" 1051
-"../../../Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset" 1052
-"../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset" 1053
-"../../../Engine/Content/EngineSky/C_Sky_Cloud_Color.uasset" 1054
-"../../../Engine/Content/EngineSky/BP_Sky_Sphere.uasset" 1055
-"../../../Engine/Content/BasicShapes/Plane.uasset" 1056
-"../../../Engine/Content/BasicShapes/BasicShapeMaterial.uasset" 1057
-"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Levels/Prototype.umap" 1058
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/StarterContent/Materials/M_Basic_Wall.uasset" 571
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/StarterContent/Shapes/Shape_Sphere.uasset" 572
+"../../Plugins/2D/Paper2D/Content/PlaceholderTextures/DummySpriteTexture.uasset" 573
+"../../Plugins/2D/Paper2D/Content/DummySprite.uasset" 574
+"../../Plugins/2D/Paper2D/Content/DefaultPaperTerrainMaterial.uasset" 575
+"../../Plugins/2D/Paper2D/Content/DefaultSpriteMaterial.uasset" 576
+"../../Plugins/2D/Paper2D/Content/MaskedUnlitSpriteMaterial.uasset" 577
+"../../Plugins/2D/Paper2D/Content/OpaqueUnlitSpriteMaterial.uasset" 578
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraCoordinateSpace.uasset" 579
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraOrientationAxis.uasset" 580
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraRandomnessMode.uasset" 581
+"../../Plugins/FX/Niagara/Content/Icons/S_ParticleSystem.uasset" 582
+"../../../Engine/Content/BasicShapes/Cylinder.uasset" 583
+"../../../Engine/Content/ArtTools/RenderToTexture/Materials/Debug/M_Emissive_Color.uasset" 584
+"../../Plugins/Lumin/MagicLeapPassableWorld/Content/MagicLeapARPinInfoActor.uasset" 585
+"../../Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackInteger3.uasset" 586
+"../../Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/UnpackDirection.uasset" 587
+"../../Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/game_wind_noise.uasset" 588
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/SafeNormalize.uasset" 589
+"../../Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeWindMotion.uasset" 590
+"../../Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBranchMotion.uasset" 591
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/ObjectLocalBounds.uasset" 592
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/UVs/BoundingBoxBased_0-1_UVW.uasset" 593
+"../../Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeWind.uasset" 594
+"../../Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBillboard.uasset" 595
+"../../../Engine/Content/EngineResources/DefaultTexture.uasset" 596
+"../../Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeBillboardMaster.uasset" 597
+"../../Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeCameraFacing.uasset" 598
+"../../Plugins/Editor/SpeedTreeImporter/Content/SpeedTree9/SpeedTreeMaster.uasset" 599
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat4Components.uasset" 600
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_ChromaKey.uasset" 601
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_OpaqueColoredMaterial.uasset" 602
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/PokeAHoleMaterial.uasset" 603
+"../../../Engine/Content/Maps/Entry_BuiltData.uasset" 604
+"../../../Engine/Content/Maps/Entry.umap" 605
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/StarterContent/Textures/T_MacroVariation.uasset" 606
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/StarterContent/Textures/T_Wood_Oak_N.uasset" 607
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/StarterContent/Textures/T_Wood_Oak_D.uasset" 608
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/StarterContent/Materials/M_Wood_Oak.uasset" 609
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/StarterContent/Materials/M_Basic_Floor.uasset" 610
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Levels/Prototype_BuiltData.uasset" 611
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/StarterContent/Audio/Starter_Wind06.uasset" 612
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/StarterContent/Audio/Starter_Wind05.uasset" 613
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/StarterContent/Audio/Starter_Birds01.uasset" 614
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/StarterContent/Audio/Starter_Background_Cue.uasset" 615
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Wall_01_N.uasset" 616
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Wall_01_MRE.uasset" 617
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Wall_01_C.uasset" 618
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Prop_Computer_02_E.uasset" 619
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/_SimpleMaterial.uasset" 620
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Trim_01_N.uasset" 621
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Trim_01_MRE.uasset" 622
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Trim_01_C.uasset" 623
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Trim_01.uasset" 624
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Panels_01_N.uasset" 625
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Panels_01_MRE.uasset" 626
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Panels_01_E.uasset" 627
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Panels_01_C.uasset" 628
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Panels_01.uasset" 629
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Wall_03_Addon_01.uasset" 630
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/_Glass_01.uasset" 631
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Glass_01.uasset" 632
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Glass_Wall_01.uasset" 633
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Ceiling_01_Lights_N.uasset" 634
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Ceiling_01_Lights_MRE.uasset" 635
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Ceiling_01_Lights_E.uasset" 636
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Ceiling_01_Lights_C.uasset" 637
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Ceiling_01_Lights.uasset" 638
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Ceiling_01_Lights.uasset" 639
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Ceiling_01_N.uasset" 640
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Ceiling_01_MRE.uasset" 641
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Ceiling_01_C.uasset" 642
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Ceiling_01.uasset" 643
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/SFW_Ceiling_01.uasset" 644
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Elevator_01_N.uasset" 645
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Elevator_01_MRE.uasset" 646
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Elevator_01_E.uasset" 647
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Elevator_01_C.uasset" 648
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Elevator_01.uasset" 649
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Sign_Elevator.uasset" 650
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Floor_03_N.uasset" 651
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Floor_03_MRE.uasset" 652
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Floor_03_C.uasset" 653
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Floor_03.uasset" 654
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Rooftop_Table_01.uasset" 655
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Table_01_N.uasset" 656
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Table_01_MRE.uasset" 657
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Table_01_C.uasset" 658
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Table_01.uasset" 659
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Prop_Desk_01.uasset" 660
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Prop_Computer_01_N.uasset" 661
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Prop_Computer_01_MRE.uasset" 662
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Prop_Computer_01_E.uasset" 663
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Prop_Computer_01_C.uasset" 664
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Computer_01.uasset" 665
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Prop_Computer_Monitor_01.uasset" 666
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Prop_Computer_Keyboard_01.uasset" 667
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Prop_Computer_02_N.uasset" 668
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Prop_Computer_02_MRE.uasset" 669
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Prop_Computer_02_C.uasset" 670
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Computer_02.uasset" 671
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Prop_Computer_Case_01.uasset" 672
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Leather_01_N.uasset" 673
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Leather_01_MRE.uasset" 674
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Leather_01_C.uasset" 675
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Chair_01.uasset" 676
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Props/SFW_Chair_Office_01.uasset" 677
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Wall_01_N.uasset" 678
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Wall_01_MRE.uasset" 679
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Wall_01_C.uasset" 680
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Backdrop_01_Wall.uasset" 681
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Windows_Back_01_C1.uasset" 682
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Windows_01_N.uasset" 683
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Windows_01_MRE.uasset" 684
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Windows_01_C.uasset" 685
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/_BackdropWindows.uasset" 686
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Windows_Back_01_C2.uasset" 687
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Windows_02_N.uasset" 688
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Windows_02_MRE.uasset" 689
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Windows_02_C.uasset" 690
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Backdrop_Windows_02.uasset" 691
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Backdrop/SFW_Backdrop_Building_05.uasset" 692
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Windows_03_N.uasset" 693
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Windows_03_MRE.uasset" 694
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Textures/SFW_Backdrop_Windows_03_C.uasset" 695
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Backdrop_Windows_03.uasset" 696
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Backdrop/SFW_Backdrop_Building_04.uasset" 697
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Materials/SFW_Backdrop_Windows_01.uasset" 698
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Office/Mesh/Backdrop/SFW_Backdrop_Building_02.uasset" 699
+"../../../Engine/Content/BasicShapes/Cube.uasset" 700
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Blueprints/Waypoint_BP.uasset" 701
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_ROOT_Phase_hair_01.uasset" 702
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_ID_Phase_hair_01.uasset" 703
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_A_Phase_hair_01.uasset" 704
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/Textures/T_PhaseHair_Flow.uasset" 705
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/SharedHairContent/FemaleHair_Straight_Venus/T_Diffuse.uasset" 706
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/SharedHairContent/FemaleHair_Straight_Venus/T_Depth.uasset" 707
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/SharedHairContent/Dye_MaskGradients/T_Gradient.uasset" 708
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/TestContent/T_HairClump02_Roots.uasset" 709
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/TestContent/T_HairClump02_ID.uasset" 710
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/TestContent/T_HairClump02_DyeMask.uasset" 711
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/TestContent/T_HairClump02_Depth.uasset" 712
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/TestContent/T_HairClump02_Alpha.uasset" 713
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/ParagonCharacterHairWind.uasset" 714
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/Materials/MF_BlendHairColorsWithParam.uasset" 715
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/T_Fire_Tiled_D.uasset" 716
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/FX/Textures/Water/T_Caustics_2.uasset" 717
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/FX/Textures/Gradients/Masks/T_gradient_stasis.uasset" 718
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/T_TestML_Mask.uasset" 719
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Rubber/T_Blank_N.uasset" 720
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Metal/T_Blue_Metal02.uasset" 721
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/Textures/T_AtmosphericCloudNoise03.uasset" 722
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/Textures/T_AtmosphericCloudNoise01_N.uasset" 723
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/Textures/T_AtmosphericCloudNoise01.uasset" 724
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/ParameterCollections/OrionGlobalGameplayCollection.uasset" 725
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/ML__Blank.uasset" 726
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MaterialLayerConstructors/MLC_Standard.uasset" 727
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MaterialLayerConstructors/MLC_ScratchAndGrime.uasset" 728
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Metal/ML_blue_Metal.uasset" 729
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MF_OrionRimlight.uasset" 730
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MF_HitFlash.uasset" 731
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MF_DeathFade.uasset" 732
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MF_BrightnessAdjust.uasset" 733
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MF_CharacterEffects.uasset" 734
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/T_Black_Linear.uasset" 735
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/Materials/M_HairSheet_Master2.uasset" 736
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/M_Phase_Pandapack_hair_short.uasset" 737
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/SharedHairContent/FemaleHair_Straight_Venus/T_Roots.uasset" 738
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/SharedHairContent/FemaleHair_Straight_Venus/T_ID.uasset" 739
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Hair/SharedHairContent/FemaleHair_Straight_Venus/T_Alfa.uasset" 740
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/FX/Textures/Tile/Noise/T_Soft_Noise.uasset" 741
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/FX/Textures/Energy/Plasma/T_Plasma_Aurora_Seamless.uasset" 742
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/M_Phase_Pandapack_hair.uasset" 743
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/T_EyeIrisBaseColor_Example_3.uasset" 744
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/FX/Textures/Flares/T_Phase_Corona_D.uasset" 745
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/T_Swirly_Noise.uasset" 746
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/T_Sphere_EYE_NORMALS.uasset" 747
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/T_EyeScleraBaseColor_Example_2.uasset" 748
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/T_EyeIrisBaseColor_Example_2.uasset" 749
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/T_Eye_Wet_Normal.uasset" 750
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/T_EYE_NORMALS.uasset" 751
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/T_DecalMask_Radial03.uasset" 752
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/EpicQuadPanorama_CC.uasset" 753
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/EyeInner_Profile.uasset" 754
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/ML_TacticiaULTEye.uasset" 755
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/T_EyeMidPlaneDisplacement_Example.uasset" 756
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/MaterialFunctions/ML_EyeRefraction.uasset" 757
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Materials/M_EyeRefractive.uasset" 758
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/M_Phase_Pandapack_Eye.uasset" 759
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Textures/T_Phase_Pandapack_body_head_2_Skin_Mask02.uasset" 760
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Body_Head_N.uasset" 761
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_body_head_2_Skin_Mask.uasset" 762
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_body_head_2_DIFF.uasset" 763
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/ML_Phase_NailPolish.uasset" 764
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Leather/T_Dark_Leather_N.uasset" 765
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Leather/T_Light_Leather2.uasset" 766
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MaterialLayerConstructors/MF_RoughnessAdjustment.uasset" 767
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MaterialLayerConstructors/MF_BaseColorTintAndContrast.uasset" 768
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Leather/ML_Light_Leather_Brown2.uasset" 769
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/ML_Phase_Leather.uasset" 770
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MF_Lerp_GammaColor.uasset" 771
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/MF_Lipstick_Basic.uasset" 772
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/SSP_Phase_Skin.uasset" 773
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Skin/T_Pore_Specular.uasset" 774
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Skin/T_Pore_Normals2.uasset" 775
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MF_SkinPores.uasset" 776
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Skin/ML_Skin.uasset" 777
+"../../../Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_RoughnessOverride.uasset" 778
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/M_Phase_Pandapack_body_head.uasset" 779
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Textures/T_PyroPhoenix_Fabric_Pattern_D.uasset" 780
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Textures/T_Phase_Pandapack_RGB.uasset" 781
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Textures/T_Phase_Pandapack_Mask02.uasset" 782
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Textures/T_Phase_Pandapack_Mask01.uasset" 783
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Textures/T_Pandapack_Normal_Demo.uasset" 784
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Painted/T_PaintScratches.uasset" 785
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MF_Character_MaterialLayerQuality.uasset" 786
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Painted/ML_MetallicClearCoat.uasset" 787
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Metal/T_Metal_Precious_Old_RGBA.uasset" 788
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Metal/T_Metal_Precious_Old_N.uasset" 789
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Metal/ML_Precious_Metal_Old.uasset" 790
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/T_Velvet_Thick_N.uasset" 791
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/T_Velvet_Thick_MASKS.uasset" 792
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/ML_Velvet_Thick.uasset" 793
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/T_silkroughness.uasset" 794
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/T_GoldFabric01_N.uasset" 795
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/ML_RoyalSilk.uasset" 796
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MF_OrionCharacterAO.uasset" 797
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MF_Fuzz_Layer.uasset" 798
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialFunctions/MF_Fiber_Shadow.uasset" 799
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/M_Phase_Pandapack.uasset" 800
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Metal/T_ScratchMask.uasset" 801
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Metal/T_Metal_SandCast_Med_N.uasset" 802
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Metal/T_Gray_Flat_Black.uasset" 803
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/FX/Textures/Tile/Noise/T_Noise_Rough_Dark_Big.uasset" 804
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Metal/ML_Metal_SandCast.uasset" 805
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/Layer/ML_Phase_Pandapack_Metal.uasset" 806
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Leather/T_ML_FineLeather01_N.uasset" 807
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Leather/T_ML_FineLeather01.uasset" 808
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Leather/ML_ThinLeather01_Colored.uasset" 809
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/ML_Phase_Hard_Leather.uasset" 810
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Metal/T_Blank_N.uasset" 811
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/T_Kurohane_Eye_D.uasset" 812
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Synthetics/ML_Gem.uasset" 813
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/ML_Phase_Gem.uasset" 814
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/T_ML_Fabric_Blue_Medium_N.uasset" 815
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/T_ML_Fabric_Shiny_Gray.uasset" 816
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/ML_ColorableCloth2.uasset" 817
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/ML_Phase_Fabric.uasset" 818
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/T_FineFabric01_N.uasset" 819
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/T_FineFabric01.uasset" 820
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Fabric/ML_ColorableCloth.uasset" 821
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/ML_Phase_Cloth.uasset" 822
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Skirt_Shoe_Jewelery_RGBAO.uasset" 823
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Skirt_Shoe_Jewelery_N.uasset" 824
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Skirt_Shoe_Jewelery_Mask03.uasset" 825
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Skirt_Shoe_Jewelery_Mask02.uasset" 826
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Skirt_Shoe_Jewelery_Mask01.uasset" 827
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/M_T_Phase_Pandapack_Skirt_Shoe_Jewelery.uasset" 828
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/MIC_T_Phase_Pandapack_Jewelery.uasset" 829
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/MIC_T_Phase_Pandapack_Boots.uasset" 830
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/Layer/ML_Phase_Pandapack_Cloth.uasset" 831
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Textures/T_Phase_Pandapack_Jacket_tights_RGBAO.uasset" 832
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Textures/T_Phase_Pandapack_Jacket_tights_N.uasset" 833
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Textures/T_Phase_Pandapack_Jacket_tights_Mask03.uasset" 834
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Textures/T_Phase_Pandapack_Jacket_tights_Mask02.uasset" 835
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Jacket_tights_Mask01.uasset" 836
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/T_Basic_Flesh_Color_N.uasset" 837
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/T_Basic_Flesh_Color.uasset" 838
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/MaterialLayers/Painted/ML_Plain_Glossy_Plastic.uasset" 839
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/ML_Phase_Hard_Plastic.uasset" 840
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/ML_Basic_Fleah_Color.uasset" 841
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/M_Phase_Pandapack_jacket_tights.uasset" 842
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/MIC_Phase_Pandapack_jTights.uasset" 843
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Backpack_Purse_RGBAO.uasset" 844
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Backpack_Purse_N.uasset" 845
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Backpack_Purse_Mask03.uasset" 846
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Backpack_Purse_Mask02.uasset" 847
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Backpack_Purse_Mask01.uasset" 848
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/ML_Phase_Silk.uasset" 849
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Layers/ML_Phase_Metal.uasset" 850
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Parent/M_Phase_backpack_purse.uasset" 851
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/MIC_Phase_Pandapack_backpack_purse.uasset" 852
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Lace_N.uasset" 853
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Lace_Mask.uasset" 854
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Parent/M_Phase_lace.uasset" 855
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Materials/MIC_PhasePandaPack_lace.uasset" 856
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Materials/M_TearLine.uasset" 857
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/M_Phase_TearLine.uasset" 858
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/T_EyeOcclusion2.uasset" 859
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Materials/M_Eye_Occlusion.uasset" 860
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/M_Phase_Eye_Occlusion.uasset" 861
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Mouth/Textures/T_TeethAndTongue_N.uasset" 862
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Mouth/Textures/T_TeethAndTongue_D2.uasset" 863
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Mouth/Textures/T_Master_Mouth_1_RGB.uasset" 864
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Mouth/Textures/T_Master_Mouth_1_N.uasset" 865
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Mouth/Textures/T_Master_Mouth_1_COLOR.uasset" 866
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Mouth/Materials/TeethSubsurfaceProfile.uasset" 867
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Mouth/Materials/M_Mouth_Master.uasset" 868
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Mouth/Materials/M_Mouth_MId_color.uasset" 869
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyelash/T_Femme_Eyelashes_N.uasset" 870
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyelash/T_Femme_Eyelashes_D.uasset" 871
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyelash/M_EyelashMaster_N.uasset" 872
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Meshes/phase_Skeleton.uasset" 873
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Skins/Tier_1_5/Pandapack/Meshes/Phase_Pandapack_GDC.uasset" 874
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Animations/PhaseRetarget/phase_ThirdPersonWalk.uasset" 875
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Animations/PhaseRetarget/phase_ThirdPersonRun.uasset" 876
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Animations/PhaseRetarget/phase_ThirdPersonIdle.uasset" 877
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Animations/PhaseRetarget/phase_ThirdPerson_IdleRun_2D.uasset" 878
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Animations/PhaseRetarget/phase_ThirdPerson_Jump.uasset" 879
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Animations/PhaseRetarget/phase_ThirdPersonJump_Start.uasset" 880
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Animations/PhaseRetarget/phase_ThirdPersonJump_Loop.uasset" 881
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Animations/PhaseRetarget/phase_ThirdPerson_AnimBP.uasset" 882
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Blueprints/ShooterEnemyCharacter_BP.uasset" 883
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Meshes/Material__30.uasset" 884
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Meshes/Heart.uasset" 885
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Blueprints/PickableItem_BP.uasset" 886
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Parent/M_T_Phase_Skirt_Shoe_Jewelery.uasset" 887
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/MIC_T_PhaseJewelery.uasset" 888
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/MIC_Phase_lace.uasset" 889
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Jacket_tights_RGBAO.uasset" 890
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Jacket_tights_N.uasset" 891
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Jacket_tights_Mask03.uasset" 892
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_Jacket_tights_Mask02.uasset" 893
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Parent/M_Phase_jacket_tights.uasset" 894
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/MIC_Phase_jacket.uasset" 895
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Textures/T_Phase_body_head_2_Skin_Mask02.uasset" 896
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/Parent/M_Phase_body_head.uasset" 897
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/MIC_Phase_body_head.uasset" 898
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/MIC_Phase_backpack_purse.uasset" 899
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Meshes/Phase_ShadowCyl.uasset" 900
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Meshes/Phase_Extents.uasset" 901
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/M_Phase_hair_short.uasset" 902
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Global/Eyes/Textures/T_EyeIrisBaseColor_Example_6.uasset" 903
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/M_Phase_Eye.uasset" 904
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Materials/MIC_T_Phase_Skirt.uasset" 905
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/ParagonPhase/Characters/Heroes/Phase/Meshes/Phase_GDC.uasset" 906
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Blueprints/MeleeEnemyCharacter_BP.uasset" 907
+"../../../Engine/Content/EngineSky/T_Sky_Stars.uasset" 908
+"../../../Engine/Content/EngineSky/T_Sky_Clouds_M.uasset" 909
+"../../../Engine/Content/EngineSky/T_Sky_Blue.uasset" 910
+"../../../Engine/Content/EngineSky/M_Sky_Panning_Clouds2.uasset" 911
+"../../../Engine/Content/EngineSky/SM_SkySphere.uasset" 912
+"../../../Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset" 913
+"../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset" 914
+"../../../Engine/Content/EngineSky/C_Sky_Cloud_Color.uasset" 915
+"../../../Engine/Content/EngineSky/BP_Sky_Sphere.uasset" 916
+"../../../Engine/Content/BasicShapes/Plane.uasset" 917
+"../../../Engine/Content/BasicShapes/BasicShapeMaterial.uasset" 918
+"S:/2021/Programacion en Motores 1 Unreal/FPS/Content/Levels/Prototype.umap" 919

@@ -6,6 +6,11 @@
 
 void AEnemyAIController::OnMoveCompleted(FAIRequestID RequestID, const FPathFollowingResult& Result)
 {
+	GetWorldTimerManager().SetTimerForNextTick(this, &AEnemyAIController::NextMove);
+}
+
+void AEnemyAIController::NextMove()
+{
 	AEnemyCharacter* character = GetPawn<AEnemyCharacter>();
 	if (character)
 	{
