@@ -33,7 +33,6 @@ private:
 	void GoToHuntState();
 	void GoToChaseState();
 	void GoToPatrolState();
-	void NextMove();
 
 public:
 	void CanSeePlayer(bool can);
