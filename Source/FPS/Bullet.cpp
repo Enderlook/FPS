@@ -66,14 +66,19 @@ void ABullet::OnBeginOverlap(UPrimitiveComponent* HitComp,
 			OtherComp->AddImpulseAtLocation(bulletMovementComponent->Velocity * 100.0f, SweepResult.ImpactPoint);
 
 		IDamagable* damagable = Cast<IDamagable>(OtherActor);
-		if (damagable != nullptr)
+		if (damagable)
+		{
 			damagable->TakeDamage();
+			OnHit(OtherActor);
+		}
 
 		Destroy();
 	}
 }
 
-void ABullet::SpawnAndShoot(AActor* actor, TSubclassOf<class ABullet> bulletClass, FVector position, FRotator rotation)
+void ABullet::OnHit(AActor* OtherActor) { }
+
+ABullet* ABullet::SpawnAndShoot(AActor* actor, TSubclassOf<class ABullet> bulletClass, FVector position, FRotator rotation)
 {
 	UWorld* world = actor->GetWorld();
 	if (world)
@@ -91,5 +96,9 @@ void ABullet::SpawnAndShoot(AActor* actor, TSubclassOf<class ABullet> bulletClas
 			bullet->bulletMovementComponent->Velocity = launchDirection * bullet->bulletMovementComponent->InitialSpeed;
 			bullet->ownerActor = actor;
 		}
+
+		return bullet;
 	}
+
+	return nullptr;
 }

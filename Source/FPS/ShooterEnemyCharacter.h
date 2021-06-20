@@ -19,6 +19,9 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "Enemy Character|Attack")
 	TSubclassOf<class ABullet> bulletClass;
 
+	UPROPERTY(EditAnywhere, Category = "Enemy Character|Attack")
+	float fireWarmup;
+
 protected:
 	virtual void AttackStart() override;
 
