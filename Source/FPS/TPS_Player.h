@@ -43,6 +43,13 @@ private:
 	TSubclassOf<class ABullet> bulletClass;
 
 	USkeletalMeshComponent* firingDrone;
+
+	UCharacterMovementComponent* movementComponent;
+
+	float initialMaxWalkSpeed;
+	float initialMaxWalkSpeedCrouched;
+	float initialMaxAcceleration;
+	float speedMultiplier;
 	
 protected:
 	// Called when the game starts or when spawned
@@ -60,16 +67,11 @@ public:
 
 	virtual void Jump() override;
 
-private:
-	UFUNCTION()
-	void OnBeginOverlap(
-		class UPrimitiveComponent* HitComp,
-		class AActor* OtherActor,
-		class UPrimitiveComponent* OtherComp,
-		int32 OtherBodyIndex,
-		bool bFromSweep,
-		const FHitResult& SweepResult);
+	void RestoreHitpoints(int restoredHitpoints);
 
+	void ModifySpeed(float factor, float duration);
+
+private:
 	UFUNCTION()
 	void Fire();
 
@@ -78,4 +80,7 @@ private:
 	void MoveRight(float Axis);
 
 	void RestartGame();
+
+	UFUNCTION()
+	void UnmodifySpeed(float factor);
 };

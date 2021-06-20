@@ -15,11 +15,18 @@ ATPS_Player::ATPS_Player()
 	bUseControllerRotationRoll = false;
 	bUseControllerRotationYaw = false;
 
-	UCharacterMovementComponent* movement = GetCharacterMovement();
-	movement->bOrientRotationToMovement = true;
-	movement->RotationRate = FRotator(0.0f, 540.0f, 0.0f);
-	movement->JumpZVelocity = 650.0f;
-	movement->AirControl = 0.2f;
+	movementComponent = GetCharacterMovement();
+	if (movementComponent)
+	{
+		movementComponent->bOrientRotationToMovement = true;
+		movementComponent->RotationRate = FRotator(0.0f, 540.0f, 0.0f);
+		movementComponent->JumpZVelocity = 650.0f;
+		movementComponent->AirControl = 0.2f;
+		initialMaxWalkSpeed = movementComponent->MaxWalkSpeed;
+		initialMaxWalkSpeedCrouched = movementComponent->MaxWalkSpeedCrouched;
+		initialMaxAcceleration = movementComponent->MaxAcceleration;
+		speedMultiplier = 1;
+	}
 
 	USpringArmComponent* cameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	cameraBoom->SetupAttachment(RootComponent);
@@ -56,7 +63,6 @@ void ATPS_Player::BeginPlay()
 {
 	Super::BeginPlay();
 
-	GetCapsuleComponent()->OnComponentBeginOverlap.AddDynamic(this, &ATPS_Player::OnBeginOverlap);
 	if (playerPowerWidgetClass != nullptr)
 	{
 		playerPowerWidget = CreateWidget(GetWorld(), playerPowerWidgetClass);
@@ -152,23 +158,6 @@ void ATPS_Player::RestartGame()
 	UGameplayStatics::OpenLevel(this, FName(*GetWorld()->GetName(), false));
 }
 
-void ATPS_Player::OnBeginOverlap(UPrimitiveComponent* HitComp,
-	AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex,
-	bool bFromSweep, const FHitResult& SweepResult)
-{
-	if (OtherActor->ActorHasTag("Recharge"))
-	{
-		UE_LOG(LogTemp, Warning, TEXT("Collided with Health Pack"));
-
-		currentHitpoints += hitpointsRestoredOnPickup;
-
-		if (currentHitpoints > hitpoints)
-			currentHitpoints = hitpoints;
-
-		OtherActor->Destroy();
-	}
-}
-
 void ATPS_Player::TakeDamage()
 {
 	if (--currentHitpoints <= 0)
@@ -177,5 +166,41 @@ void ATPS_Player::TakeDamage()
 		firingDrone->SetSimulatePhysics(true);
 		FTimerHandle handle;
 		GetWorldTimerManager().SetTimer(handle, this, &ATPS_Player::RestartGame, 3.0f, false);
+	}
+}
+
+void ATPS_Player::RestoreHitpoints(int restoredHitpoints)
+{
+	currentHitpoints += restoredHitpoints;
+		
+	if (currentHitpoints > hitpoints)
+		currentHitpoints = hitpoints;
+}
+
+void ATPS_Player::ModifySpeed(float factor, float duration)
+{
+	speedMultiplier *= factor;
+
+	if (movementComponent)
+	{
+		movementComponent->MaxWalkSpeed = initialMaxWalkSpeed * speedMultiplier;
+		movementComponent->MaxWalkSpeedCrouched = initialMaxWalkSpeedCrouched * speedMultiplier;
+		movementComponent->MaxAcceleration = initialMaxAcceleration * speedMultiplier;
+
+		FTimerHandle handle;
+		FTimerDelegate slowdownDelegate = FTimerDelegate::CreateUObject(this, &ATPS_Player::UnmodifySpeed, factor);
+		GetWorldTimerManager().SetTimer(handle, slowdownDelegate, duration, false);
+	}
+}
+
+void ATPS_Player::UnmodifySpeed(float factor)
+{
+	speedMultiplier /= factor;
+
+	if (movementComponent)
+	{
+		movementComponent->MaxWalkSpeed = initialMaxWalkSpeed * speedMultiplier;
+		movementComponent->MaxWalkSpeedCrouched = initialMaxWalkSpeedCrouched * speedMultiplier;
+		movementComponent->MaxAcceleration = initialMaxAcceleration * speedMultiplier;
 	}
 }
