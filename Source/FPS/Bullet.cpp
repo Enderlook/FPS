@@ -45,6 +45,10 @@ ABullet::ABullet()
 		UMaterialInstanceDynamic* bulletMaterialInstance = UMaterialInstanceDynamic::Create(material.Object, bulletMeshComponent);
 		bulletMeshComponent->SetMaterial(0, bulletMaterialInstance);
 	}
+
+	static ConstructorHelpers::FObjectFinder<USoundCue> impactSoundResource(TEXT("/Game/Audio/Sounds/Impact/Impact_Cue.Impact_Cue"));
+	if (impactSoundResource.Succeeded())
+		impactSound = impactSoundResource.Object;
 }
 
 // Called when the game starts or when spawned
@@ -74,6 +78,9 @@ void ABullet::OnBeginOverlap(UPrimitiveComponent* HitComp,
 			damagable->TakeDamage();
 			OnHit(OtherActor);
 		}
+
+		if (impactSound)
+			UGameplayStatics::PlaySoundAtLocation(GetWorld(), impactSound, SweepResult.ImpactPoint);
 
 		Destroy();
 	}

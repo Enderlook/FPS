@@ -17,8 +17,9 @@ private:
 	UPROPERTY(VisibleAnywhere, Category = Movement)
 	UProjectileMovementComponent* bulletMovementComponent;
 
-
 	const AActor* ownerActor;
+
+	USoundCue* impactSound;
 
 public:	
 	// Sets default values for this actor's properties
