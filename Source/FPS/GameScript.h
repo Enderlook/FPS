@@ -3,7 +3,10 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Blueprint/UserWidget.h"
+#include "Components/AudioComponent.h"
 #include "Engine/LevelScriptActor.h"
+#include "Sound/SoundCue.h"
 #include "GameScript.generated.h"
 
 /**
@@ -18,12 +21,28 @@ private:
 	UPROPERTY(EditAnywhere)
 	FName levelName;
 
+	UPROPERTY(EditAnywhere)
+	USoundCue* backgroundMusic;
+
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<UUserWidget> loseWidgetClass;
+
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<UUserWidget> winWidgetClass;
+
+	UAudioComponent* backgroundMusicComponent;
+
 	int enemyCount;
 
+protected:
+	virtual void BeginPlay() override;
+
 private:
-	void ContinueGame();
+	UUserWidget* MakeWidget(TSubclassOf<UUserWidget> widgetClass);
 
 public:
 	void OnEnemySpawned();
 	void OnEnemyDestroyed();
+	void OnLostGame();
+	void NextLevel();
 };

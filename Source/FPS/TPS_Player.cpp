@@ -1,4 +1,5 @@
 #include "TPS_Player.h"
+#include "GameScript.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "GameFramework/Actor.h"
 #include "Kismet/GameplayStatics.h"
@@ -162,10 +163,9 @@ void ATPS_Player::TakeDamage()
 {
 	if (--currentHitpoints <= 0)
 	{
-		GetMesh()->SetSimulatePhysics(true);
-		firingDrone->SetSimulatePhysics(true);
-		FTimerHandle handle;
-		GetWorldTimerManager().SetTimer(handle, this, &ATPS_Player::RestartGame, 3.0f, false);
+		AGameScript* gameScript = Cast<AGameScript>(GetWorld()->GetLevelScriptActor());
+		if (gameScript)
+			gameScript->OnLostGame();
 	}
 }
 
