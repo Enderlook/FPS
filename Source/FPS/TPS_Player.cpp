@@ -121,7 +121,7 @@ void ATPS_Player::Fire()
 		// Skew the aim to be slightly upwards.
 		FRotator muzzleRotation = cameraRotation;
 
-		ABullet::SpawnAndShoot(this, bulletClass, muzzleLocation, muzzleRotation);
+		ABullet::SpawnAndShoot(this, bulletClass, muzzleLocation, muzzleRotation, shootSound);
 	}
 }
 

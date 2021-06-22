@@ -15,6 +15,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "Sound/SoundCue.h"
 #include "TPS_Player.generated.h"
 
 UCLASS()
@@ -41,6 +42,9 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Player|Attack")
 	TSubclassOf<class ABullet> bulletClass;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Player|Attack")
+	USoundCue* shootSound;
 
 	USkeletalMeshComponent* firingDrone;
 

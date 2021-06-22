@@ -32,7 +32,7 @@ void AShooterEnemyCharacter::Attack()
 		FVector direction = GetLastKnownPlayerLocation() - eyesLocation;
 		direction.Normalize();
 
-		ABullet::SpawnAndShoot(this, bulletClass, position, direction.Rotation());
+		ABullet::SpawnAndShoot(this, bulletClass, position, direction.Rotation(), shootSound);
 	}
 
 	AttackCallback();

@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Bullet.h"
 #include "EnemyCharacter.h"
+#include "Sound/SoundCue.h"
 #include "ShooterEnemyCharacter.generated.h"
 
 /**
@@ -21,6 +22,9 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Enemy Character|Attack")
 	float fireWarmup;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Enemy Character|Attack")
+	USoundCue* shootSound;
 
 protected:
 	virtual void AttackStart() override;

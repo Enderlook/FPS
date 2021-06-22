@@ -25,3 +25,9 @@ Lost in the Dawn made by azazel42 under license GPL 3.0
 Action synth track made PetterTheSturgeon under license CC-BY 4.0, CC-BY 3.0, CC-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0, GPL 2.0, OGA-BY 3.0
 	https://opengameart.org/content/action-synth-track
 	Notathing2.mp3
+
+Q009's weapon sounds made by Q009 under license CC-BY-SA 3.0
+	https://opengameart.org/content/q009s-weapon-sounds
+	pistol.ogg
+	pistol1.ogg
+	pistol2.ogg

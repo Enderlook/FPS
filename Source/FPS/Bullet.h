@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "GameFramework/ProjectileMovementComponent.h"
+#include "Sound/SoundCue.h"
 #include "Bullet.generated.h"
 
 UCLASS()
@@ -42,5 +43,5 @@ protected:
 	virtual void OnHit(AActor* OtherActor);
 
 public:
-	static ABullet* SpawnAndShoot(AActor* actor, TSubclassOf<class ABullet> bulletClass, FVector position, FRotator rotation);
+	static ABullet* SpawnAndShoot(AActor* actor, TSubclassOf<class ABullet> bulletClass, FVector position, FRotator rotation, USoundCue* shootSound);
 };

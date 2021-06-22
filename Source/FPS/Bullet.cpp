@@ -4,6 +4,7 @@
 #include "Bullet.h"
 #include "Components/SphereComponent.h"
 #include "Damagable.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 ABullet::ABullet()
@@ -80,7 +81,7 @@ void ABullet::OnBeginOverlap(UPrimitiveComponent* HitComp,
 
 void ABullet::OnHit(AActor* OtherActor) { }
 
-ABullet* ABullet::SpawnAndShoot(AActor* actor, TSubclassOf<class ABullet> bulletClass, FVector position, FRotator rotation)
+ABullet* ABullet::SpawnAndShoot(AActor* actor, TSubclassOf<class ABullet> bulletClass, FVector position, FRotator rotation, USoundCue* shootSound)
 {
 	UWorld* world = actor->GetWorld();
 	if (world)
@@ -97,6 +98,9 @@ ABullet* ABullet::SpawnAndShoot(AActor* actor, TSubclassOf<class ABullet> bullet
 			FVector launchDirection = rotation.Vector();
 			bullet->bulletMovementComponent->Velocity = launchDirection * bullet->bulletMovementComponent->InitialSpeed;
 			bullet->ownerActor = actor;
+
+			if (shootSound)
+				UGameplayStatics::PlaySoundAtLocation(world, shootSound, position, rotation);
 		}
 
 		return bullet;
