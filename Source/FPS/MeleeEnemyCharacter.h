@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "EnemyCharacter.h"
+#include "Sound/SoundCue.h"
 #include "MeleeEnemyCharacter.generated.h"
 
 /**
@@ -14,8 +15,14 @@ class FPS_API AMeleeEnemyCharacter : public AEnemyCharacter
 {
 	GENERATED_BODY()
 
+private:
+	USoundCue* impactSound;
+
 protected:
 	virtual void AttackStart() override;
+
+public:
+	AMeleeEnemyCharacter();
 
 private:
 	void Attack();

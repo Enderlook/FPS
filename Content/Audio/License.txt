@@ -38,3 +38,7 @@ Low Poly FPS Pack - Free (Sample) made by David Stenfors
 	impact-2.wav
 	impact-3.wav
 	impact-4.wav
+
+Metal Impact Sounds made by BMacZero under license CC0
+	https://opengameart.org/content/metal-impact-sounds
+	bing1.wav

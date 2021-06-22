@@ -4,6 +4,13 @@
 #include "MeleeEnemyCharacter.h"
 #include "Kismet/KismetSystemLibrary.h"
 
+AMeleeEnemyCharacter::AMeleeEnemyCharacter()
+{
+	static ConstructorHelpers::FObjectFinder<USoundCue> impactSoundResource(TEXT("/Game/Audio/Sounds/Melee_Impact_Cue.Melee_Impact_Cue"));
+	if (impactSoundResource.Succeeded())
+		impactSound = impactSoundResource.Object;
+}
+
 void AMeleeEnemyCharacter::AttackStart()
 {
 	Super::AttackStart();
@@ -40,6 +47,9 @@ void AMeleeEnemyCharacter::Attack()
 			if (damagable != nullptr)
 				damagable->TakeDamage();
 		}
+
+		if (impactSound)
+			UGameplayStatics::PlaySoundAtLocation(GetWorld(), impactSound, GetActorLocation());
 	}
 	AttackCallback();
 }
