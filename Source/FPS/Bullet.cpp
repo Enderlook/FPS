@@ -2,6 +2,8 @@
 
 
 #include "Bullet.h"
+#include "Components/SphereComponent.h"
+#include "Damagable.h"
 
 // Sets default values
 ABullet::ABullet()

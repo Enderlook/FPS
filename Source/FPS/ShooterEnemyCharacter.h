@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "EnemyCharacter.h"
 #include "Bullet.h"
+#include "EnemyCharacter.h"
 #include "ShooterEnemyCharacter.generated.h"
 
 /**

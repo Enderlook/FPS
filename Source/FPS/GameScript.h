@@ -2,8 +2,8 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
+#include "CoreMinimal.h"
 #include "Components/AudioComponent.h"
 #include "Engine/LevelScriptActor.h"
 #include "Sound/SoundCue.h"

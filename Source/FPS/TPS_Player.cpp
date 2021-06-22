@@ -1,6 +1,6 @@
 #include "TPS_Player.h"
-#include "GameScript.h"
 #include "Components/SkeletalMeshComponent.h"
+#include "GameScript.h"
 #include "GameFramework/Actor.h"
 #include "Kismet/GameplayStatics.h"
 
