@@ -7,12 +7,8 @@ void AShooterEnemyCharacter::AttackStart()
 {
 	Super::AttackStart();
 
-	AEnemyAIController* controller = GetAIController();
-	if (controller)
-	{
-		FTimerHandle handle;
-		GetWorldTimerManager().SetTimer(handle, this, &AShooterEnemyCharacter::Attack, fireWarmup, false, fireWarmup);
-	}
+	FTimerHandle handle;
+	GetWorldTimerManager().SetTimer(handle, this, &AShooterEnemyCharacter::Attack, fireWarmup, false, fireWarmup);
 }
 
 void AShooterEnemyCharacter::Attack()

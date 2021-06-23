@@ -15,12 +15,8 @@ void AMeleeEnemyCharacter::AttackStart()
 {
 	Super::AttackStart();
 
-	AEnemyAIController* controller = GetAIController();
-	if (controller)
-	{
-		FTimerHandle handle;
-		GetWorldTimerManager().SetTimer(handle, this, &AMeleeEnemyCharacter::Attack, 1, false, 1);
-	}
+	FTimerHandle handle;
+	GetWorldTimerManager().SetTimer(handle, this, &AMeleeEnemyCharacter::Attack, 1, false, 1);
 }
 
 void AMeleeEnemyCharacter::Attack()
