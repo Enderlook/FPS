@@ -74,6 +74,7 @@ protected:
 	class AGameScript* GetGameMode();
 	bool IsPlayerInSight();
 	FVector GetLastKnownPlayerLocation();
+	bool IsAlive();
 
 private:
 	int GetWaypointIndex();

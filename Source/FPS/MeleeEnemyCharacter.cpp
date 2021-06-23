@@ -25,6 +25,9 @@ void AMeleeEnemyCharacter::AttackStart()
 
 void AMeleeEnemyCharacter::Attack()
 {
+	if (!IsAlive())
+		return;
+
 	TArray<AActor*> actorsToIgnore = TArray<AActor*>();
 	actorsToIgnore.Add(this);
 	TArray<AActor*> actors = TArray<AActor*>();

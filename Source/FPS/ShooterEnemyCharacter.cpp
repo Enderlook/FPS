@@ -17,6 +17,9 @@ void AShooterEnemyCharacter::AttackStart()
 
 void AShooterEnemyCharacter::Attack()
 {
+	if (!IsAlive())
+		return;
+
 	if (bulletClass)
 	{
 		FVector eyesLocation;

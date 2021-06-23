@@ -46,6 +46,9 @@ void AEnemyAIController::CanSeePlayer(bool can)
 
 void AEnemyAIController::FromAttack(bool canSeePlayer)
 {
+	if (state == EState::ES_Dead)
+		return;
+
 	if (canSeePlayer)
 		GoToHuntState();
 	else
