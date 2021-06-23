@@ -57,6 +57,14 @@ ATPS_Player::ATPS_Player()
 			firingDrone->SetMaterial(0, droneMaterialInstance);
 		}
 	}
+
+	static ConstructorHelpers::FObjectFinder<USoundCue> shootSoundHelper(TEXT("/Game/Audio/Sounds/Shoot/Shoot_Cue.Shoot_Cue"));
+	if (shootSoundHelper.Succeeded())
+		shootSound = shootSoundHelper.Object;
+
+	static ConstructorHelpers::FObjectFinder<USoundCue> deathSoundHelper(TEXT("/Game/Audio/Sounds/Death/Death_Cue.Death_Cue"));
+	if (deathSoundHelper.Succeeded())
+		deathSound = deathSoundHelper.Object;
 }
 
 // Called when the game starts or when spawned
@@ -166,9 +174,14 @@ void ATPS_Player::TakeDamage()
 {
 	if (--currentHitpoints <= 0)
 	{
-		AGameScript* gameScript = Cast<AGameScript>(GetWorld()->GetLevelScriptActor());
+		UWorld* world = GetWorld();
+		AGameScript* gameScript = Cast<AGameScript>(world->GetLevelScriptActor());
 		if (gameScript)
+		{
+			if (deathSound)
+				UGameplayStatics::PlaySoundAtLocation(world, deathSound, GetActorLocation(), GetActorRotation());
 			gameScript->OnLostGame();
+		}
 	}
 }
 
