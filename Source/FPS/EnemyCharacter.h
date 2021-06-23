@@ -40,9 +40,18 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Enemy Character|NavAgent")
 	float sightMaxAngle;
 
+	UPROPERTY(EditAnywhere, Category = "Enemy Character|NavAgent")
+	float speedIncreaseMultiplierWhenChasingPlayer;
+
 	bool isAttacking;
 
 	UTextRenderComponent* textComponent;
+
+	UCharacterMovementComponent* movementComponent;
+
+	float initialMaxWalkSpeed;
+	float initialMaxWalkSpeedCrouched;
+	float initialMaxAcceleration;
 
 public:
 	// Sets default values for this character's properties
@@ -78,4 +87,5 @@ protected:
 
 private:
 	int GetWaypointIndex();
+	void SetMovementSpeed(bool isChasingPlayer);
 };

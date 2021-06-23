@@ -44,6 +44,11 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "Player|Attack")
 	USoundCue* shootSound;
 
+	UPROPERTY(EditAnywhere, Category = "Player|Movement")
+	float runSpeedIncreaseMultiplier;
+
+	bool isRunning;
+
 	USkeletalMeshComponent* firingDrone;
 
 	UCharacterMovementComponent* movementComponent;
@@ -85,4 +90,10 @@ private:
 
 	UFUNCTION()
 	void UnmodifySpeed(float factor);
+
+	void StartRunning();
+
+	void StopRunning();
+
+	void SetMovementSpeed();
 };

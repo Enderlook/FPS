@@ -98,6 +98,9 @@ void ATPS_Player::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	PlayerInputComponent->BindAxis("MoveRight", this, &ATPS_Player::MoveRight);
 
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &ATPS_Player::Fire);
+	
+	PlayerInputComponent->BindAction("Run", IE_Pressed, this, &ATPS_Player::StartRunning);
+	PlayerInputComponent->BindAction("Run", IE_Released, this, &ATPS_Player::StopRunning);
 }
 
 void ATPS_Player::Fire()
@@ -180,27 +183,43 @@ void ATPS_Player::RestoreHitpoints(int restoredHitpoints)
 void ATPS_Player::ModifySpeed(float factor, float duration)
 {
 	speedMultiplier *= factor;
+	SetMovementSpeed();
 
-	if (movementComponent)
-	{
-		movementComponent->MaxWalkSpeed = initialMaxWalkSpeed * speedMultiplier;
-		movementComponent->MaxWalkSpeedCrouched = initialMaxWalkSpeedCrouched * speedMultiplier;
-		movementComponent->MaxAcceleration = initialMaxAcceleration * speedMultiplier;
-
-		FTimerHandle handle;
-		FTimerDelegate slowdownDelegate = FTimerDelegate::CreateUObject(this, &ATPS_Player::UnmodifySpeed, factor);
-		GetWorldTimerManager().SetTimer(handle, slowdownDelegate, duration, false);
-	}
+	FTimerHandle handle;
+	FTimerDelegate slowdownDelegate = FTimerDelegate::CreateUObject(this, &ATPS_Player::UnmodifySpeed, factor);
+	GetWorldTimerManager().SetTimer(handle, slowdownDelegate, duration, false);
 }
 
 void ATPS_Player::UnmodifySpeed(float factor)
 {
 	speedMultiplier /= factor;
+	SetMovementSpeed();
+}
+
+void ATPS_Player::StartRunning()
+{
+	isRunning = true;
+	SetMovementSpeed();
+}
+
+
+void ATPS_Player::StopRunning()
+{
+	isRunning = false;
+	SetMovementSpeed();
+}
+
+void ATPS_Player::SetMovementSpeed()
+{
+	float multiplier = speedMultiplier;
+
+	if (isRunning)
+		multiplier = multiplier * (1 + runSpeedIncreaseMultiplier);
 
 	if (movementComponent)
 	{
-		movementComponent->MaxWalkSpeed = initialMaxWalkSpeed * speedMultiplier;
-		movementComponent->MaxWalkSpeedCrouched = initialMaxWalkSpeedCrouched * speedMultiplier;
-		movementComponent->MaxAcceleration = initialMaxAcceleration * speedMultiplier;
+		movementComponent->MaxWalkSpeed = initialMaxWalkSpeed * multiplier;
+		movementComponent->MaxWalkSpeedCrouched = initialMaxWalkSpeedCrouched * multiplier;
+		movementComponent->MaxAcceleration = initialMaxAcceleration * multiplier;
 	}
 }
