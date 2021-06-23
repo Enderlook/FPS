@@ -26,7 +26,8 @@ void AHealthPack::OnBeginOverlap(UPrimitiveComponent* HitComp,
 {
 	ATPS_Player* player = Cast<ATPS_Player>(OtherActor);
 	if (player)
+	{
 		player->RestoreHitpoints(restoredHitpoints);
-
-	Destroy();
+		Destroy();
+	}
 }

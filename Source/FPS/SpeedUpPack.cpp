@@ -26,7 +26,8 @@ void ASpeedUpPack::OnBeginOverlap(UPrimitiveComponent* HitComp,
 {
 	ATPS_Player* player = Cast<ATPS_Player>(OtherActor);
 	if (player)
+	{
 		player->ModifySpeed(1 + speedFactor, speedDuration);
-
-	Destroy();
+		Destroy();
+	}
 }
