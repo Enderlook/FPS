@@ -1,0 +1,5 @@
+Q009's weapon sounds made by Q009 under license CC-BY-SA 3.0
+	https://opengameart.org/content/q009s-weapon-sounds
+	pistol.ogg
+	pistol1.ogg
+	pistol2.ogg

@@ -1,0 +1,6 @@
+Low Poly FPS Pack - Free (Sample) made by David Stenfors
+	https://assetstore.unity.com/packages/3d/props/weapons/low-poly-fps-pack-free-sample-144839
+	impact-1.wav
+	impact-2.wav
+	impact-3.wav
+	impact-4.wav
