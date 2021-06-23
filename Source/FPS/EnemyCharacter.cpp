@@ -217,7 +217,7 @@ AGameScript* AEnemyCharacter::GetGameMode()
 	return Cast<AGameScript>(GetWorld()->GetLevelScriptActor());
 }
 
-bool AEnemyCharacter : IsAlive()
+bool AEnemyCharacter::IsAlive()
 {
 	return hitpoints >= 0;
 }
