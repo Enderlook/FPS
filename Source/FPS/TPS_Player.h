@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "AttackAnimInstance.h"
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
 #include "Bullet.h"
@@ -15,11 +16,12 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "HasAttack.h"
 #include "Sound/SoundCue.h"
 #include "TPS_Player.generated.h"
 
 UCLASS()
-class FPS_API ATPS_Player : public ACharacter, public IDamagable
+class FPS_API ATPS_Player : public ACharacter, public IDamagable, public IHasAttack
 {
 	GENERATED_BODY()
 
@@ -45,6 +47,9 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Player|Attack")
 	TSubclassOf<class ABullet> bulletClass;
+
+	UPROPERTY(EditAnywhere, Category = "Player|Attack")
+	UAttackAnimInstance* attackAnimation;
 
 	USoundCue* shootSound;
 
@@ -77,6 +82,10 @@ public:
 	virtual void TakeDamage() override;
 
 	virtual void Jump() override;
+
+	virtual void OnAttack() override;
+
+	virtual void OnEndAttack() override;
 
 	void RestoreHitpoints(int restoredHitpoints);
 
