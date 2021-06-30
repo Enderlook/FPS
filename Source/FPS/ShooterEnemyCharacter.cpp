@@ -3,13 +3,6 @@
 
 #include "ShooterEnemyCharacter.h"
 
-AShooterEnemyCharacter::AShooterEnemyCharacter()
-{
-	static ConstructorHelpers::FObjectFinder<USoundCue> shootSoundHelper(TEXT("/Game/Audio/Sounds/Shoot/Shoot_Cue.Shoot_Cue"));
-	if (shootSoundHelper.Succeeded())
-		shootSound = shootSoundHelper.Object;
-}
-
 void AShooterEnemyCharacter::AttackStart()
 {
 	Super::AttackStart();

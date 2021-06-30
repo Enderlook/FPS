@@ -45,9 +45,6 @@ ATPS_Player::ATPS_Player()
 	firingDrone->SetRelativeLocation(FVector(cameraBoom->TargetArmLength, 0.0f, 100.0f));
 	firingDrone->SetupAttachment(cameraBoom);
 
-	if (attackAnimation)
-		attackAnimation->SetAttackCallback(this);
-
 	static ConstructorHelpers::FObjectFinder<USkeletalMesh> mesh(TEXT("/Game/Meshes/drone.drone"));
 	if (mesh.Succeeded())
 	{
@@ -60,14 +57,6 @@ ATPS_Player::ATPS_Player()
 			firingDrone->SetMaterial(0, droneMaterialInstance);
 		}
 	}
-
-	static ConstructorHelpers::FObjectFinder<USoundCue> shootSoundHelper(TEXT("/Game/Audio/Sounds/Shoot/Shoot_Cue.Shoot_Cue"));
-	if (shootSoundHelper.Succeeded())
-		shootSound = shootSoundHelper.Object;
-
-	static ConstructorHelpers::FObjectFinder<USoundCue> deathSoundHelper(TEXT("/Game/Audio/Sounds/Death/Death_Cue.Death_Cue"));
-	if (deathSoundHelper.Succeeded())
-		deathSound = deathSoundHelper.Object;
 }
 
 // Called when the game starts or when spawned
@@ -109,9 +98,6 @@ void ATPS_Player::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	PlayerInputComponent->BindAxis("MoveRight", this, &ATPS_Player::MoveRight);
 
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &ATPS_Player::Fire);
-	
-	PlayerInputComponent->BindAction("Run", IE_Pressed, this, &ATPS_Player::StartRunning);
-	PlayerInputComponent->BindAction("Run", IE_Released, this, &ATPS_Player::StopRunning);
 }
 
 void ATPS_Player::Fire()
@@ -119,32 +105,24 @@ void ATPS_Player::Fire()
 	if (currentHitpoints <= 0)
 		return;
 
-	if (bulletClass && attackAnimation)
-		attackAnimation->TryAttack();
-}
+	if (bulletClass)
+	{
+		// Get the camera transform.
+		FVector cameraLocation;
+		FRotator cameraRotation;
+		GetActorEyesViewPoint(cameraLocation, cameraRotation);
 
-void ATPS_Player::OnAttack()
-{
-	// Get the camera transform.
-	FVector cameraLocation;
-	FRotator cameraRotation;
-	GetActorEyesViewPoint(cameraLocation, cameraRotation);
+		// Set MuzzleOffset to spawn projectiles slightly in front of the camera.
+		FVector muzzleOffset = FVector(0.0f, 150.0f, 0.0f);
 
-	// Set MuzzleOffset to spawn projectiles slightly in front of the camera.
-	FVector muzzleOffset = FVector(0.0f, 150.0f, 0.0f);
-
-	// Transform MuzzleOffset from camera space to world space.
-	FVector muzzleLocation = cameraLocation + FTransform(cameraRotation).TransformVector(muzzleOffset);
+		// Transform MuzzleOffset from camera space to world space.
+		FVector muzzleLocation = cameraLocation + FTransform(cameraRotation).TransformVector(muzzleOffset);
 		
-	// Skew the aim to be slightly upwards.
-	FRotator muzzleRotation = cameraRotation;
+		// Skew the aim to be slightly upwards.
+		FRotator muzzleRotation = cameraRotation;
 
-	ABullet::SpawnAndShoot(this, bulletClass, muzzleLocation, muzzleRotation, shootSound);
-}
-
-void ATPS_Player::OnEndAttack()
-{
-
+		ABullet::SpawnAndShoot(this, bulletClass, muzzleLocation, muzzleRotation, shootSound);
+	}
 }
 
 void ATPS_Player::MoveForward(float Axis)
@@ -185,14 +163,9 @@ void ATPS_Player::TakeDamage()
 {
 	if (--currentHitpoints <= 0)
 	{
-		UWorld* world = GetWorld();
-		AGameScript* gameScript = Cast<AGameScript>(world->GetLevelScriptActor());
+		AGameScript* gameScript = Cast<AGameScript>(GetWorld()->GetLevelScriptActor());
 		if (gameScript)
-		{
-			if (deathSound)
-				UGameplayStatics::PlaySoundAtLocation(world, deathSound, GetActorLocation(), GetActorRotation());
 			gameScript->OnLostGame();
-		}
 	}
 }
 
@@ -207,43 +180,27 @@ void ATPS_Player::RestoreHitpoints(int restoredHitpoints)
 void ATPS_Player::ModifySpeed(float factor, float duration)
 {
 	speedMultiplier *= factor;
-	SetMovementSpeed();
 
-	FTimerHandle handle;
-	FTimerDelegate slowdownDelegate = FTimerDelegate::CreateUObject(this, &ATPS_Player::UnmodifySpeed, factor);
-	GetWorldTimerManager().SetTimer(handle, slowdownDelegate, duration, false);
+	if (movementComponent)
+	{
+		movementComponent->MaxWalkSpeed = initialMaxWalkSpeed * speedMultiplier;
+		movementComponent->MaxWalkSpeedCrouched = initialMaxWalkSpeedCrouched * speedMultiplier;
+		movementComponent->MaxAcceleration = initialMaxAcceleration * speedMultiplier;
+
+		FTimerHandle handle;
+		FTimerDelegate slowdownDelegate = FTimerDelegate::CreateUObject(this, &ATPS_Player::UnmodifySpeed, factor);
+		GetWorldTimerManager().SetTimer(handle, slowdownDelegate, duration, false);
+	}
 }
 
 void ATPS_Player::UnmodifySpeed(float factor)
 {
 	speedMultiplier /= factor;
-	SetMovementSpeed();
-}
-
-void ATPS_Player::StartRunning()
-{
-	isRunning = true;
-	SetMovementSpeed();
-}
-
-
-void ATPS_Player::StopRunning()
-{
-	isRunning = false;
-	SetMovementSpeed();
-}
-
-void ATPS_Player::SetMovementSpeed()
-{
-	float multiplier = speedMultiplier;
-
-	if (isRunning)
-		multiplier = multiplier * (1 + runSpeedIncreaseMultiplier);
 
 	if (movementComponent)
 	{
-		movementComponent->MaxWalkSpeed = initialMaxWalkSpeed * multiplier;
-		movementComponent->MaxWalkSpeedCrouched = initialMaxWalkSpeedCrouched * multiplier;
-		movementComponent->MaxAcceleration = initialMaxAcceleration * multiplier;
+		movementComponent->MaxWalkSpeed = initialMaxWalkSpeed * speedMultiplier;
+		movementComponent->MaxWalkSpeedCrouched = initialMaxWalkSpeedCrouched * speedMultiplier;
+		movementComponent->MaxAcceleration = initialMaxAcceleration * speedMultiplier;
 	}
 }

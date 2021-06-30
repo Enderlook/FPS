@@ -18,10 +18,8 @@ class FPS_API AEnemyCharacter : public ACharacter, public IDamagable
 	GENERATED_BODY()
 
 private:
-	UPROPERTY(EditAnywhere, Category = "Enemy Character|Health")
+	UPROPERTY(EditAnywhere, Category = "Enemy Character")
 	int hitpoints;
-	
-	USoundCue* deathSound;
 
 	UPROPERTY(EditAnywhere, Category = "Enemy Character|NavAgent")
 	float waypointAceptanceRadius;
@@ -42,18 +40,9 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Enemy Character|NavAgent")
 	float sightMaxAngle;
 
-	UPROPERTY(EditAnywhere, Category = "Enemy Character|NavAgent")
-	float speedIncreaseMultiplierWhenChasingPlayer;
-
 	bool isAttacking;
 
 	UTextRenderComponent* textComponent;
-
-	UCharacterMovementComponent* movementComponent;
-
-	float initialMaxWalkSpeed;
-	float initialMaxWalkSpeedCrouched;
-	float initialMaxAcceleration;
 
 public:
 	// Sets default values for this character's properties
@@ -89,5 +78,4 @@ protected:
 
 private:
 	int GetWaypointIndex();
-	void SetMovementSpeed(bool isChasingPlayer);
 };

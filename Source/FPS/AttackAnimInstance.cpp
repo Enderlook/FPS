@@ -25,5 +25,5 @@ void UAttackAnimInstance::OnEndAttack()
 {
 	isAttacking = false;
 	if (hasAttack)
-		hasATtack->OnEndAttack();
+		hasAttack->OnEndAttack();
 }

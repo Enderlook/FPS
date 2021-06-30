@@ -15,12 +15,6 @@ AEnemyCharacter::AEnemyCharacter()
 	textComponent->SetupAttachment(RootComponent);
 	textComponent->AddLocalOffset(FVector(0.0f, 0.0f, 90.0f));
 	textComponent->HorizontalAlignment = EHorizTextAligment::EHTA_Center;
-
-	movementComponent = GetCharacterMovement();
-
-	static ConstructorHelpers::FObjectFinder<USoundCue> deathSoundHelper(TEXT("/Game/Audio/Sounds/Death/Death_Cue.Death_Cue"));
-	if (deathSoundHelper.Succeeded())
-		deathSound = deathSoundHelper.Object;
 }
 
 // Called when the game starts or when spawned
@@ -64,7 +58,6 @@ void AEnemyCharacter::MoveToCurrentWaypoint()
 		int index = GetWaypointIndex();
 		AActor* actor = waypoints[index];
 		controller->MoveToActor(actor, waypointAceptanceRadius, false);
-		SetMovementSpeed(false);
 	}
 }
 
@@ -77,12 +70,10 @@ void AEnemyCharacter::MoveToNextWaypoint()
 		int index = GetWaypointIndex();
 		AActor* actor = waypoints[index];
 		controller->MoveToActor(actor, waypointAceptanceRadius, false);
-		SetMovementSpeed(false);
 	}
 }
 
-int AEnemyCharacter::GetWaypointIndex()
-{
+int AEnemyCharacter::GetWaypointIndex() {
 	int count = waypoints.Num() - 1;
 	int max = count * 2;
 	int index = waypointIndex % max;
@@ -95,20 +86,14 @@ void AEnemyCharacter::MoveToPlayer()
 {
 	AEnemyAIController* controller = GetAIController();
 	if (controller)
-	{
 		controller->MoveToActor(player, playerAceptanceRadius, false);
-		SetMovementSpeed(true);
-	}
 }
 
 void AEnemyCharacter::MoveToLastPlayerKnownLocation()
 {
 	AEnemyAIController* controller = GetAIController();
 	if (controller)
-	{
 		controller->MoveToLocation(GetLastKnownPlayerLocation(), playerAceptanceRadius, false);
-		SetMovementSpeed(true);
-	}
 }
 
 bool AEnemyCharacter::IsPlayerInSight()
@@ -195,9 +180,6 @@ void AEnemyCharacter::TakeDamage()
 			if (hitpoints < 0)
 				return;
 
-			if (deathSound)
-				UGameplayStatics::PlaySoundAtLocation(GetWorld(), deathSound, GetActorLocation(), GetActorRotation());
-
 			controller->StopMovement();
 			controller->SetDead();
 			GetMesh()->SetSimulatePhysics(true);
@@ -237,27 +219,5 @@ AGameScript* AEnemyCharacter::GetGameMode()
 
 bool AEnemyCharacter::IsAlive()
 {
-	if (hitpoints >= 0) {
-		UE_LOG(LogTemp, Warning, TEXT("A"));
-	}
-	else {
-		UE_LOG(LogTemp, Warning, TEXT("B"));
-	}
 	return hitpoints >= 0;
-}
-
-void AEnemyCharacter::SetMovementSpeed(bool isChasingPlayer)
-{
-	float multiplier;
-	if (isChasingPlayer)
-		multiplier = 1 + speedIncreaseMultiplierWhenChasingPlayer;
-	else
-		multiplier = 1;
-
-	if (movementComponent)
-	{
-		movementComponent->MaxWalkSpeed = initialMaxWalkSpeed * multiplier;
-		movementComponent->MaxWalkSpeedCrouched = initialMaxWalkSpeedCrouched * multiplier;
-		movementComponent->MaxAcceleration = initialMaxAcceleration * multiplier;
-	}
 }
