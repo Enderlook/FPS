@@ -15,6 +15,14 @@ AEnemyCharacter::AEnemyCharacter()
 	textComponent->SetupAttachment(RootComponent);
 	textComponent->AddLocalOffset(FVector(0.0f, 0.0f, 90.0f));
 	textComponent->HorizontalAlignment = EHorizTextAligment::EHTA_Center;
+
+	movementComponent = GetCharacterMovement();
+	if (movementComponent)
+	{
+		initialMaxWalkSpeed = movementComponent->MaxWalkSpeed;
+		initialMaxWalkSpeedCrouched = movementComponent->MaxWalkSpeedCrouched;
+		initialMaxAcceleration = movementComponent->MaxAcceleration;
+	}
 }
 
 // Called when the game starts or when spawned
@@ -58,6 +66,7 @@ void AEnemyCharacter::MoveToCurrentWaypoint()
 		int index = GetWaypointIndex();
 		AActor* actor = waypoints[index];
 		controller->MoveToActor(actor, waypointAceptanceRadius, false);
+		SetMovementSpeed(false);
 	}
 }
 
@@ -70,10 +79,12 @@ void AEnemyCharacter::MoveToNextWaypoint()
 		int index = GetWaypointIndex();
 		AActor* actor = waypoints[index];
 		controller->MoveToActor(actor, waypointAceptanceRadius, false);
+		SetMovementSpeed(false);
 	}
 }
 
-int AEnemyCharacter::GetWaypointIndex() {
+int AEnemyCharacter::GetWaypointIndex()
+{
 	int count = waypoints.Num() - 1;
 	int max = count * 2;
 	int index = waypointIndex % max;
@@ -86,14 +97,20 @@ void AEnemyCharacter::MoveToPlayer()
 {
 	AEnemyAIController* controller = GetAIController();
 	if (controller)
+	{
 		controller->MoveToActor(player, playerAceptanceRadius, false);
+		SetMovementSpeed(true);
+	}
 }
 
 void AEnemyCharacter::MoveToLastPlayerKnownLocation()
 {
 	AEnemyAIController* controller = GetAIController();
 	if (controller)
+	{
 		controller->MoveToLocation(GetLastKnownPlayerLocation(), playerAceptanceRadius, false);
+		SetMovementSpeed(true);
+	}
 }
 
 bool AEnemyCharacter::IsPlayerInSight()
@@ -219,5 +236,27 @@ AGameScript* AEnemyCharacter::GetGameMode()
 
 bool AEnemyCharacter::IsAlive()
 {
+	if (hitpoints >= 0) {
+		UE_LOG(LogTemp, Warning, TEXT("A"));
+	}
+	else {
+		UE_LOG(LogTemp, Warning, TEXT("B"));
+	}
 	return hitpoints >= 0;
+}
+
+void AEnemyCharacter::SetMovementSpeed(bool isChasingPlayer)
+{
+	float multiplier;
+	if (isChasingPlayer)
+		multiplier = 1 + speedIncreaseMultiplierWhenChasingPlayer;
+	else
+		multiplier = 1;
+
+	if (movementComponent)
+	{
+		movementComponent->MaxWalkSpeed = initialMaxWalkSpeed * multiplier;
+		movementComponent->MaxWalkSpeedCrouched = initialMaxWalkSpeedCrouched * multiplier;
+		movementComponent->MaxAcceleration = initialMaxAcceleration * multiplier;
+	}
 }
