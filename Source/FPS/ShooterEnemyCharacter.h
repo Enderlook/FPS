@@ -16,6 +16,9 @@ class FPS_API AShooterEnemyCharacter : public AEnemyCharacter
 {
 	GENERATED_BODY()
 
+public:
+	AShooterEnemyCharacter();
+
 private:
 	UPROPERTY(EditDefaultsOnly, Category = "Enemy Character|Attack")
 	TSubclassOf<class ABullet> bulletClass;
@@ -23,7 +26,6 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Enemy Character|Attack")
 	float fireWarmup;
 
-	UPROPERTY(EditDefaultsOnly, Category = "Enemy Character|Attack")
 	USoundCue* shootSound;
 
 protected:

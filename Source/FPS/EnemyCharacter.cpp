@@ -23,6 +23,10 @@ AEnemyCharacter::AEnemyCharacter()
 		initialMaxWalkSpeedCrouched = movementComponent->MaxWalkSpeedCrouched;
 		initialMaxAcceleration = movementComponent->MaxAcceleration;
 	}
+
+	static ConstructorHelpers::FObjectFinder<USoundCue> deathSoundHelper(TEXT("/Game/Audio/Sounds/Death/Death_Cue.Death_Cue"));
+	if (deathSoundHelper.Succeeded())
+		deathSound = deathSoundHelper.Object;
 }
 
 // Called when the game starts or when spawned
@@ -196,6 +200,9 @@ void AEnemyCharacter::TakeDamage()
 		{
 			if (hitpoints < 0)
 				return;
+
+			if (deathSound)
+				UGameplayStatics::PlaySoundAtLocation(GetWorld(), deathSound, GetActorLocation(), GetActorRotation());
 
 			controller->StopMovement();
 			controller->SetDead();

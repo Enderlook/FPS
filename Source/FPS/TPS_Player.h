@@ -37,6 +37,8 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Player|Health")
 	int hitpoints;
 
+	USoundCue* deathSound;
+
 	UPROPERTY(EditAnywhere, Category = "Player|UI")
 	TSubclassOf<UUserWidget> playerPowerWidgetClass;
 	UUserWidget* playerPowerWidget;
@@ -44,7 +46,6 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "Player|Attack")
 	TSubclassOf<class ABullet> bulletClass;
 
-	UPROPERTY(EditDefaultsOnly, Category = "Player|Attack")
 	USoundCue* shootSound;
 
 	UPROPERTY(EditAnywhere, Category = "Player|Movement")

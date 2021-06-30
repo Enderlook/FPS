@@ -18,8 +18,10 @@ class FPS_API AEnemyCharacter : public ACharacter, public IDamagable
 	GENERATED_BODY()
 
 private:
-	UPROPERTY(EditAnywhere, Category = "Enemy Character")
+	UPROPERTY(EditAnywhere, Category = "Enemy Character|Health")
 	int hitpoints;
+	
+	USoundCue* deathSound;
 
 	UPROPERTY(EditAnywhere, Category = "Enemy Character|NavAgent")
 	float waypointAceptanceRadius;
