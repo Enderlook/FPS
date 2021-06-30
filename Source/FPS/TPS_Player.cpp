@@ -163,10 +163,22 @@ void ATPS_Player::TakeDamage()
 {
 	if (--currentHitpoints <= 0)
 	{
+		currentHitpoints = -100;
+		
 		AGameScript* gameScript = Cast<AGameScript>(GetWorld()->GetLevelScriptActor());
 		if (gameScript)
 			gameScript->OnLostGame();
 	}
+}
+
+void ATPS_Player::Die()
+{
+	if (GEngine)
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("DIE EXECUTED"));
+	
+	AGameScript* gameScript = Cast<AGameScript>(GetWorld()->GetLevelScriptActor());
+	if (gameScript)
+		gameScript->OnLostGame();
 }
 
 void ATPS_Player::RestoreHitpoints(int restoredHitpoints)

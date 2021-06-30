@@ -26,6 +26,9 @@ class FPS_API ATPS_Player : public ACharacter, public IDamagable
 public:
 	// Sets default values for this character's properties
 	ATPS_Player();
+
+	UFUNCTION(BlueprintCallable)
+	void Die();
 	
 	UPROPERTY(BlueprintReadOnly, Category = "Player|Health")
 	int currentHitpoints;
