@@ -45,6 +45,9 @@ ATPS_Player::ATPS_Player()
 	firingDrone->SetRelativeLocation(FVector(cameraBoom->TargetArmLength, 0.0f, 100.0f));
 	firingDrone->SetupAttachment(cameraBoom);
 
+	if (attackAnimation)
+		attackAnimation->SetAttackCallback(this);
+
 	static ConstructorHelpers::FObjectFinder<USkeletalMesh> mesh(TEXT("/Game/Meshes/drone.drone"));
 	if (mesh.Succeeded())
 	{
@@ -116,24 +119,32 @@ void ATPS_Player::Fire()
 	if (currentHitpoints <= 0)
 		return;
 
-	if (bulletClass)
-	{
-		// Get the camera transform.
-		FVector cameraLocation;
-		FRotator cameraRotation;
-		GetActorEyesViewPoint(cameraLocation, cameraRotation);
+	if (bulletClass && attackAnimation)
+		attackAnimation->TryAttack();
+}
 
-		// Set MuzzleOffset to spawn projectiles slightly in front of the camera.
-		FVector muzzleOffset = FVector(0.0f, 150.0f, 0.0f);
+void ATPS_Player::OnAttack()
+{
+	// Get the camera transform.
+	FVector cameraLocation;
+	FRotator cameraRotation;
+	GetActorEyesViewPoint(cameraLocation, cameraRotation);
 
-		// Transform MuzzleOffset from camera space to world space.
-		FVector muzzleLocation = cameraLocation + FTransform(cameraRotation).TransformVector(muzzleOffset);
+	// Set MuzzleOffset to spawn projectiles slightly in front of the camera.
+	FVector muzzleOffset = FVector(0.0f, 150.0f, 0.0f);
+
+	// Transform MuzzleOffset from camera space to world space.
+	FVector muzzleLocation = cameraLocation + FTransform(cameraRotation).TransformVector(muzzleOffset);
 		
-		// Skew the aim to be slightly upwards.
-		FRotator muzzleRotation = cameraRotation;
+	// Skew the aim to be slightly upwards.
+	FRotator muzzleRotation = cameraRotation;
 
-		ABullet::SpawnAndShoot(this, bulletClass, muzzleLocation, muzzleRotation, shootSound);
-	}
+	ABullet::SpawnAndShoot(this, bulletClass, muzzleLocation, muzzleRotation, shootSound);
+}
+
+void ATPS_Player::OnEndAttack()
+{
+
 }
 
 void ATPS_Player::MoveForward(float Axis)
