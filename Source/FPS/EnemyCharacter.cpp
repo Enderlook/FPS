@@ -243,12 +243,6 @@ AGameScript* AEnemyCharacter::GetGameMode()
 
 bool AEnemyCharacter::IsAlive()
 {
-	if (hitpoints >= 0) {
-		UE_LOG(LogTemp, Warning, TEXT("A"));
-	}
-	else {
-		UE_LOG(LogTemp, Warning, TEXT("B"));
-	}
 	return hitpoints >= 0;
 }
 
