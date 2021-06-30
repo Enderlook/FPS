@@ -19,11 +19,10 @@ private:
 	USoundCue* impactSound;
 
 protected:
-	virtual void AttackStart() override;
+	virtual void AttackLogic() override;
 
 public:
 	AMeleeEnemyCharacter();
 
 private:
-	void Attack();
 };

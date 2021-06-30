@@ -24,6 +24,9 @@ AEnemyCharacter::AEnemyCharacter()
 		initialMaxAcceleration = movementComponent->MaxAcceleration;
 	}
 
+	if (attackAnimation)
+		attackAnimation->SetAttackCallback(this);
+
 	static ConstructorHelpers::FObjectFinder<USoundCue> deathSoundHelper(TEXT("/Game/Audio/Sounds/Death/Death_Cue.Death_Cue"));
 	if (deathSoundHelper.Succeeded())
 		deathSound = deathSoundHelper.Object;
@@ -175,15 +178,34 @@ void AEnemyCharacter::Attack()
 {
 	if (isAttacking)
 		return;
-	AttackStart();
-}
 
-void AEnemyCharacter::AttackStart()
-{
 	isAttacking = true;
+	if (attackAnimation)
+		attackAnimation->TryAttack();
+	else
+	{
+		FTimerHandle handle;
+		GetWorldTimerManager().SetTimer(handle, this, &AEnemyCharacter::AttackLogicFallback, 1, false, 1);
+	}
 }
 
-void AEnemyCharacter::AttackCallback()
+void AEnemyCharacter::AttackLogicFallback()
+{
+	OnAttack();
+	OnEndAttack();
+}
+
+void AEnemyCharacter::AttackLogic()
+{
+}
+
+void AEnemyCharacter::OnAttack()
+{
+	if (IsAlive())
+		AttackLogic();
+}
+
+void AEnemyCharacter::OnEndAttack()
 {
 	isAttacking = false;
 	AEnemyAIController* controller = GetAIController();

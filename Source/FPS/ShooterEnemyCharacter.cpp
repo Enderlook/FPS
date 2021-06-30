@@ -10,15 +10,7 @@ AShooterEnemyCharacter::AShooterEnemyCharacter()
 		shootSound = shootSoundHelper.Object;
 }
 
-void AShooterEnemyCharacter::AttackStart()
-{
-	Super::AttackStart();
-
-	FTimerHandle handle;
-	GetWorldTimerManager().SetTimer(handle, this, &AShooterEnemyCharacter::Attack, fireWarmup, false, fireWarmup);
-}
-
-void AShooterEnemyCharacter::Attack()
+void AShooterEnemyCharacter::AttackLogic()
 {
 	if (!IsAlive())
 		return;
@@ -40,6 +32,4 @@ void AShooterEnemyCharacter::Attack()
 
 		ABullet::SpawnAndShoot(this, bulletClass, position, direction.Rotation(), shootSound);
 	}
-
-	AttackCallback();
 }

@@ -23,13 +23,10 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "Enemy Character|Attack")
 	TSubclassOf<class ABullet> bulletClass;
 
-	UPROPERTY(EditAnywhere, Category = "Enemy Character|Attack")
-	float fireWarmup;
-
 	USoundCue* shootSound;
 
 protected:
-	virtual void AttackStart() override;
+	virtual void AttackLogic() override;
 
 private:
 	void Attack();

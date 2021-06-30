@@ -11,15 +11,8 @@ AMeleeEnemyCharacter::AMeleeEnemyCharacter()
 		impactSound = impactSoundResource.Object;
 }
 
-void AMeleeEnemyCharacter::AttackStart()
-{
-	Super::AttackStart();
 
-	FTimerHandle handle;
-	GetWorldTimerManager().SetTimer(handle, this, &AMeleeEnemyCharacter::Attack, 1, false, 1);
-}
-
-void AMeleeEnemyCharacter::Attack()
+void AMeleeEnemyCharacter::AttackLogic()
 {
 	if (!IsAlive())
 		return;
@@ -50,5 +43,4 @@ void AMeleeEnemyCharacter::Attack()
 		if (impactSound)
 			UGameplayStatics::PlaySoundAtLocation(GetWorld(), impactSound, GetActorLocation());
 	}
-	AttackCallback();
 }
