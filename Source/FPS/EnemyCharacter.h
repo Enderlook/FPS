@@ -50,8 +50,6 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Enemy Character|Attack")
 	UAttackAnimInstance* attackAnimation;
 
-	bool isAttacking;
-
 	UTextRenderComponent* textComponent;
 
 	UCharacterMovementComponent* movementComponent;
@@ -63,6 +61,9 @@ private:
 public:
 	// Sets default values for this character's properties
 	AEnemyCharacter();
+
+	UPROPERTY(BlueprintReadWrite)
+	bool isAttacking;
 
 protected:
 	// Called when the game starts or when spawned
