@@ -62,7 +62,7 @@ public:
 	// Sets default values for this character's properties
 	AEnemyCharacter();
 
-	UPROPERTY(BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool isAttacking;
 
 protected:
