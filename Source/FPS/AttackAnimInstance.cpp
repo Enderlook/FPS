@@ -17,12 +17,18 @@ void UAttackAnimInstance::TryAttack()
 
 void UAttackAnimInstance::OnAttack()
 {
+	if (GEngine)
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("On Attack"));
+
 	if (hasAttack)
 		hasAttack->OnAttack();
 }
 
 void UAttackAnimInstance::OnEndAttack()
 {
+	if (GEngine)
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("On End Attack"));
+
 	isAttacking = false;
 	if (hasAttack)
 		hasAttack->OnEndAttack();
