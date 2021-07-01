@@ -25,6 +25,9 @@ AEnemyCharacter::AEnemyCharacter()
 	}
 
 	if (attackAnimation)
+		attackAnimation = Cast<UAttackAnimInstance>(GetMesh()->GetAnimInstance());
+
+	if (attackAnimation)
 		attackAnimation->SetAttackCallback(this);
 
 	static ConstructorHelpers::FObjectFinder<USoundCue> deathSoundHelper(TEXT("/Game/Audio/Sounds/Death/Death_Cue.Death_Cue"));
