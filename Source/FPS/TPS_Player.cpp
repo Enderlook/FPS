@@ -119,12 +119,17 @@ void ATPS_Player::Fire()
 	if (currentHitpoints <= 0)
 		return;
 
+	if (isAttacking)
+		return;
+
 	if (bulletClass)
 	{
-		if (attackAnimation)
-			attackAnimation->TryAttack();
-		else
+		isAttacking = true;
+		if (!attackAnimation)
+		{
 			OnAttack();
+			OnEndAttack();
+		}
 	}
 }
 
@@ -149,7 +154,7 @@ void ATPS_Player::OnAttack()
 
 void ATPS_Player::OnEndAttack()
 {
-
+	isAttacking = false;
 }
 
 void ATPS_Player::MoveForward(float Axis)

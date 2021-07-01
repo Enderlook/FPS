@@ -184,9 +184,7 @@ void AEnemyCharacter::Attack()
 		return;
 
 	isAttacking = true;
-	if (attackAnimation)
-		attackAnimation->TryAttack();
-	else
+	if (!attackAnimation)
 	{
 		FTimerHandle handle;
 		GetWorldTimerManager().SetTimer(handle, this, &AEnemyCharacter::AttackLogicFallback, 1, false, 1);

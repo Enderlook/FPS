@@ -56,6 +56,7 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Player|Movement")
 	float runSpeedIncreaseMultiplier;
 
+	bool isAttacking;
 	bool isRunning;
 
 	USkeletalMeshComponent* firingDrone;

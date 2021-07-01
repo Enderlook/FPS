@@ -8,13 +8,6 @@ void UAttackAnimInstance::SetAttackCallback(IHasAttack* callback)
 	hasAttack = callback;
 }
 
-void UAttackAnimInstance::TryAttack()
-{
-	if (isAttacking)
-		return;
-	isAttacking = true;
-}
-
 void UAttackAnimInstance::OnAttack()
 {
 	if (GEngine)
@@ -29,7 +22,6 @@ void UAttackAnimInstance::OnEndAttack()
 	if (GEngine)
 		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("On End Attack"));
 
-	isAttacking = false;
 	if (hasAttack)
 		hasAttack->OnEndAttack();
 }

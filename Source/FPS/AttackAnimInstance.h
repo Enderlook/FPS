@@ -19,13 +19,7 @@ private:
 	IHasAttack* hasAttack;
 
 public:
-	UPROPERTY(BlueprintReadOnly)
-	bool isAttacking;
-
-public:
 	void SetAttackCallback(IHasAttack* callback);
-
-	void TryAttack();
 
 	UFUNCTION(BlueprintCallable)
 	void OnAttack();
