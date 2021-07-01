@@ -50,8 +50,6 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Enemy Character|Attack")
 	UAttackAnimInstance* attackAnimation;
 
-	UTextRenderComponent* textComponent;
-
 	UCharacterMovementComponent* movementComponent;
 
 	float initialMaxWalkSpeed;
@@ -82,7 +80,6 @@ public:
 	void MoveToPlayer();
 	void MoveToLastPlayerKnownLocation();
 	void Attack();
-	void SetText(FText text);
 
 protected:
 	virtual void AttackLogic();

@@ -11,11 +11,6 @@ AEnemyCharacter::AEnemyCharacter()
 
 	AIControllerClass = AEnemyAIController::StaticClass();
 
-	textComponent = CreateDefaultSubobject<UTextRenderComponent>(TEXT("Status"));
-	textComponent->SetupAttachment(RootComponent);
-	textComponent->AddLocalOffset(FVector(0.0f, 0.0f, 90.0f));
-	textComponent->HorizontalAlignment = EHorizTextAligment::EHTA_Center;
-
 	movementComponent = GetCharacterMovement();
 	if (movementComponent)
 	{
@@ -256,11 +251,6 @@ AEnemyAIController* AEnemyCharacter::GetAIController()
 FVector AEnemyCharacter::GetLastKnownPlayerLocation()
 {
 	return lastKnownPlayerPosition;
-}
-
-void AEnemyCharacter::SetText(FText text)
-{
-	textComponent->SetText(text);
 }
 
 AGameScript* AEnemyCharacter::GetGameMode()
