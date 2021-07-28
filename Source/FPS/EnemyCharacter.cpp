@@ -174,10 +174,6 @@ bool AEnemyCharacter::IsPlayerInSight()
 
 void AEnemyCharacter::Attack()
 {
-	//if (GEngine)
-	//	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("AEnemyCharacter::Attack()"));
-
-	
 	if (isAttacking)
 		return;
 
