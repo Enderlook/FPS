@@ -274,3 +274,8 @@ void AEnemyCharacter::SetMovementSpeed(bool isChasingPlayer)
 		movementComponent->MaxAcceleration = initialMaxAcceleration * multiplier;
 	}
 }
+
+AActor* AEnemyCharacter::GetPlayer()
+{
+	return player;
+}

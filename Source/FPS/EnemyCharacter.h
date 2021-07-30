@@ -36,9 +36,6 @@ private:
 	FVector lastKnownPlayerPosition;
 
 	UPROPERTY(EditAnywhere, Category = "Enemy Character|NavAgent")
-	float playerAceptanceRadius;
-
-	UPROPERTY(EditAnywhere, Category = "Enemy Character|NavAgent")
 	float sightRadius;
 
 	UPROPERTY(EditAnywhere, Category = "Enemy Character|NavAgent")
@@ -49,6 +46,9 @@ private:
 		
 	UPROPERTY(EditAnywhere, Category = "Enemy Character|Attack")
 	UAttackAnimInstance* attackAnimation;
+	
+	UPROPERTY(EditAnywhere, Category = "Enemy Character|Attack")
+	float playerAceptanceRadius;
 
 	UCharacterMovementComponent* movementComponent;
 
@@ -91,6 +91,7 @@ protected:
 	bool IsPlayerInSight();
 	FVector GetLastKnownPlayerLocation();
 	bool IsAlive();
+	AActor* GetPlayer();
 
 private:
 	int GetWaypointIndex();
