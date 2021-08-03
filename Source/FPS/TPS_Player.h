@@ -51,6 +51,9 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Player|Attack")
 	UAttackAnimInstance* attackAnimation;
 
+	UPROPERTY(EditAnywhere, Category = "Player|Attack")
+	float fireCooldown;
+
 	USoundCue* shootSound;
 
 	UPROPERTY(EditAnywhere, Category = "Player|Movement")
@@ -58,6 +61,7 @@ private:
 
 	bool isAttacking;
 	bool isRunning;
+	float allowShootAt;
 
 	USkeletalMeshComponent* firingDrone;
 

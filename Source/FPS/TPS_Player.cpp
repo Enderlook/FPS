@@ -122,6 +122,9 @@ void ATPS_Player::Fire()
 	if (isAttacking)
 		return;
 
+	if (allowShootAt >= GetWorld()->GetTimeSeconds())
+		return;
+
 	if (bulletClass)
 	{
 		isAttacking = true;
@@ -155,6 +158,7 @@ void ATPS_Player::OnAttack()
 void ATPS_Player::OnEndAttack()
 {
 	isAttacking = false;
+	allowShootAt = GetWorld()->GetTimeSeconds() + fireCooldown;
 }
 
 void ATPS_Player::MoveForward(float Axis)
