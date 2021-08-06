@@ -15,7 +15,6 @@ void AShooterFarEnemyCharacter::Tick(float DeltaTime)
 	if (player_ && controller && IsPlayerInSight())
 	{
 		float distance = player_->GetDistanceTo(this);
-		//UE_LOG(LogTemp, Warning, TEXT("%d %d"), distance, (player_->GetActorLocation() - GetActorLocation()).Size());
 		if (distance < minPlayerDistance)
 		{
 			UWorld* world = GetWorld();
