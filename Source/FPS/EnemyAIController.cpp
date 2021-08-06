@@ -69,9 +69,7 @@ void AEnemyAIController::GoToChaseState()
 
 	AEnemyCharacter* character = GetPawn<AEnemyCharacter>();
 	if (character)
-	{
 		character->MoveToLastPlayerKnownLocation();
-	}
 }
 
 void AEnemyAIController::GoToPatrolState()
