@@ -4,18 +4,17 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
-#include "ShooterEnemyCharacter.h"
-#include "ShooterFarEnemyCharacter.generated.h"
+#include "EnemyCharacter.h"
+#include "FarEnemyCharacter.generated.h"
 
 UCLASS()
-class FPS_API AShooterFarEnemyCharacter : public AShooterEnemyCharacter
+class FPS_API AFarEnemyCharacter : public AEnemyCharacter
 {
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, Category = "Enemy Character|Attack")
 	float minPlayerDistance;
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+protected:
+	virtual bool CanAttack() override;
 };

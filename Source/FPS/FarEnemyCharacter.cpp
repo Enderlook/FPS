@@ -1,14 +1,15 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "ShooterFarEnemyCharacter.h"
+#include "FarEnemyCharacter.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "NavigationSystem.h"
 
 // Called every frame
-void AShooterFarEnemyCharacter::Tick(float DeltaTime)
+bool AFarEnemyCharacter::CanAttack()
 {
-	Super::Tick(DeltaTime);
+	if (!Super::CanAttack())
+		return false;
 
 	AEnemyAIController* controller = GetAIController();
 	AActor* player_ = GetPlayer();
@@ -46,8 +47,12 @@ void AShooterFarEnemyCharacter::Tick(float DeltaTime)
 
 						// TODO: If none of those locations is valid, should fallback to diagonals?
 					}
+
+					return false;
 				}
 			}
 		}
 	}
+
+	return true;
 }

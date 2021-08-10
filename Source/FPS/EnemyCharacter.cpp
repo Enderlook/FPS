@@ -172,11 +172,21 @@ bool AEnemyCharacter::IsPlayerInSight()
 	return false;
 }
 
-void AEnemyCharacter::Attack()
+void AEnemyCharacter::TryAttack()
 {
-	if (isAttacking)
+	if (!CanAttack())
 		return;
 
+	Attack();
+}
+
+bool AEnemyCharacter::CanAttack()
+{
+	return !isAttacking;
+}
+
+void AEnemyCharacter::Attack()
+{
 	isAttacking = true;
 	if (!attackAnimation)
 	{

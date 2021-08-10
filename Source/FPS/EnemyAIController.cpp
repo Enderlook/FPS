@@ -15,7 +15,7 @@ void AEnemyAIController::OnMoveCompleted(FAIRequestID RequestID, const FPathFoll
 			character->MoveToNextWaypoint();
 			break;
 		case EState::ES_Hunt:
-			character->Attack();
+			character->TryAttack();
 			break;
 		case EState::ES_Chase:
 			GoToPatrolState();

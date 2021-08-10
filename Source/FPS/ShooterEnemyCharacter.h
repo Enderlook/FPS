@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Bullet.h"
-#include "EnemyCharacter.h"
+#include "FarEnemyCharacter.h"
 #include "Sound/SoundCue.h"
 #include "ShooterEnemyCharacter.generated.h"
 
@@ -12,7 +12,7 @@
  * 
  */
 UCLASS()
-class FPS_API AShooterEnemyCharacter : public AEnemyCharacter
+class FPS_API AShooterEnemyCharacter : public AFarEnemyCharacter
 {
 	GENERATED_BODY()
 
@@ -27,7 +27,4 @@ private:
 
 protected:
 	virtual void AttackLogic() override;
-
-private:
-	void Attack();
 };

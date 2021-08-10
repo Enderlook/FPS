@@ -79,11 +79,13 @@ public:
 	void MoveToNextWaypoint();
 	void MoveToPlayer();
 	void MoveToLastPlayerKnownLocation();
-	void Attack();
+	void TryAttack();
 
 protected:
 	virtual void AttackLogic();
 	void AttackLogicFallback();
+	virtual bool CanAttack();
+	virtual void Attack();
 	virtual void OnAttack() override;
 	virtual void OnEndAttack() override;
 	class AEnemyAIController* GetAIController();
