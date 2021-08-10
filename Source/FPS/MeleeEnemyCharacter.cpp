@@ -11,7 +11,6 @@ AMeleeEnemyCharacter::AMeleeEnemyCharacter()
 		impactSound = impactSoundResource.Object;
 }
 
-
 void AMeleeEnemyCharacter::AttackLogic()
 {
 	if (!IsAlive())
