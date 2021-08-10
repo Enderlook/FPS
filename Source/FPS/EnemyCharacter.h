@@ -80,6 +80,10 @@ public:
 	void MoveToPlayer();
 	void MoveToLastPlayerKnownLocation();
 	void TryAttack();
+	UFUNCTION(BlueprintCallable, Category = "Enemy")
+	bool IsAlive();
+	UFUNCTION(BlueprintCallable, Category = "Enemy")
+	void OnEndDead();
 
 protected:
 	virtual void AttackLogic();
@@ -92,7 +96,6 @@ protected:
 	class AGameScript* GetGameMode();
 	bool IsPlayerInSight();
 	FVector GetLastKnownPlayerLocation();
-	bool IsAlive();
 	AActor* GetPlayer();
 
 private:

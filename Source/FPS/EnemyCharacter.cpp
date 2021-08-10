@@ -234,12 +234,6 @@ void AEnemyCharacter::TakeDamage()
 
 			controller->StopMovement();
 			controller->SetDead();
-			GetMesh()->SetSimulatePhysics(true);
-			SetLifeSpan(3);
-
-			AGameScript* gameScript = GetGameMode();
-			if (gameScript)
-				gameScript->OnEnemyDestroyed();
 		}
 		else
 		{
@@ -248,6 +242,17 @@ void AEnemyCharacter::TakeDamage()
 		}
 	}
 }
+
+void AEnemyCharacter::OnEndDead()
+{
+	AGameScript* gameScript = GetGameMode();
+	if (gameScript)
+		gameScript->OnEnemyDestroyed();
+	GetMesh()->SetSimulatePhysics(true);
+	Destroy();
+	//SetLifeSpan(1);
+}
+
 
 AEnemyAIController* AEnemyCharacter::GetAIController()
 {
