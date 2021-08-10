@@ -9,9 +9,6 @@
 // Sets default values
 ABullet::ABullet()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
-
 	InitialLifeSpan = 3.0f;
 
 	if (!RootComponent)
@@ -49,18 +46,6 @@ ABullet::ABullet()
 	static ConstructorHelpers::FObjectFinder<USoundCue> impactSoundResource(TEXT("/Game/Audio/Sounds/Impact/Impact_Cue.Impact_Cue"));
 	if (impactSoundResource.Succeeded())
 		impactSound = impactSoundResource.Object;
-}
-
-// Called when the game starts or when spawned
-void ABullet::BeginPlay()
-{
-	Super::BeginPlay();
-}
-
-// Called every frame
-void ABullet::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
 }
 
 void ABullet::OnBeginOverlap(UPrimitiveComponent* HitComp,
