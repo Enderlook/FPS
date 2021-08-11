@@ -18,7 +18,7 @@ public:
 	AArea();
 
 public:
-	UPROPERTY(EditAnywhere, Category = "Area")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Area")
 	float warmupTime;
 
 	UPROPERTY(EditAnywhere, Category = "Area")
