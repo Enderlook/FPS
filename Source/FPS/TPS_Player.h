@@ -117,4 +117,6 @@ private:
 	void StopRunning();
 
 	void SetMovementSpeed();
+
+	void UpdateStatus();
 };

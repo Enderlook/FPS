@@ -2,6 +2,7 @@
 #include "Components/SkeletalMeshComponent.h"
 #include "GameScript.h"
 #include "GameFramework/Actor.h"
+#include "PlayerStatus.h"
 #include "Kismet/GameplayStatics.h"
 
 // Sets default values
@@ -79,6 +80,7 @@ void ATPS_Player::BeginPlay()
 	{
 		playerPowerWidget = CreateWidget(GetWorld(), playerPowerWidgetClass);
 		playerPowerWidget->AddToViewport();
+		UpdateStatus();
 	}
 
 	currentHitpoints = hitpoints;
@@ -233,6 +235,8 @@ void ATPS_Player::RestoreHitpoints(int restoredHitpoints)
 void ATPS_Player::ModifySpeed(float factor, float duration)
 {
 	speedMultiplier *= factor;
+	UpdateStatus();
+
 	SetMovementSpeed();
 
 	FTimerHandle handle;
@@ -243,6 +247,8 @@ void ATPS_Player::ModifySpeed(float factor, float duration)
 void ATPS_Player::UnmodifySpeed(float factor)
 {
 	speedMultiplier /= factor;
+	UpdateStatus();
+
 	SetMovementSpeed();
 }
 
@@ -277,4 +283,11 @@ void ATPS_Player::SetMovementSpeed()
 void ATPS_Player::ModifyFireRate(float factor)
 {
 	fireRateSlowdown += factor;
+	UpdateStatus();
+}
+
+void ATPS_Player::UpdateStatus()
+{
+	if (playerPowerWidget && playerPowerWidget->Implements<UPlayerStatus>())
+		IPlayerStatus::Execute_SetStatus(playerPowerWidget, speedMultiplier, fireRateSlowdown);
 }
