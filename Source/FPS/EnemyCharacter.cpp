@@ -66,7 +66,7 @@ void AEnemyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 void AEnemyCharacter::MoveToCurrentWaypoint()
 {
 	AEnemyAIController* controller = GetAIController();
-	if (controller && waypoints.Num() > 0)
+	if (controller && waypoints.Num() > 1) // > 1 instead of > 0 to prevent possible infinite recursion if the enemy is in the waypoint already
 	{
 		int index = GetWaypointIndex();
 		AActor* actor = waypoints[index];
@@ -78,7 +78,7 @@ void AEnemyCharacter::MoveToCurrentWaypoint()
 void AEnemyCharacter::MoveToNextWaypoint()
 {
 	AEnemyAIController* controller = GetAIController();
-	if (controller && waypoints.Num() > 0)
+	if (controller && waypoints.Num() > 1) // > 1 instead of > 0 to prevent possible infinite recursion if the enemy is in the waypoint already
 	{
 		waypointIndex++;
 		int index = GetWaypointIndex();
