@@ -94,6 +94,7 @@ void AArea::OnBeginOverlap(UPrimitiveComponent* HitComp,
 	if (player)
 	{
 		player->ModifyFireRate(fireRateSlowdownFactor);
+		hasPlayer = true;
 
 		if (affectSound)
 			UGameplayStatics::PlaySoundAtLocation(GetWorld(), affectSound, SweepResult.ImpactPoint);
