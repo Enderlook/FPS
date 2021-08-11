@@ -10,6 +10,7 @@ void AGameScript::BeginPlay()
 {
 	if (backgroundMusic)
 		backgroundMusicComponent = UGameplayStatics::SpawnSound2D(GetWorld(), backgroundMusic);
+	SetMouse(false);
 }
 
 void AGameScript::OnEnemySpawned()
@@ -24,6 +25,7 @@ void AGameScript::OnEnemyDestroyed()
 		UUserWidget* widget = MakeWidget(winWidgetClass);
 		if (widget && widget->Implements<UHasNextLevelButton>())
 			IHasNextLevelButton::Execute_SetNextLevelName(widget, levelName);
+		SetMouse(true);
 	}
 }
 
@@ -35,6 +37,7 @@ void AGameScript::NextLevel()
 void AGameScript::OnLostGame()
 {
 	MakeWidget(loseWidgetClass);
+	SetMouse(true);
 }
 
 UUserWidget* AGameScript::MakeWidget(TSubclassOf<UUserWidget> widgetClass)
@@ -66,4 +69,11 @@ UUserWidget* AGameScript::MakeWidget(TSubclassOf<UUserWidget> widgetClass)
 	}
 
 	return widget;
+}
+
+void AGameScript::SetMouse(bool show)
+{
+	APlayerController* controller = GetWorld()->GetFirstPlayerController();
+	controller->SetShowMouseCursor(show);
+	controller->SetIgnoreMoveInput(show);
 }

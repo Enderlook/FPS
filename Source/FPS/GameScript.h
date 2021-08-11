@@ -39,6 +39,7 @@ protected:
 
 private:
 	UUserWidget* MakeWidget(TSubclassOf<UUserWidget> widgetClass);
+	void SetMouse(bool show);
 
 public:
 	void OnEnemySpawned();
