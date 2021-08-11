@@ -16,7 +16,7 @@ AArea::AArea()
 	areaMeshComponent->BodyInstance.SetCollisionProfileName(TEXT("Area"));
 	areaMeshComponent->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Overlap);
 	RootComponent = areaMeshComponent;
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> mesh(TEXT("/Game/Meshes/aoe_hitbox.aoe_hitbox"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> mesh(TEXT("StaticMesh'/Game/Meshes/aoe_hitbox_uvw.aoe_hitbox_uvw'"));
 	if (mesh.Succeeded())
 		areaMeshComponent->SetStaticMesh(mesh.Object);
 
