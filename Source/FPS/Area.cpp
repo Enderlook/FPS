@@ -76,6 +76,7 @@ void AArea::ManualSetPlayer(bool apply)
 		if (player)
 		{
 			player->ModifyFireRate(apply ? fireRateSlowdownFactor : -fireRateSlowdownFactor);
+			player->TakeDamage();
 			hasPlayer = apply;
 			if (apply)
 			{
@@ -104,6 +105,7 @@ void AArea::OnBeginOverlap(UPrimitiveComponent* HitComp,
 	if (player)
 	{
 		player->ModifyFireRate(fireRateSlowdownFactor);
+		player->TakeDamage();
 		hasPlayer = true;
 
 		if (affectSound)
