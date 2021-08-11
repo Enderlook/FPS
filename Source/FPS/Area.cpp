@@ -12,7 +12,7 @@ AArea::AArea()
 		RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("BoxSceneComponent"));
 
 	areaMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("BoxMeshComponent"));
-	areaMeshComponent->SetRelativeScale3D(FVector(40, 20, 20));
+	areaMeshComponent->SetRelativeScale3D(FVector(20, 10, 10));
 	areaMeshComponent->BodyInstance.SetCollisionProfileName(TEXT("Area"));
 	areaMeshComponent->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Overlap);
 	RootComponent = areaMeshComponent;
