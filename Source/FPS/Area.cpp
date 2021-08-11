@@ -23,9 +23,8 @@ AArea::AArea()
 	/*static ConstructorHelpers::FObjectFinder<UMaterial> material(TEXT(""));
 	if (material.Succeeded())
 	{
-		UMaterialInstanceDynamic* bulletMaterialInstance = UMaterialInstanceDynamic::Create(material.Object, bulletMeshComponent);
-		bulletMeshComponent->SetMaterial(0, bulletMaterialInstance);
-	}
+		UMaterialInstanceDynamic* areaMaterialInstance = UMaterialInstanceDynamic::Create(material.Object, areaMeshComponent);
+		areaMeshComponent->SetMaterial(0, areaMaterialInstance);
 
 	static ConstructorHelpers::FObjectFinder<USoundCue> affectSoundHelper(TEXT(""));
 	if (affectSoundHelper.Succeeded())
