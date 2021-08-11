@@ -2,12 +2,14 @@
 
 
 #include "HealthPack.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 AHealthPack::AHealthPack()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = false;
+	static ConstructorHelpers::FObjectFinder<USoundCue> pickupSoundHelper(TEXT("/Game/Audio/Sounds/Health_Pack_Cue.Health_Pack_Cue"));
+	if (pickupSoundHelper.Succeeded())
+		pickupSound = pickupSoundHelper.Object;
 }
 
 // Called when the game starts or when spawned
@@ -28,6 +30,8 @@ void AHealthPack::OnBeginOverlap(UPrimitiveComponent* HitComp,
 	if (player)
 	{
 		player->RestoreHitpoints(restoredHitpoints);
+		if (pickupSound)
+			UGameplayStatics::PlaySoundAtLocation(GetWorld(), pickupSound, player->GetActorLocation(), player->GetActorRotation());
 		Destroy();
 	}
 }

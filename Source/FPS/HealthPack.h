@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Sound/SoundCue.h"
 #include "TPS_Player.h"
 #include "HealthPack.generated.h"
 
@@ -19,6 +20,8 @@ public:
 private:
 	UPROPERTY(EditAnywhere)
 	int restoredHitpoints;
+
+	USoundCue* pickupSound;
 
 protected:
 	// Called when the game starts or when spawned

@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Sound/SoundCue.h"
 #include "TPS_Player.h"
 #include "SpeedUpPack.generated.h"
 
@@ -22,6 +23,8 @@ private:
 	
 	UPROPERTY(EditAnywhere)
 	float speedDuration;
+
+	USoundCue* pickupSound;
 
 protected:
 	// Called when the game starts or when spawned

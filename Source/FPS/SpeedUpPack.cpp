@@ -2,12 +2,14 @@
 
 
 #include "SpeedUpPack.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 ASpeedUpPack::ASpeedUpPack()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = false;
+	static ConstructorHelpers::FObjectFinder<USoundCue> pickupSoundHelper(TEXT("/Game/Audio/Sounds/Speed_Up_Pack_Cue.Speed_Up_Pack_Cue"));
+	if (pickupSoundHelper.Succeeded())
+		pickupSound = pickupSoundHelper.Object;
 }
 
 // Called when the game starts or when spawned
@@ -28,6 +30,8 @@ void ASpeedUpPack::OnBeginOverlap(UPrimitiveComponent* HitComp,
 	if (player)
 	{
 		player->ModifySpeed(1 + speedFactor, speedDuration);
+		if (pickupSound)
+			UGameplayStatics::PlaySoundAtLocation(GetWorld(), pickupSound, player->GetActorLocation(), player->GetActorRotation());
 		Destroy();
 	}
 }
