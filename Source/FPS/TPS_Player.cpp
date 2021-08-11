@@ -158,7 +158,7 @@ void ATPS_Player::OnAttack()
 void ATPS_Player::OnEndAttack()
 {
 	isAttacking = false;
-	allowShootAt = GetWorld()->GetTimeSeconds() + fireCooldown;
+	allowShootAt = GetWorld()->GetTimeSeconds() + (fireCooldown * (1 + fireRateSlowdown));
 }
 
 void ATPS_Player::MoveForward(float Axis)
@@ -272,4 +272,9 @@ void ATPS_Player::SetMovementSpeed()
 		movementComponent->MaxWalkSpeedCrouched = initialMaxWalkSpeedCrouched * multiplier;
 		movementComponent->MaxAcceleration = initialMaxAcceleration * multiplier;
 	}
+}
+
+void ATPS_Player::ModifyFireRate(float factor)
+{
+	fireRateSlowdown += factor;
 }

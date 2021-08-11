@@ -71,6 +71,7 @@ private:
 	float initialMaxWalkSpeedCrouched;
 	float initialMaxAcceleration;
 	float speedMultiplier;
+	float fireRateSlowdown;
 	
 protected:
 	// Called when the game starts or when spawned
@@ -95,6 +96,8 @@ public:
 	void RestoreHitpoints(int restoredHitpoints);
 
 	void ModifySpeed(float factor, float duration);
+
+	void ModifyFireRate(float factor);
 
 private:
 	UFUNCTION()
