@@ -25,12 +25,13 @@ AArea::AArea()
 	{
 		UMaterialInstanceDynamic* areaMaterialInstance = UMaterialInstanceDynamic::Create(material.Object, areaMeshComponent);
 		areaMeshComponent->SetMaterial(0, areaMaterialInstance);
+	}*/
 
-	static ConstructorHelpers::FObjectFinder<USoundCue> affectSoundHelper(TEXT(""));
+	static ConstructorHelpers::FObjectFinder<USoundCue> affectSoundHelper(TEXT("/Game/Audio/Sounds/Area_Affect.Area_Affect"));
 	if (affectSoundHelper.Succeeded())
 		affectSound = affectSoundHelper.Object;
 
-	static ConstructorHelpers::FObjectFinder<USoundCue> unaffectSoundHelper(TEXT(""));
+	/*static ConstructorHelpers::FObjectFinder<USoundCue> unaffectSoundHelper(TEXT(""));
 	if (unaffectSoundHelper.Succeeded())
 		unaffectSound = unaffectSoundHelper.Object;*/
 }
@@ -76,6 +77,16 @@ void AArea::ManualSetPlayer(bool apply)
 		{
 			player->ModifyFireRate(apply ? fireRateSlowdownFactor : -fireRateSlowdownFactor);
 			hasPlayer = apply;
+			if (apply)
+			{
+				if (affectSound)
+					UGameplayStatics::PlaySoundAtLocation(GetWorld(), affectSound, actor->GetActorLocation());
+			}
+			else
+			{
+				if (unaffectSound)
+					UGameplayStatics::PlaySoundAtLocation(GetWorld(), unaffectSound, actor->GetActorLocation());
+			}
 			break;
 		}
 	}

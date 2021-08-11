@@ -9,3 +9,8 @@ Insect or alien scream (short) made by qubodup under license CC0
 Life Pickup (Yo Frankie!) made by Blender Foundation under licese CC-BY 3.0
 	https://opengameart.org/content/life-pickup-yo-frankie
 	life_pickup.flac
+
+Energy Drain made by qubodup under license CC-BY-SA 3.0, GPL 3.0, GPL 2.0
+	https://opengameart.org/content/energy-drain
+	qubodup-PowerDrain.ogg
+	
