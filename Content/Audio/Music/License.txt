@@ -13,3 +13,7 @@ Action synth track made PetterTheSturgeon under license CC-BY 4.0, CC-BY 3.0, CC
 Intense Action Loop made by linxiaoma under license CC-BY 4.0
 	https://opengameart.org/content/intense-action-loop
 	IntenseActionLoop.flac
+
+Scifi Action made by Bogarat VGM under license CC-BY 4.0
+	https://opengameart.org/content/scifi-action
+	Scifi Action.mp3
