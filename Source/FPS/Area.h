@@ -27,9 +27,11 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Area")
 	float fireRateSlowdownFactor;
 
+	UPROPERTY(BlueprintReadOnly, Category="Area")
+	UStaticMeshComponent* areaMeshComponent;
+
 private:
 	//UBoxComponent* collisionComponent;
-	UStaticMeshComponent* areaMeshComponent;
 	USoundCue* affectSound;
 	USoundCue* unaffectSound;
 	bool hasPlayer;
